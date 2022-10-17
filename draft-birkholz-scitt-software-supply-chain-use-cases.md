@@ -29,6 +29,10 @@ author:
     name: Dick Brooks
     org: REA
     email: dick@reliableenergyanalytics.com
+  - ins: R. Martin
+    name: Robert Martin
+    org: MITRE
+    email: ramartin@mitre.org
   - ins: B. Knight
     name: Brian Knight
     org: Microsoft
