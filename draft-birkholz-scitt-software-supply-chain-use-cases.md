@@ -117,12 +117,8 @@ A software consumer, in this case DOI, obtains a digitally signed SBOM artifact 
 4. If a trust declaration is on file with the SCITT trusted registry then continue with the risk assessment, otherwise inform the consumer that the SBOM hash and SKID combination are not registered, and the risk assessment ceases.
 5. Continue with the risk assessment by performing a vulnerability search for each SBOM component, identifying any CVE’s that are reported.
 
-### Implementation Scenario
-
-TBD
-
 ~~~~
-deployment scenario digram here
+deployment scenario diagram here
 ~~~~
 {: #implement-scenario title="Potential SCITT Implementation Scenario"}
 
