@@ -99,7 +99,7 @@ MCW has been informed by DOI that their software will be subject to Cybersecurit
 ### Producer (MCW) Actions
 
 A software producer, in this case MCW, creates a digitally signed SBOM, listing all the components contained in the final “distribution package” which a software consumer downloads in preparation for deployment within their digital ecosystem.
-The following steps are performed by the Software Producer: 
+The following steps are performed by the Software Producer:
 
 1. Create the “final SBOM” listing all the components contained in the final distribution package of a software product, which the customer will install into their environment.
 The SBOM must follow NTIA minimum elements for SBOM’s and other NTIA and NIST recommendations for SBOM, to meet Executive Order 14028 and OMB M-22-18 requirements.
