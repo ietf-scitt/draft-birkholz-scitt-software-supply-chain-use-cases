@@ -64,7 +64,6 @@ SCITT-enabled products and analytics solutions will assist in managing complianc
 
 {::boilerplate bcp14-tagged}
 
-{::comment}
 # Generic Problem Statement
 
 As illustrated in {{livecycle-threats}}, a supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
