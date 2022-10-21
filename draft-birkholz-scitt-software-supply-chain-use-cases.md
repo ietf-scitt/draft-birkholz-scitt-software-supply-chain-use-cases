@@ -36,7 +36,7 @@ author:
   - ins: B. Knight
     name: Brian Knight
     org: Microsoft
-    email: brianknight@microsoft.com
+    email: brian.knight@microsoft.com
 
 normative:
 
@@ -63,7 +63,7 @@ Supply chain security is paramount to protecting critical infrastructure, aerosp
 ![SCITT_SW_Use_Case](https://user-images.githubusercontent.com/100775190/197196387-f8f835ba-7023-4223-98c9-3d8ec197e658.svg)
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
-Modern DevSecOps relies on third-party and open-source solutions, expanding supply chain complexity, and reducing the visibility of the lifecycle compliance. One solution approach is to enhance the auditability and accountability of Digital Supply Chain Artifacts (DSCA) by using an interoperable, scalable, and flexible decentralized architecture with a transparent registry. The required software artifacts are highly variable based on community policy requirements, and the solution approach should be artifact agnostic to enable adaptation to these broad policies. Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. 
+DevSecOps relies on third-party and open-source solutions, expanding supply chain complexity, and reducing the visibility of the lifecycle compliance. One solution approach is to enhance the auditability and accountability of Digital Supply Chain Artifacts (DSCA) by using an interoperable, scalable, and flexible decentralized architecture with a transparent registry. The required software artifacts are highly variable based on community policy requirements, and the solution approach should be artifact agnostic to enable adaptation to these broad policies. Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. 
 
 # Notational Implementation
 
