@@ -53,7 +53,7 @@ Generalized Software Supply Chain Use Case Descriptions
 Modern software applications are an intricate mix of first-party and third-party code, development practices and tools, deployment methods and infrastructure, and interfaces and protocols.
 The software supply chain comprises all elements associated with an application's design, development, deployment, and maintenance throughout its entire lifecycle.
 The complexity of software coupled with a lack of lifecycle visibility increases the risks associated with system attack surface and the number of cyber threats capable of harmful impacts, such as exfiltration of data, disruption of operations, and loss of reputation, intellectual property, and financial assets.
-There is a need for a platform architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
+There is a need for a platform architecture that will allow consumers to ascertain that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
 SCITT-enabled products and analytics solutions will assist in managing compliance and assessing risk to help prevent and detect supply chain attacks across the entire software lifecycle while prioritizing data privacy.
 
 [^abs2-]
@@ -66,12 +66,12 @@ SCITT-enabled products and analytics solutions will assist in managing complianc
 
 # Generic Problem Statement
 
-As illustrated in {{livecycle-threats}}, a supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
+As illustrated in {{lifecycle-threats}}, a supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
 ~~~~
 threat chain diagram here
 ~~~~
-{: #livecycle-threats title="Example Lifecycle Threats"}
+{: #lifecycle-threats title="Example Lifecycle Threats"}
 
 [^status]
 
@@ -89,6 +89,7 @@ deployment chain diagram here
 {: #deployment-chain title="Deployment Example of SCITT in Software Development"}
 
 # Software Supply Chain Use Cases
+SCITT fundamental architecture emphasizes heavily on introducing transparency and accountability to the entire steps involved in software delivery. With the advancement of Software Bill of Materials (SBOM) as a standard practice for managing software deliveries the below use case will take SBOM as an example to illustrate how a SCITT based system can augment security built using SBOMs.
 
 ## Software Bill of Material
 
@@ -107,18 +108,32 @@ The following steps are performed by the Software Producer:
 1. Create the “final SBOM” listing all the components contained in the final distribution package of a software product, which the customer will install into their environment.
 The SBOM must follow NTIA minimum elements for SBOM’s and other NTIA and NIST recommendations for SBOM, to meet Executive Order 14028 and OMB M-22-18 requirements.
 (Co)SWID, SPDX or CycloneDX SBOM formats are acceptable for this artifact. 
-2. Digitally sign the SBOM artifact.
-3. Place the SBOM and digital signature artifacts within an access-controlled location, i.e. a customer portal, and provide the end consumer with a link to these artifacts for downloading to the customers environment.
+2. The encoding of SBOM is specific to the protocol in question.
+3. Makes a claim to establish its own identity as a producer of the overall SBOM.
+4. The issuer in certain situations can make further claims (example claims that relate to steps that might assist independent building of the software components, to arrive at the final deliverable).
+5. Once all the claim construction is complete, make a CBOR data payload of all the claims.
+6. Signs the payload using SCITT recommended signing scheme. For now this will be COSE signing. 
+7. Submits the COSE signed object to the transparent registry.
+8. Receives the return receipts (A COSE Countersignature object, containing the inclusion proofs, the original COSE payload and a signature from the transparency service)
+9. Producer would then ship the software along with the return receipts to the Software Consumer.
 
 ### Consumer Actions
 
-A software consumer, in this case DOI, obtains a digitally signed SBOM artifact from a software vendor, which initiates the following risk assessment process:
+A software consumer, in this case DOI, receives the software deliverable along with return receipts from the Producer.
 
-1. Produce a SHA-256 hash value for the SBOM artifact.
-2. Verify the digital signature over the SBOM artifact and identify the signing key used to sign the SBOM, referred to as the SKID (Secret Key ID), assuming the signature is verified successfully.
-3. Submit an inquiry to a trusted SCITT Registry requesting confirmation that a trust declaration is present in the registry for the combination of SHA-256 hash value and SKID associated with the SBOM.
-4. If a trust declaration is on file with the SCITT trusted registry then continue with the risk assessment, otherwise inform the consumer that the SBOM hash and SKID combination are not registered, and the risk assessment ceases.
-5. Continue with the risk assessment by performing a vulnerability search for each SBOM component, identifying any CVE’s that are reported.
+1. The Consumer may choose to verify that the received software specific claims are indeed present in the Transparency Service.
+2. It will decode the return receipts to get the inclusion proof.
+3. Using inclusion proofs it will cyrpotgraphically evaluate the presence of Supply Chain Artifacts (including SBOM) in the Transparency Service.
+4. It will decode the CBOR Payload to get the SBOM and other claims made by the issuer.
+5. It may do additional verification to check that the identity claim value matches the identity of the issuer from where it received the software or the trust chain linking to the issuer.
+6. A format aware consumer can decode the SBOM contents and do the SBOM specific verification steps to further augment the trustworthiness of the received deliverable.
+7. The consumer can decode other claims to establish augmented trust on the received software. for example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.
+
+
+#### SBOM specific actions
+1. Verify the digital signature over the SBOM artifact and identify the signing key used to sign the SBOM, referred to as the SKID (Secret Key ID), assuming the signature is verified successfully.
+2. Can perform risk assessment of the SBOM by performing a vulnerability search for each SBOM component, identifying any CVE's that are reported.
+
 
 ~~~~
 deployment scenario diagram here
