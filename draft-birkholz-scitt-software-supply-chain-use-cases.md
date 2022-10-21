@@ -11,7 +11,7 @@ stream: IETF
 venue:
   group: SCITT
   mail: scitt@ietf.org
-  github: ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-case
+  github: ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases
 
 pi: [toc, sortrefs, symrefs, compact, comments]
 
