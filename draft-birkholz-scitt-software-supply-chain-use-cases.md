@@ -50,15 +50,7 @@ Generalized Software Supply Chain Use Case Descriptions
 
 # Introduction {#intro}
 
-Modern software applications are an intricate mix of first-party and third-party code, development practices and tools, deployment methods and infrastructure, and interfaces and protocols.
-The software supply chain comprises all elements associated with an application's design, development, deployment, and maintenance throughout its entire lifecycle.
-The complexity of software coupled with a lack of lifecycle visibility increases the risks associated with system attack surface and the number of cyber threats capable of harmful impacts, such as exfiltration of data, disruption of operations, and loss of reputation, intellectual property, and financial assets.
-There is a need for a platform architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
-SCITT-enabled products and analytics solutions will assist in managing compliance and assessing risk to help prevent and detect supply chain attacks across the entire software lifecycle while prioritizing data privacy.
-
-[^abs2-]
-
-[^abs2-]: Insert more detail on the development and deployment flows, threat landscape, and notional artifacts that allow security/compliance risk assessment.
+Modern software applications are an intricate mix of first-party and third-party code, development practices and tools, deployment methods and infrastructure, and interfaces and protocols. The software supply chain comprises all elements associated with an application's design, development, deployment, and maintenance throughout its entire lifecycle. The complexity of software coupled with a lack of lifecycle visibility increases the risks associated with system attack surface and the number of cyber threats capable of harmful impacts, such as exfiltration of data, disruption of operations, and loss of reputation, intellectual property, and financial assets. There is a need for a platform architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property. SCITT-enabled products and analytics solutions will assist in managing compliance and assessing risk to help prevent and detect supply chain attacks across the entire software lifecycle while prioritizing data privacy.
 
 ## Terminology {#terms}
 
@@ -66,16 +58,12 @@ SCITT-enabled products and analytics solutions will assist in managing complianc
 
 # Generic Problem Statement
 
-Supply chain security is paramount to protecting critical infrastructure, aerospace, and defense and avoiding impacts on security, the economy, public health, and safety. It has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory. While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined. Recently, the global community has experienced numerous supply chain attacks by cybercriminals targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component. Modern DevSecOps relies on third-party and open-source solutions, expanding supply chain complexity, and reducing the visibility of the lifecycle compliance. One solution approach is to enhance the auditability and accountability of Digital Supply Chain Artifacts (DSCA) by applying an interoperable, scalable, and flexible decentralized architecture.
+Supply chain security is paramount to protecting critical infrastructure, aerospace, and defense and avoiding impacts on security, the economy, public health, and safety. It has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory. While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined. Recently, the global community has experienced numerous supply chain attacks by cybercriminals targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
 ![SCITT_SW_Use_Case](https://user-images.githubusercontent.com/100775190/197196387-f8f835ba-7023-4223-98c9-3d8ec197e658.svg)
-{: #livecycle-threats title="Example Lifecycle Threats"}
+{: #lifecycle-threats title="Example Lifecycle Threats"}
 
-[^status]
-
-[^status]:
-    Text on notional artifacts to be collected and to underscore the payload agnostic concept needed.
-    Also insert notatonal artifacts table here.
+Modern DevSecOps relies on third-party and open-source solutions, expanding supply chain complexity, and reducing the visibility of the lifecycle compliance. One solution approach is to enhance the auditability and accountability of Digital Supply Chain Artifacts (DSCA) by using an interoperable, scalable, and flexible decentralized architecture with a transparent registry. The required software artifacts are highly variable based on community policy requirements, and the solution approach should be artifact agnostic to enable adaptation to these broad policies. Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. 
 
 # Notational Implementation
 
