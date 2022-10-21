@@ -123,11 +123,11 @@ A software consumer, in this case DOI, receives the software deliverable along w
 
 1. The Consumer may choose to verify that the received software specific claims are indeed present in the Transparency Service.
 2. It will decode the return receipts to get the inclusion proof.
-3. Using inclusion proofs it will cyrpotgraphically evaluate the presence of Supply Chain Artifacts (including SBOM) in the Transparency Service.
+3. Using inclusion proofs it will cryptographically evaluate the presence of Supply Chain Artifacts (including SBOM)  for the software deliverable in the Transparency Service.
 4. It will decode the CBOR Payload to get the SBOM and other claims made by the issuer.
 5. It may do additional verification to check that the identity claim value matches the identity of the issuer from where it received the software or the trust chain linking to the issuer.
 6. A format aware consumer can decode the SBOM contents and do the SBOM specific verification steps to further augment the trustworthiness of the received deliverable.
-7. The consumer can decode other claims to establish augmented trust on the received software. for example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.
+7. The consumer can decode other claims to establish augmented trust on the received software. For example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.
 
 
 #### SBOM specific actions
