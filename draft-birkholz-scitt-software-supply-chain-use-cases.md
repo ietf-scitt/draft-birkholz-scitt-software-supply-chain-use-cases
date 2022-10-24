@@ -41,7 +41,7 @@ author:
     name: Yogesh Deshpande
     org: ARM
     email: Yogesh.Deshpande@arm.com
-    
+
 normative:
 
 informative:
@@ -63,6 +63,7 @@ SCITT-enabled products and analytics solutions will assist in managing complianc
 [^abs2-]
 
 [^abs2-]: Insert more detail on the development and deployment flows, threat landscape, and notional artifacts that allow security/compliance risk assessment.
+oducts and analytics solutions will assist in managing compliance and assessing risk to help prevent and detect supply chain attacks across the entire software lifecycle while prioritizing data privacy.
 
 ## Terminology {#terms}
 
@@ -77,11 +78,19 @@ threat chain diagram here
 ~~~~
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
-[^status]
+Supply chain security is paramount to protecting critical infrastructure, aerospace, and defense and avoiding impacts on security, the economy, public health, and safety.
+It has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory.
+While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined.
+Recently, the global community has experienced numerous supply chain attacks by cybercriminals targeting weaknesses in software supply chains.
+As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
-[^status]:
-    Text on notional artifacts to be collected and to underscore the payload agnostic concept needed.
-    Also insert notatonal artifacts table here.
+![SCITT_SW_Use_Case](https://user-images.githubusercontent.com/100775190/197196387-f8f835ba-7023-4223-98c9-3d8ec197e658.svg)
+{: #lifecycle-threats title="Example Lifecycle Threats"}
+
+DevSecOps relies on third-party and open-source solutions, expanding supply chain complexity, and reducing the visibility of the lifecycle compliance.
+One solution approach is to enhance the auditability and accountability of Digital Supply Chain Artifacts (DSCA) by using an interoperable, scalable, and flexible decentralized architecture with a transparent registry.
+The required software artifacts are highly variable based on community policy requirements, and the solution approach should be artifact agnostic to enable adaptation to these broad policies.
+Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. 
 
 # Notational Implementation
 
@@ -127,17 +136,15 @@ A software consumer, in this case DOI, receives the software deliverable along w
 
 1. The Consumer may choose to verify that the received software specific claims are indeed present in the Transparency Service.
 2. It will decode the return receipts to get the inclusion proof.
-3. Using inclusion proofs it will cyrpotgraphically evaluate the presence of Supply Chain Artifacts (including SBOM) in the Transparency Service.
+3. Using inclusion proofs it will cryptographically evaluate the presence of Supply Chain Artifacts (including SBOM)  for the software deliverable in the Transparency Service.
 4. It will decode the CBOR Payload to get the SBOM and other claims made by the issuer.
 5. It may do additional verification to check that the identity claim value matches the identity of the issuer from where it received the software or the trust chain linking to the issuer.
 6. A format aware consumer can decode the SBOM contents and do the SBOM specific verification steps to further augment the trustworthiness of the received deliverable.
-7. The consumer can decode other claims to establish augmented trust on the received software. for example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.
-
+7. The consumer can decode other claims to establish augmented trust on the received software. For example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.
 
 #### SBOM specific actions
 1. Verify the digital signature over the SBOM artifact and identify the signing key used to sign the SBOM, referred to as the SKID (Secret Key ID), assuming the signature is verified successfully.
 2. Can perform risk assessment of the SBOM by performing a vulnerability search for each SBOM component, identifying any CVE's that are reported.
-
 
 ~~~~
 deployment scenario diagram here
@@ -185,9 +192,6 @@ An acceptable self-attestation must include the following minimum requirements:
 ### Consumer Actions
 
 TBD
-
-
-
 
 --- back
 
