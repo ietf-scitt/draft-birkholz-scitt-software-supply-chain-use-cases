@@ -1,7 +1,7 @@
 ---
 v: 3
 
-title: Detailed Software Supply Chain Uses Case for SCITT
+title: Detailed Software Supply Chain Uses Cases for SCITT
 abbrev: SCITT SW Supply Chain
 docname: draft-birkholz-scitt-software-use-cases-latest
 keyword: Internet-Draft
