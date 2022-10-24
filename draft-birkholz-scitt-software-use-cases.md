@@ -36,7 +36,7 @@ author:
   - ins: B. Knight
     name: Brian Knight
     org: Microsoft
-    email: brian.knight@microsoft.com
+    email: brianknight@microsoft.com
 
 normative:
 
