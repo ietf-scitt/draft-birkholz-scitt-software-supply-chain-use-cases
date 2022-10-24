@@ -37,7 +37,11 @@ author:
     name: Brian Knight
     org: Microsoft
     email: brianknight@microsoft.com
-
+  - ins: Y. Deshpande
+    name: Yogesh Deshpande
+    org: ARM
+    email: Yogesh.Deshpande@arm.com
+    
 normative:
 
 informative:
@@ -112,9 +116,9 @@ The SBOM must follow NTIA minimum elements for SBOM’s and other NTIA and NIST 
 3. Makes a claim to establish its own identity as a producer of the overall SBOM.
 4. The issuer in certain situations can make further claims (example claims that relate to steps that might assist independent building of the software components, to arrive at the final deliverable).
 5. Once all the claim construction is complete, make a CBOR data payload of all the claims.
-6. Signs the payload using SCITT recommended signing scheme. For now this will be COSE signing. 
+6. Signs the payload using SCITT recommended signing scheme. For now this will be COSE signing.
 7. Submits the COSE signed object to the transparent registry.
-8. Receives the return receipts (A COSE Countersignature object, containing the inclusion proofs, the original COSE payload and a signature from the transparency service)
+8. Receives the return receipts (A COSE Countersignature object, containing the inclusion proofs, the original COSE payload and a signature from the transparency service).
 9. Producer would then ship the software along with the return receipts to the Software Consumer.
 
 ### Consumer Actions
