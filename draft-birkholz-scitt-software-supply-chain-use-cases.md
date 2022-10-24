@@ -156,9 +156,6 @@ An acceptable self-attestation must include the following minimum requirements:
 
 TBD
 
-
-
-
 --- back
 
 <!--
@@ -186,4 +183,3 @@ Acknowledgements
 * Promotion Scenario: '3rd party lab validates the detail instead of their own test'
 * Endorsement Scenario: Audit downstream independent of issuer and provide an endorsement
 * CI/CD SCITT interaction - Create a model before talking to Github (Statements about SW could be listed. Policy management can be done via SCITT through SW development lifecycle)
-* DSCA signing SCITT interaction – existing services that sign artifacts. Need to capture interaction with SCITT – Sigstore, Notary V2, Maven ecosystem, GPG
