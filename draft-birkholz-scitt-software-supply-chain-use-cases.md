@@ -37,10 +37,6 @@ author:
     name: Brian Knight
     org: Microsoft
     email: brianknight@microsoft.com
-  - ins: Y. Deshpande
-    name: Yogesh Deshpande
-    org: ARM
-    email: Yogesh.Deshpande@arm.com
 
 normative:
 
@@ -90,7 +86,7 @@ As illustrated in {{lifecycle-threats}}, a software supply chain attack may leve
 DevSecOps relies on third-party and open-source solutions, expanding supply chain complexity, and reducing the visibility of the lifecycle compliance.
 One solution approach is to enhance the auditability and accountability of Digital Supply Chain Artifacts (DSCA) by using an interoperable, scalable, and flexible decentralized architecture with a transparent registry.
 The required software artifacts are highly variable based on community policy requirements, and the solution approach should be artifact agnostic to enable adaptation to these broad policies.
-Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. 
+Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals,deployment records, vulnerability scan results, and patch logs.
 
 # Notational Implementation
 
