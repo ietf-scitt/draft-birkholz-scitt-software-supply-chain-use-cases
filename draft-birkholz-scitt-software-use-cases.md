@@ -129,7 +129,7 @@ A software component source (e.g., a library) released by a certain original pro
 The released software component source is accompanied by a statement of authenticity (e.g., a detached signature).
 Over time, there has been an increasing amount of providers of the same version of the software component source over the Internet.
 Some popular providers package the software component and provide the package with proof of authenticity using their own issuer authority.
-Some of these packages include the original statement of authenticity, some do not.
+Some packages include the original statement of authenticity, and some do not.
 After some time, some providers do not offer the exact same software component source, but pre-compiled software component binaries.
 Some sources do not provide the exact same software component, but include patches and fixes produced faster by 3rd parties than the original producer.
 In the end, there is vast number of forms the original software component source is distributed and promoted by.
