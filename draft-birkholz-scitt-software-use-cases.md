@@ -83,9 +83,25 @@ deployment chain diagram here
 
 # Software Supply Chain Use Cases
 
+## Trust Bond between Package Supplier and the Signing Authority
+
+A certain software component product is created and packaged by a Supplier.
+The package by itself does not include a proof of authenticity.
+A signing authority is tasked with adding a proof of authenticity.
+Trust has to be established from the Supplier towards the Signing Authority - and vice versa.
+The mutual trust relationship (trust bond) between Supplier and Signing Authority is established per each individual software component package.
+
+A consumer of a released software wants:
+
+* to understand and verify that an actual trust bond exists between the Supplier of a certain software component package and the Signing Authority of that software component package.
+
+There is no standardized way to:
+
+* enable the consumer to verify that a trust bond for a certain software component package exists and is still valid.
+
 ## Updated Statements over Time
 
-A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed secure by both producers and consumers.
+A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed trustworthy by both producers and consumers.
 After some time, new statements produced and published by 3rd parties show that a software component used in the software product contains potentially weakness.
 Over time, a statement of another 3rd party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.
 The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement how to mitigate the vulnerability ad-hoc.
@@ -93,7 +109,7 @@ Later, the producer provides an updated software product that still uses the vul
 A second update of the software product includes a patch to the affected software component created by the software product producer itself.
 A third update then includes an updated version of the formerly insecure software component - both the software product and the affected software component are deemed secure by both producer and consumers in this release.
 
-A consumer wants:
+A consumer of a released software wants:
 
 * to know where to get these statements from producers and 3rd parties related to the software product in a timely and unambiguous fashion,
 * how to attribute them to an authoritative issuer,
