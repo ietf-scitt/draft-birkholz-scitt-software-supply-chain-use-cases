@@ -139,7 +139,7 @@ A consumer wants:
 * to understand if a particular provider is actually the original provider or a promoter,
 * to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,
 * to check the provenance and history of a software component's source back to its origin, and
-* to assess whether to trust a promoter of not.
+* to assess whether to trust a promoter or not.
 
 There is no standardized way to:
 
