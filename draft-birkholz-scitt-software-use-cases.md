@@ -152,7 +152,7 @@ There is no standardized way to:
 
 ### Introduction
 
-Firmware is ubiquitous. It is in phone, watch, TV, alarm clock, baby monitor, WiFi devices and possibly even in light bulbs if one uses LED lamps. In any given desktop or Personal Computer (PC) there is a BIOS or UEFI type firmware that people are familiar with, but there are also scores of other hidden firmware blobs running on small controllers which power things like management engines, keyboards, network cards, hard disks, SSD's etc.
+Firmware is ubiquitous in IoT devices (e.g., appliances, televisions, smart LED bulbs, HVAC, automobiles), runs at the highest privilege level possible, and is often the bedrock on which the security story of the devices it powers.
 
 Firmware is powerful, it runs in a highest privilege level possible and is often the bedrock on which the security story of the devices it powers.
 
