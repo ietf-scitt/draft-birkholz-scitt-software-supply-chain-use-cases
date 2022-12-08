@@ -132,14 +132,14 @@ There is no standardized way to:
 
 ### Introduction
 
-Firmware is ubiquitous. It is in phone, watch, TV, alarm clock, baby monitor, WiFi devices and possibly even in light bulbs if one uses LED lamps. In any given desktop or Personal Computer (PC) there is a BIOS or UEFI type firmware that people are familiar with, but there are also scores of other hidden firmware blobs running on small controllers which power things like managment engines, keyboards, network cards, hard disks, SSD's etc.
+Firmware is ubiquitous. It is in phone, watch, TV, alarm clock, baby monitor, WiFi devices and possibly even in light bulbs if one uses LED lamps. In any given desktop or Personal Computer (PC) there is a BIOS or UEFI type firmware that people are familiar with, but there are also scores of other hidden firmware blobs running on small controllers which power things like management engines, keyboards, network cards, hard disks, SSD's etc.
 
-Firmware is powerful, it runs in a highest previlege level possible and is often the bedrock on which the security story of the devices it powers.
+Firmware is powerful, it runs in a highest privilege level possible and is often the bedrock on which the security story of the devices it powers.
 
 
 ### Personal Health Monitoring Systems
 
-Personal health monitoring devices, i.e., eHealth devices are typically battery driven and located physically on or under user control to monitor some bodily function, such as temperatire, blood pressure or pulse rate. These devices typically connect to the Internet through an intermediary base statation, using wireless technologies. This connection is used to report the monitored data and also to update the firmware on the health monitoring system. This public network and open distribution system produces its own security challenges.
+Personal health monitoring devices, i.e., eHealth devices are typically battery driven and located physically on or under user control to monitor some bodily function, such as temperature, blood pressure or pulse rate. These devices typically connect to the Internet through an intermediary base station, using wireless technologies. This connection is used to report the monitored data and also to update the firmware on the health monitoring system. This public network and open distribution system produces its own security challenges.
 
 Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing them to be installed.
 
@@ -151,7 +151,7 @@ Even with a robust firmware update system the following problems remain as given
 
 * What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates (whether through outright compromise as in the Realtek identity used to sign the Stuxnet worm)?
 
-* How can one ascertain that the released firmare is not subverted or compromised due to an insider risk - be it malicious or otherwise ?
+* How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise ?
 
 * How the publisher themselves even know that there deliverable has been compromised in some way, can they trust their  key protection or audit logging ?
 
@@ -160,17 +160,17 @@ Even with a robust firmware update system the following problems remain as given
 ## Software Integrator assembling a software product for a smart car
 ### Introduction
 
-Software Integration is a complex activity. It essentially implies combining various different software components coming from a a range of suppliers and producing a combined executable to be given to a Device Manufacturer. Then the executable is loaded into the device, as part of device assembly.
+Software Integration is a complex activity. It essentially implies combining various different software components coming from a range of suppliers and producing a combined executable to be given to a Device Manufacturer. Then the executable is loaded into the device, as part of device assembly.
 
 The complexity adds a level of security vulnerability into the delivered software.
 
 ### Assembly of a Components in a Smart Car
 
-SoftAuto Ltd and Smart Cars Ltd are two different companies that source developed integrated software that can be loaded into autonmous vehicles they produce. Both these companies, source integrated software solution from Micro Coding Wizard (MCW) a fictitious company that sells integrated software solutions that can be loaded into specific vehicle product. MCW assembles the OS from Vendor OS-X that is built on top of Firmware released by Component Vendor-A and then integrates a package manager and some open source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car is been sold and is been actively used by Customer-Y.
+SoftAuto Ltd and Smart Cars Ltd are two different companies that source developed integrated software that can be loaded into autonomous vehicles they produce. Both these companies, source integrated software solution from Micro Coding Wizard (MCW) a fictitious company that sells integrated software solutions that can be loaded into specific vehicle product. MCW assembles the OS from Vendor OS-X that is built on top of Firmware released by Component Vendor-A and then integrates a package manager and some open source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car is been sold and is been actively used by Customer-Y.
 
 ### Software Problem Summary
 
-* While the software is been running on the automated vehicle, a periodic vulnerability scanning software detects some known security issue with one of the component. Customer-Y is prompted with a "Warning Indictor" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.
+* While the software is been running on the automated vehicle, a periodic vulnerability scanning software detects some known security issue with one of the component. Customer-Y is prompted with a "Warning Indicator" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.
 
 * Smart Cars Ltd, while not very sure what could be the problem, under panic communicates to MCW and requests them to look into the problem.
 
