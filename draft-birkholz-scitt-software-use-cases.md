@@ -137,7 +137,7 @@ Due to complex distribution and promotion lifecycle scenarios, the original soft
 A consumer wants:
 
 * to understand if a particular provider is actually the original provider or a promoter,
-* to know, if and how the source (or resulting binary) of a promoted software component is different to the original software component,
+* to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,
 * to check the provenance and history of a software component's source back to its origin, and
 * to assess whether to trust a promoter of not.
 
