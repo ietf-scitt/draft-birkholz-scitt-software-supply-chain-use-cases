@@ -202,7 +202,7 @@ SoftAuto Ltd and Smart Cars Ltd are two different companies that source develope
 
 * However there is no "Verifiable Proofs" of the statement made by Vendor OS-X.
 
-* MCW, Smart Cars Ltd., and Customer-Y now has to trust without any means of verifying the claims made by Vendor OS-X.
+* MCW, Smart Cars Ltd., and Customer-Y now have to trust without the ability to verify the claims made by Vendor OS-X.
 
 * Vendor OS-X thinks there is some mistake on the part of MCW that has led to this situation.
 
