@@ -120,7 +120,7 @@ There is no standardized way to:
 
 * know the various sources of statements,
 * how to express the provenance and historicity of statements,
-* how to related/link various heterogeneous statements in a simple fashion,
+* how to related/link various heterogeneous statements in a simple fashion, and
 * check that the statement actually is coming from a source that actually has the authority to issue that statement
 
 ## Authenticity of Promoted Software Products
