@@ -144,7 +144,7 @@ A consumer wants:
 There is no standardized way to:
 
 * to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
-* track the provenance path from an original producer to a certain provider
+* track the provenance path from an original producer to a particular provider
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
 
