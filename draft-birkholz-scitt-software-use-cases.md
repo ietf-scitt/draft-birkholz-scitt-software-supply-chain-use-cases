@@ -149,7 +149,7 @@ Even with a robust firmware update system the following problems remain as given
 
 * How does the client applying the firmware update on the system know, that the received firmware is not faulty or even malicious ?
 
-* What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates (whether through outright compromise as in the Realtek identity used to sign the Stuxnet worm)?
+* What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates ?
 
 * How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise ?
 
