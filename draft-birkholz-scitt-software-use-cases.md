@@ -180,27 +180,27 @@ Even with a robust firmware update system the following problems remain as given
 ## Software Integrator assembling a software product for a smart car
 ### Introduction
 
-Software Integration is a complex activity. It essentially implies combining various different software components coming from a range of suppliers and producing a combined executable to be given to a Device Manufacturer. Then the executable is loaded into the device, as part of device assembly.
+Software Integration is a complex activity. It implies combining various software components from multiple suppliers and producing an integrated package deployed as part of device assembly and provisioning.
 
-The complexity adds a level of security vulnerability into the delivered software.
+Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
 
-### Assembly of a Components in a Smart Car
+### Assembly of Components in a Smart Car
 
-SoftAuto Ltd and Smart Cars Ltd are two different companies that source developed integrated software that can be loaded into autonomous vehicles they produce. Both these companies, source integrated software solution from Micro Coding Wizard (MCW) a fictitious company that sells integrated software solutions that can be loaded into specific vehicle product. MCW assembles the OS from Vendor OS-X that is built on top of Firmware released by Component Vendor-A and then integrates a package manager and some open source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car is been sold and is been actively used by Customer-Y.
+SoftAuto Ltd and Smart Cars Ltd are two different companies that source third-party integrated software for the autonomous vehicles they produce. Both these companies source integrated software solutions from Micro Coding Wizard (MCW), a fictitious company that sells integrated software solutions. MCW assembles the OS from Vendor OS-X that is built on top of firmware released by Component Vendor-A and then integrates a package manager and some open-source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car has been sold and is actively used by Customer-Y.
 
 ### Software Problem Summary
 
-* While the software is been running on the automated vehicle, a periodic vulnerability scanning software detects some known security issue with one of the component. Customer-Y is prompted with a "Warning Indicator" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.
+* While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. Customer-Y is prompted with a "Warning Indicator" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.
 
-* Smart Cars Ltd, while not very sure what could be the problem, under panic communicates to MCW and requests them to look into the problem.
+* Smart Cars Ltd, has little insight into the root cause of the error, communicates to MCW, and requests them to look into the problem.
 
-* MCW does initial investigation and suspects that the binary received from Vendor OS-X has some problems. It demands specific environment and architectural details associated with the built operating systems binary to ascertain that the software was produced without any tampering by the Vendor OS-X.
+* MCW does an initial investigation and suspects that the binary received from Vendor OS-X has some problems. It demands specific environment and architectural details associated with the built operating systems binary to ascertain that the software was produced without tampering by Vendor OS-X.
 
-* Unfortunately there is no way for the integrator to know, if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.
+* Unfortunately, there is no way for the integrator to know if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.
 
-* Vendor OS-X attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition to this, they also demonstrated the build environment and the architecture, they used during the build.
+* Vendor OS-X attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.
 
-* However there is no "Verifiable Proofs" of the statement made by Vendor OS-X.
+* However, there are no "Verifiable Proofs" of the statement made by Vendor OS-X.
 
 * MCW, Smart Cars Ltd., and Customer-Y now have to trust without the ability to verify the claims made by Vendor OS-X.
 
