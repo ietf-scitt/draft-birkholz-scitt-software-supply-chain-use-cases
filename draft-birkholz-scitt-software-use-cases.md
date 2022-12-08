@@ -111,7 +111,7 @@ A third update includes an updated version of the formerly insecure software com
 
 A consumer of a released software wants:
 
-* to know where to get these statements from producers and 3rd parties related to the software product in a timely and unambiguous fashion,
+* to know where to get these statements from producers and third-parties related to the software product in a timely and unambiguous fashion,
 * how to attribute them to an authoritative issuer,
 * how to associate the statements in a meaningful manner, and
 * how to consistently, efficiently, and homogeneously check their authenticity.
