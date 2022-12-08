@@ -48,7 +48,7 @@ informative:
 
 --- abstract
 
-This document includes a collection of representative Software Supply Chain Use Case Descriptions. These use cases aim at identifying software supply chain problems that the industry faces today and acts as a guideline for developing a comprehensive solution for these class of scnenarios.
+This document includes a collection of representative Software Supply Chain Use Case Descriptions. These use cases aim to identify software supply chain problems that the industry faces today and acts as a guideline for developing a comprehensive solution for these class of scenarios.
 
 --- middle
 
