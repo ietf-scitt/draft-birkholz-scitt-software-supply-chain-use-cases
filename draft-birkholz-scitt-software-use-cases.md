@@ -167,15 +167,15 @@ Today, the best-in-class firmware vendors who supply the firmware also provide a
 
 Even with a robust firmware update system the following problems remain as given below:
 
-* How does the client applying the firmware update on the system know, that the received firmware is not faulty or even malicious ?
+* How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?
 
-* What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates ?
+* What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates?
 
-* How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise ?
+* How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise?
 
-* How the publisher themselves even know that there deliverable has been compromised in some way, can they trust their  key protection or audit logging ?
+* How does the publisher even know that their deliverable has been compromised? Can they trust their key protection or audit logging?
 
-* How  the update client on an instance of health monitoring system know that they have been given the same update as all other devices or one especially crafted for just a small subset of fleet of devices ?
+* How does the update client on an instance of a health monitoring system know that they have been given the same update as all other devices or one specially crafted for just a small subset of a fleet of devices?
 
 ## Software Integrator assembling a software product for a smart car
 ### Introduction
