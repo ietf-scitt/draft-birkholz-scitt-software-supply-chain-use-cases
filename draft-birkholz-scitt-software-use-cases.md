@@ -94,12 +94,14 @@ A second update of the software product includes a patch to the affected softwar
 A third update then includes an updated version of the formerly insecure software component - both the software product and the affected software component are deemed secure by both producer and consumers in this release.
 
 A consumer wants:
+
 * to know where to get these statements from producers and 3rd parties related to the software product in a timely and unambiguous fashion,
 * how to attribute them to an authoritative issuer,
 * how to associate the statements in a meaningful manner, and
 * how to consistently, efficiently, and homogeneously check their authenticity.
 
 There is no standardized way to:
+
 * know the various sources of statements,
 * how to express the provenance and historicity of statements,
 * how to related/link various heterogeneous statements in a simple fashion,
@@ -117,12 +119,14 @@ Some sources do not provide the exact same software component, but include patch
 In the end, there is vast number of forms the original software component source is distributed and promoted by.
 
 A consumer wants:
+
 * to understand, if a certain provider is actually the original provider or a promoter,
 * to know, if and how the source (or resulting binary) of a promoted software component is different to the original software component,
 * to check the provenance and history of a software component's source back to its origin, and
 * to assess whether to trust a promoter of not.
 
 There is no standardized way to:
+
 * to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
 * track the provenance path from an original producer to a certain provider
 * to check for the trustworthiness of a provider
