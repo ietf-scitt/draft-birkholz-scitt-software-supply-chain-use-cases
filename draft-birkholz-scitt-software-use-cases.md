@@ -70,7 +70,7 @@ generic supply chain threats diagram here
 ~~~~
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
-DevSecOps relies on third-party and open-source solutions. An unfortunate effect that also results from this dependency is an increase of supply chain complexity and a corresponding reduction of the visibility of w.r.t. lifecycle compliance. One solution approach to counter that effect is to enhance the auditability and accountability of digital products by using an interoperable, scalable, and flexible decentralized architecture including a transparent registry bolstering visibility and . The required software artifacts are highly variable based on community policy requirements, and the solution approach should be artifact agnostic to enable adaptation to these broad policies. Example artifacts may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs.
+DevSecOps often depends on third-party and open-source solutions. These dependencies can be quite complex throughout the supply chain and render the checking of lifecycle compliance difficult. There is a need for manageable auditability and accountability of digital products. Typically, the range of types of statements about digital products (and their dependencies) is vast, heterogeneous, and can differ between community policy requirements. Taking the type and structure of all statements about digital and products into account might not be possible. Examples of statements may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statements about digital products, the SCITT architecture focusses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessability. The following use case illustrate the scope of SCITT and elaborate on the generic problem statement above.
 
 # Notational Implementation
 
@@ -82,6 +82,28 @@ deployment chain diagram here
 {: #deployment-chain title="Deployment Example of SCITT in Software Development"}
 
 # Software Supply Chain Use Cases
+
+## Updated Statements over Time
+
+A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed secure by both producers and consumers.
+After some time, new statements produced and published by 3rd parties show that a software component used in the software product contains potentially weakness.
+Over time, a statement of another 3rd party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.
+The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement how to mitigate the vulnerability ad-hoc.
+Later, the producer provides an updated software product that still uses the vulnerable software component, but shields the issue in a fashion that inhibits exploitation.
+A second update of the software product includes a patch to the affected software component created by the software product producer itself.
+A third update then includes an updated version of the formerly insecure software component - both the software product and the affected software component are deemed secure by both producer and consumers in this release.
+
+A consumer wants:
+* to know where to get these statements from producers and 3rd parties related to the software product in a timely and unambiguous fashion,
+* how to attribute them to an authoritative issuer,
+* how to associate the statements in a meaningful manner, and
+* how to consistently, efficiently, and homogeneously check their authenticity.
+
+There is no standardized way to:
+* know the various sources of statements,
+* how to express the provenance and historicity of statements,
+* how to related/link various heterogeneous statements in a simple fashion,
+* check that the statement actually is coming from a source that actually has the authority to issue that statement
 
 ## Firmware Delivery to large set of constrained IoT Devices
 
