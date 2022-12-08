@@ -107,7 +107,7 @@ Over time, a statement from another third-party illustrates that the weakness is
 The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability ad-hoc.
 Later, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
 A second update of the software product includes a patch to the affected software component created by the software product producer.
-A third update then includes an updated version of the formerly insecure software component - both the software product and the affected software component are deemed secure by both producer and consumers in this release.
+A third update includes an updated version of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.
 
 A consumer of a released software wants:
 
