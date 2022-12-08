@@ -127,7 +127,7 @@ There is no standardized way to:
 
 A software component source (e.g., a library) released by a certain original producer is becoming popular.
 The released software component source is accompanied by a statement of authenticity (e.g., a detached signature).
-Over time, there is an increasing amount of providers of the same version of the software component source over the Internet.
+Over time, there has been an increasing amount of providers of the same version of the software component source over the Internet.
 Some popular providers package the software component and provide the package with a proof of authenticity using their own issuer authority.
 Some of these packages include the original statement of authenticity, some do not.
 After some time, some providers do not offer the exact same software component source, but pre-compiled software component binaries.
