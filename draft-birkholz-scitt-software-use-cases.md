@@ -154,7 +154,7 @@ There is no standardized way to:
 
 Firmware is ubiquitous in IoT devices (e.g., appliances, televisions, smart LED bulbs, HVAC, automobiles), runs at the highest privilege level possible, and is often the bedrock on which the security story of the devices it powers.
 
-Firmware is powerful, it runs in a highest privilege level possible and is often the bedrock on which the security story of the devices it powers.
+Firmware is powerful. It runs in the highest privilege level possible and is often the bedrock on which the security story of the devices it powers.
 
 
 ### Personal Health Monitoring Systems
