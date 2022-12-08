@@ -161,7 +161,7 @@ Firmware is powerful. It runs in the highest privilege level possible and is oft
 
 Personal health monitoring devices, i.e., eHealth devices, are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.
 
-Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing them to be installed.
+Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing installation.
 
 #### Firmware Delivery Problem Summary
 
