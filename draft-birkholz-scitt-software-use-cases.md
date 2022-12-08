@@ -165,7 +165,7 @@ Today, the best-in-class firmware vendors who supply the firmware also provide a
 
 #### Firmware Delivery Problem Summary
 
-Even with a robust firmware update system the following problems remain as given below:
+Even with a robust firmware update system, the following problems remain as given below:
 
 * How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?
 
