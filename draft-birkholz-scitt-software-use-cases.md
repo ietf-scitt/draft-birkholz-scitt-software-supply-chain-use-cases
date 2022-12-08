@@ -103,7 +103,7 @@ There is no standardized way to:
 
 A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed trustworthy by both producers and consumers.
 After some time, new statements produced and published by third-parties show that a software component used in the software product contains a potential weakness.
-Over time, a statement of another 3rd party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.
+Over time, a statement from another third-party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.
 The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability ad-hoc.
 Later, the producer provides an updated software product that still uses the vulnerable software component, but shields the issue in a fashion that inhibits exploitation.
 A second update of the software product includes a patch to the affected software component created by the software product producer itself.
