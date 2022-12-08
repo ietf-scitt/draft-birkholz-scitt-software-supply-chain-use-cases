@@ -132,11 +132,11 @@ Some popular providers package the software component and provide the package wi
 Some packages include the original statement of authenticity, and some do not.
 Over time, some providers no longer offer the exact same software component source but pre-compiled software component binaries.
 Some sources do not provide the exact same software component but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
-In the end, there is vast number of forms the original software component source is distributed and promoted by.
+Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.
 
 A consumer wants:
 
-* to understand, if a certain provider is actually the original provider or a promoter,
+* to understand if a particular provider is actually the original provider or a promoter,
 * to know, if and how the source (or resulting binary) of a promoted software component is different to the original software component,
 * to check the provenance and history of a software component's source back to its origin, and
 * to assess whether to trust a promoter of not.
