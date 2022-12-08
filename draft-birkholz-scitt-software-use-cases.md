@@ -208,7 +208,7 @@ SoftAuto Ltd and Smart Cars Ltd are two different companies that source develope
 
 * The deadlock continues, with no clear resolution.
 
-* This eventually leads to loss of reputation and company closure for Vendor OS-X.
+* This eventually leads to a loss of reputation and company closure for Vendor OS-X.
 
 
 --- back
