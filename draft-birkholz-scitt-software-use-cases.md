@@ -105,6 +105,29 @@ There is no standardized way to:
 * how to related/link various heterogeneous statements in a simple fashion,
 * check that the statement actually is coming from a source that actually has the authority to issue that statement
 
+## Authenticity of Promoted Software Products
+
+A software component source (e.g., a library) released by a certain original producer is becoming popular.
+The released software component source is accompanied by a statement of authenticity (e.g., a detached signature).
+Over time, there is an increasing amount of providers of the same version of the software component source over the Internet.
+Some popular providers package the software component and provide the package with a proof of authenticity using their own issuer authority.
+Some of these packages include the original statement of authenticity, some do not.
+After some time, some providers do not offer the exact same software component source, but pre-compiled software component binaries.
+Some sources do not provide the exact same software component, but include patches and fixes produced faster by 3rd parties than the original producer.
+In the end, there is vast number of forms the original software component source is distributed and promoted by.
+
+A consumer wants:
+* to understand, if a certain provider is actually the original provider or a promoter,
+* to know, if and how the source (or resulting binary) of a promoted software component is different to the original software component,
+* to check the provenance and history of a software component's source back to its origin, and
+* to assess whether to trust a promoter of not.
+
+There is no standardized way to:
+* to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
+* track the provenance path from an original producer to a certain provider
+* to check for the trustworthiness of a provider
+* to check the integrity of modifications or transformations done by a provider
+
 ## Firmware Delivery to large set of constrained IoT Devices
 
 ### Introduction
