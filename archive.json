@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-12-11T00:33:01.424130+00:00",
+  "timestamp": "2022-12-13T00:32:40.294210+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -518,24 +518,26 @@
       "id": "PR_kwDOIPKmOc5D03Hg",
       "title": "Sw use case rewrite",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/7",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "yogeshbdeshpande",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2022-11-28T18:16:54Z",
-      "updatedAt": "2022-11-28T18:21:11Z",
+      "updatedAt": "2022-12-12T16:44:32Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "6faeb7bad5fb2a1d0846f80ef6840659b8125402",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "sw-use-case-rewrite",
       "headRefOid": "d1dbfa95d0012728e6ee1ca61043cfb6d439bc88",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-12-12T16:44:32Z",
+      "mergedAt": "2022-12-12T16:44:32Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "d1dbfa95d0012728e6ee1ca61043cfb6d439bc88"
+      },
       "comments": [
         {
           "author": "yogeshbdeshpande",
@@ -552,24 +554,26 @@
       "id": "PR_kwDOIPKmOc5EXRA1",
       "title": "Continue refactoring in December 2022",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/8",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "continuing here until Yogesh is back",
       "createdAt": "2022-12-05T16:29:21Z",
-      "updatedAt": "2022-12-08T20:49:25Z",
+      "updatedAt": "2022-12-12T16:44:29Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "6faeb7bad5fb2a1d0846f80ef6840659b8125402",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "Henks-additions",
       "headRefOid": "fa0a72c755fe808a6e60b77a4a8d475ede440d28",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-12-12T16:44:29Z",
+      "mergedAt": "2022-12-12T16:44:29Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "edebd96179288f3b69492fc4c2b83b62a3dd91b4"
+      },
       "comments": [],
       "reviews": [
         {
