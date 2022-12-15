@@ -110,7 +110,7 @@ Some endorsers actively do not acknowledge other endorsers that highlight a lack
 In the end, identifying all relevant endorsements from multiple sources typically ends up to be a responsibility of the consumer.
 
 As a consumer of released software wants:
-* to offload the burden of identifying all relevant authoritative or relevant endorsing entities to a entity they 
+* to offload the burden of identifying all relevant authoritative or relevant endorsing entities to a entity they
 * to offload the burden to filter from and select all endorsements that are applicable to the released software product
 * to make informed decisions on which endorsing entities to believe based on the best visibility of all endorsing entities possible
 
