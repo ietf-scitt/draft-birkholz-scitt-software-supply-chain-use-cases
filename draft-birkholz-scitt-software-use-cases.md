@@ -99,6 +99,26 @@ There is no standardized way to:
 
 * enable the consumer to verify that a trust bond for a certain software component package exists and is still valid.
 
+## Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems
+
+Authoritative entities, such as auditing or code-review companies, a certification entities or a government bodies, continuously produce endorsements about software products and identifiable software components.
+Endorsements can include statements vouching for the trustworthiness of a software product or the lack thereof.
+Consumers of these endorsements include entities, such as distributing entities, as well as end users.
+There can be one or more endorsing entities that produce endorsements relevant to one or more of these consumer groups.
+Discovery off all sources of endorsements and/or the identity of endorsing entities is creating significant cost not all consumer groups can afford.
+Some endorsers actively do not acknowledge other endorsers that highlight a lack of trustworthiness of certain released software products.
+In the end, identifying all relevant endorsements from multiple sources typically ends up to be a responsibility of the consumer.
+
+As a consumer of released software wants:
+* to offload the burden of identifying all relevant authoritative or relevant endorsing entities to a entity they 
+* to offload the burden to filter from and select all endorsements that are applicable to the released software product
+* to make informed decisions on which endorsing entities to believe based on the best visibility of all endorsing entities possible
+
+There is no standardized way to:
+* aggregate large numbers of related endorsements in one place and discover them there
+* of referencing other endorsements via an endorsement
+* identify or discover all (or at least a critical mass) relevant endorsing entities
+
 ## Updated Statements over Time
 
 A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed trustworthy by both producers and consumers.
