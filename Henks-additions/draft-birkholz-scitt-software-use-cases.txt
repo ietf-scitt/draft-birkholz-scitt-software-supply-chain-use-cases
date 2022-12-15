@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 11 June 2023                                                ARM
+Expires: 18 June 2023                                                ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                         8 December 2022
+                                                        15 December 2022
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 June 2023.
+   This Internet-Draft will expire on 18 June 2023.
 
 Copyright Notice
 
@@ -83,15 +83,17 @@ Table of Contents
    4.  Software Supply Chain Use Cases
      4.1.  Trust Bond between Package Supplier and the Signing
            Authority
-     4.2.  Updated Statements over Time
-     4.3.  Authenticity of Promoted Software Products
-     4.4.  Firmware Delivery to large set of constrained IoT Devices
-       4.4.1.  Introduction
-       4.4.2.  Personal Health Monitoring Systems
-     4.5.  Software Integrator assembling a software product for a
+     4.2.  Scalable Determination of Trustworthiness in
+           Multi-Stakeholder Ecosystems
+     4.3.  Updated Statements over Time
+     4.4.  Authenticity of Promoted Software Products
+     4.5.  Firmware Delivery to large set of constrained IoT Devices
+       4.5.1.  Introduction
+       4.5.2.  Personal Health Monitoring Systems
+     4.6.  Software Integrator assembling a software product for a
            smart car
-       4.5.1.  Assembly of Components in a Smart Car
-       4.5.2.  Software Problem Summary
+       4.6.1.  Assembly of Components in a Smart Car
+       4.6.2.  Software Problem Summary
    5.  Normative References
    Appendix A.  TODO List
    Authors' Addresses
@@ -194,7 +196,38 @@ Table of Contents
    *  enable the consumer to verify that a trust bond for a certain
       software component package exists and is still valid.
 
-4.2.  Updated Statements over Time
+4.2.  Scalable Determination of Trustworthiness in Multi-Stakeholder
+      Ecosystems
+
+   Authoritative entities, such as auditing or code-review companies, a
+   certification entities or a government bodies, continuously produce
+   endorsements about software products and identifiable software
+   components.  Endorsements can include statements vouching for the
+   trustworthiness of a software product or the lack thereof.  Consumers
+   of these endorsements include entities, such as distributing
+   entities, as well as end users.  There can be one or more endorsing
+   entities that produce endorsements relevant to one or more of these
+   consumer groups.  Discovery off all sources of endorsements and/or
+   the identity of endorsing entities is creating significant cost not
+   all consumer groups can afford.  Some endorsers actively do not
+   acknowledge other endorsers that highlight a lack of trustworthiness
+   of certain released software products.  In the end, identifying all
+   relevant endorsements from multiple sources typically ends up to be a
+   responsibility of the consumer.
+
+   As a consumer of released software wants: * to offload the burden of
+   identifying all relevant authoritative or relevant endorsing entities
+   to a entity they * to offload the burden to filter from and select
+   all endorsements that are applicable to the released software product
+   * to make informed decisions on which endorsing entities to believe
+   based on the best visibility of all endorsing entities possible
+
+   There is no standardized way to: * aggregate large numbers of related
+   endorsements in one place and discover them there * of referencing
+   other endorsements via an endorsement * identify or discover all (or
+   at least a critical mass) relevant endorsing entities
+
+4.3.  Updated Statements over Time
 
    A released software product is accompanied by a set of complementary
    statements about it's security compliance and is deemed trustworthy
@@ -241,7 +274,7 @@ Table of Contents
    *  check that the statement comes from a source with authority to
       issue that statement.
 
-4.3.  Authenticity of Promoted Software Products
+4.4.  Authenticity of Promoted Software Products
 
    A software component source (e.g., a library) released by a certain
    original producer is becoming popular.  The released software
@@ -287,9 +320,9 @@ Table of Contents
    *  to check the integrity of modifications or transformations done by
       a provider
 
-4.4.  Firmware Delivery to large set of constrained IoT Devices
+4.5.  Firmware Delivery to large set of constrained IoT Devices
 
-4.4.1.  Introduction
+4.5.1.  Introduction
 
    Firmware is ubiquitous in IoT devices (e.g., appliances, televisions,
    smart LED bulbs, HVAC, automobiles), runs at the highest privilege
@@ -300,7 +333,7 @@ Table of Contents
    possible and is often the bedrock on which the security story of the
    devices it powers.
 
-4.4.2.  Personal Health Monitoring Systems
+4.5.2.  Personal Health Monitoring Systems
 
    Personal health monitoring devices, i.e., eHealth devices, are
    generally battery driven and offer health telemetry monitoring, such
@@ -316,7 +349,7 @@ Table of Contents
    also provide an update framework, which verifies the integrity and
    authenticity of firmware updates before allowing installation.
 
-4.4.2.1.  Firmware Delivery Problem Summary
+4.5.2.1.  Firmware Delivery Problem Summary
 
    Even with a robust firmware update system, the following problems
    remain as given below:
@@ -340,7 +373,7 @@ Table of Contents
       devices or one specially crafted for just a small subset of a
       fleet of devices?
 
-4.5.  Software Integrator assembling a software product for a smart car
+4.6.  Software Integrator assembling a software product for a smart car
 
    ### Introduction
 
@@ -352,7 +385,7 @@ Table of Contents
    Integration complexity creates a higher risk of security
    vulnerabilities to the delivered software.
 
-4.5.1.  Assembly of Components in a Smart Car
+4.6.1.  Assembly of Components in a Smart Car
 
    SoftAuto Ltd and Smart Cars Ltd are two different companies that
    source third-party integrated software for the autonomous vehicles
@@ -365,7 +398,7 @@ Table of Contents
    is loaded onto a car manufactured by Smart Cars Ltd. The car has been
    sold and is actively used by Customer-Y.
 
-4.5.2.  Software Problem Summary
+4.6.2.  Software Problem Summary
 
    *  While the software runs on the automated vehicle, periodic
       vulnerability scanning software detects a known security issue
