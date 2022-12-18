@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-12-13T00:32:40.294210+00:00",
+  "timestamp": "2022-12-18T00:27:34.537535+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -1032,6 +1032,98 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOIPKmOc5FkgUZ",
+      "title": "additional use cases for 2022-12-19 meeting",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/9",
+      "state": "OPEN",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-12-15T18:21:25Z",
+      "updatedAt": "2022-12-15T18:21:25Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "edebd96179288f3b69492fc4c2b83b62a3dd91b4",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "Henks-additions",
+      "headRefOid": "776eb07cb92d4c310e73502c999fd27a43d57a06",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOIPKmOc5FmotT",
+      "title": "Edits for readability - 'scalable determination of trustworthiness'",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/10",
+      "state": "OPEN",
+      "author": "kaywilliams",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Modified the 'Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems' use case to improve lay person understanding by reducing the number of terms introduced.",
+      "createdAt": "2022-12-16T03:33:35Z",
+      "updatedAt": "2022-12-16T07:51:40Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "Henks-additions",
+      "baseRefOid": "776eb07cb92d4c310e73502c999fd27a43d57a06",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "kaywilliams-patch-1",
+      "headRefOid": "46f299401d5a31fa89a95769a0a8686f67826129",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5IvgIW",
+          "commit": {
+            "abbreviatedOid": "46f2994"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "thank you! lgtm",
+          "createdAt": "2022-12-16T07:51:40Z",
+          "updatedAt": "2022-12-16T07:51:40Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOIPKmOc5Fmsc0",
+      "title": "Added placeholder 'Summary of Problem Statements'",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/11",
+      "state": "OPEN",
+      "author": "kaywilliams",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Added a placeholder section to aggregate problem statements across use cases. Refine and complete this section as use cases stabilize.",
+      "createdAt": "2022-12-16T03:57:20Z",
+      "updatedAt": "2022-12-16T03:58:12Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "Henks-additions",
+      "baseRefOid": "776eb07cb92d4c310e73502c999fd27a43d57a06",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "kaywilliams-patch-2",
+      "headRefOid": "e72645396595c61b778e1a88800724df5ec8bd21",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
