@@ -191,6 +191,25 @@ There is no standardized way to:
 * check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
 * allow for more than one level of complexity of audit procedures (potentially depending on criticality)
 
+## Checking the Authenticity of Software Components in Isolated or Air-Gapped Infrastructure
+
+Some software is deployed on systems not connected to the Internet.
+Authenticity checks for off-line systems can occur at time of deployment of released software.
+Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
+If the off-line systems are operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.
+
+A consumer of a released software wants:
+
+* a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
+* a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
+* a simple and low cost way to update the configuration of a system component in charge of validity or authenticity cecking
+
+There is no standardized way to:
+
+* provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
+* enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
+* manage trust relationships with respect to the producers of authenticity statements in a fashion that scales from application such as global open source repositories down to off-line constrained devices
+
 ## Firmware Delivery to large set of constrained IoT Devices
 
 ### Introduction
