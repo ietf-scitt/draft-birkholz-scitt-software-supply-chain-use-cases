@@ -89,13 +89,15 @@ Table of Contents
      4.4.  Authenticity of Promoted Software Products
      4.5.  Checking the History of Statements about Software by
            Auditors
-     4.6.  Firmware Delivery to large set of constrained IoT Devices
-       4.6.1.  Introduction
-       4.6.2.  Personal Health Monitoring Systems
-     4.7.  Software Integrator assembling a software product for a
+     4.6.  Checking the Authenticity of Software Components in
+           Isolated or Air-Gapped Infrastructure
+     4.7.  Firmware Delivery to large set of constrained IoT Devices
+       4.7.1.  Introduction
+       4.7.2.  Personal Health Monitoring Systems
+     4.8.  Software Integrator assembling a software product for a
            smart car
-       4.7.1.  Assembly of Components in a Smart Car
-       4.7.2.  Software Problem Summary
+       4.8.1.  Assembly of Components in a Smart Car
+       4.8.2.  Software Problem Summary
    5.  Summary of Problem Statements
    6.  Normative References
    Appendix A.  TODO List
@@ -372,9 +374,45 @@ Table of Contents
    *  allow for more than one level of complexity of audit procedures
       (potentially depending on criticality)
 
-4.6.  Firmware Delivery to large set of constrained IoT Devices
+4.6.  Checking the Authenticity of Software Components in Isolated or
+      Air-Gapped Infrastructure
 
-4.6.1.  Introduction
+   Some software is deployed on systems not connected to the Internet.
+   Authenticity checks for off-line systems can occur at time of
+   deployment of released software.  Off-line systems require
+   appropriate configuration and maintenance to be able to conduct
+   useful authenticity checks.  If the off-line systems are operation
+   are part of constrained node environments, they do not possess the
+   capabilities to process and evaluate all kinds of different
+   authenticity proofs that come with a released software.
+
+   A consumer of a released software wants:
+
+   *  a proof of authenticity that can be checked by an off-line system
+      for vast periods of time after system deployment
+
+   *  a proof of authenticity to be small and as uniform as possible to
+      allow for application in constrained node environments
+
+   *  a simple and low cost way to update the configuration of a system
+      component in charge of validity or authenticity cecking
+
+   There is no standardized way to:
+
+   *  provide an authenticity proof that can be checked by off-line
+      systems in a simple and uniform fashion
+
+   *  enable rich systems, regular systems, and constrained systems to
+      conduct authenticity checks via the same procedure / code base
+
+   *  manage trust relationships with respect to the producers of
+      authenticity statements in a fashion that scales from application
+      such as global open source repositories down to off-line
+      constrained devices
+
+4.7.  Firmware Delivery to large set of constrained IoT Devices
+
+4.7.1.  Introduction
 
    Firmware is ubiquitous in IoT devices (e.g., appliances, televisions,
    smart LED bulbs, HVAC, automobiles), runs at the highest privilege
@@ -385,7 +423,7 @@ Table of Contents
    possible and is often the bedrock on which the security story of the
    devices it powers.
 
-4.6.2.  Personal Health Monitoring Systems
+4.7.2.  Personal Health Monitoring Systems
 
    Personal health monitoring devices, i.e., eHealth devices, are
    generally battery driven and offer health telemetry monitoring, such
@@ -401,7 +439,7 @@ Table of Contents
    also provide an update framework, which verifies the integrity and
    authenticity of firmware updates before allowing installation.
 
-4.6.2.1.  Firmware Delivery Problem Summary
+4.7.2.1.  Firmware Delivery Problem Summary
 
    Even with a robust firmware update system, the following problems
    remain as given below:
@@ -425,7 +463,7 @@ Table of Contents
       devices or one specially crafted for just a small subset of a
       fleet of devices?
 
-4.7.  Software Integrator assembling a software product for a smart car
+4.8.  Software Integrator assembling a software product for a smart car
 
    ### Introduction
 
@@ -437,7 +475,7 @@ Table of Contents
    Integration complexity creates a higher risk of security
    vulnerabilities to the delivered software.
 
-4.7.1.  Assembly of Components in a Smart Car
+4.8.1.  Assembly of Components in a Smart Car
 
    SoftAuto Ltd and Smart Cars Ltd are two different companies that
    source third-party integrated software for the autonomous vehicles
@@ -450,7 +488,7 @@ Table of Contents
    is loaded onto a car manufactured by Smart Cars Ltd. The car has been
    sold and is actively used by Customer-Y.
 
-4.7.2.  Software Problem Summary
+4.8.2.  Software Problem Summary
 
    *  While the software runs on the automated vehicle, periodic
       vulnerability scanning software detects a known security issue
