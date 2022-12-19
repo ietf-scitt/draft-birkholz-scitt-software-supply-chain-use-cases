@@ -99,14 +99,15 @@ deployment chain diagram here
 {: #deployment-chain title="Deployment Example of SCITT in Software Development"}
 
 # Software Supply Chain Use Cases
+
 SCITT fundamental architecture emphasizes heavily on introducing transparency and accountability to the entire steps involved in software delivery. With the advancement of Software Bill of Materials (SBOM) as a standard practice for managing software deliveries the below use case will take SBOM as an example to illustrate how a SCITT based system can augment security built using SBOMs.
 
 ## Software Bill of Material
 
-Micro Coding Wizards (MCW) is a small, fictional, software development company providing software solutions to help manage a fleet of electric vehicles (EV) for corporations.
-MCW’s software solution, MCWManager, is an asset management platform specifically designed to manage electric vehicle fleets.
+Micro Coding Wizards (MCW) is a small, fictional, software development company providing software solutions for managing fleets of electric vehicles (EV).
+MCW’s software solution, MCWManager, is an asset management platform specifically designed to manage fleets of electric vehicles.
 MCWManager tracks usage, charge level, range, and other important characteristics of each EV in the fleet.
-The US Department of the Interior (DOI), a government agency has expressed interest in licensing the MCWManager software to manage a fleet of 20 Electric Vehicles, spread across the Western Region, which includes States west of the Rocky Mountains.
+The US Department of the Interior (DOI), a government agency has expressed interest in licensing the MCWManager software to manage a fleet, starting with 20 Electric Vehicles.
 
 MCW has been informed by DOI that their software will be subject to Cybersecurity Executive Order (EO) 14028 recommendations from NIST and will need to supply "Software Bill of Materials" (SBOM) and a "Vulnerability Disclosure Report" (VDR) NIST attestation to the DOI prior to procurement.
 
@@ -120,16 +121,16 @@ The SBOM must follow NTIA minimum elements for SBOM’s and other NTIA and NIST 
 (Co)SWID, SPDX or CycloneDX SBOM formats are acceptable for this artifact. 
 2. The encoding of SBOM is specific to the protocol in question.
 3. Makes a claim to establish its own identity as a producer of the overall SBOM.
-4. The issuer in certain situations can make further claims (example claims that relate to steps that might assist independent building of the software components, to arrive at the final deliverable).
-5. Once all the claim construction is complete, make a CBOR data payload of all the claims.
-6. Signs the payload using SCITT recommended signing scheme. For now this will be COSE signing.
-7. Submits the COSE signed object to the transparent registry.
-8. Receives the return receipts (A COSE Countersignature object, containing the inclusion proofs, the original COSE payload and a signature from the transparency service).
-9. Producer would then ship the software along with the return receipts to the Software Consumer.
+4. The issuer may make further claims, fo example: claims that relate to steps that might assist independent building of the software components.
+5. Place all claims in a CBOR data payload for submission to SCITT.
+6. Signs the payload using COSE signing.
+7. Submits the COSE signed object to the SCITT instance.
+8. Receives the return receipts: A COSE Countersignature object, containing the inclusion proofs, the original COSE payload and a signature from the transparency service.
+9. Producer would then distribute the software along with the return receipts to the Software Consumer.
 
 ### Consumer Actions
 
-A software consumer, in this case DOI, receives the software deliverable along with return receipts from the Producer.
+A software consumer, in this case DOI, consumes the software deliverable along with return receipts from the Producer.
 
 1. The Consumer may choose to verify that the received software specific claims are indeed present in the Transparency Service.
 2. It will decode the return receipts to get the inclusion proof.
@@ -140,6 +141,7 @@ A software consumer, in this case DOI, receives the software deliverable along w
 7. The consumer can decode other claims to establish augmented trust on the received software. For example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.
 
 #### SBOM specific actions
+
 1. Verify the digital signature over the SBOM artifact and identify the signing key used to sign the SBOM, referred to as the SKID (Secret Key ID), assuming the signature is verified successfully.
 2. Can perform risk assessment of the SBOM by performing a vulnerability search for each SBOM component, identifying any CVE's that are reported.
 
@@ -151,6 +153,7 @@ deployment scenario diagram here
 ## Vulnerability Disclosure Report
 
 MCW has been informed by DOI that their software will be subject to Cybersecurity Executive Order (EO) 14028 recommendations from NIST and will need to supply "Software Bill of Materials" (SBOM) and a "Vulnerability Disclosure Report" (VDR) NIST attestation to the DOI prior to procurement.
+Unlike SBOMs, VDRs continue to evolve over time as new vulnerabilities are discovered that may impact previously released software. Consumers will continually check their vendors and potentially other SCITT sources for updated VDR reports providing the most up to date information on new and previously consumed software.
 
 ### Producer (MCW) Actions
 
@@ -158,9 +161,10 @@ A software producer, in this case MCW, participates in a Vulnerability Disclosur
 The following steps are performed by the Software Producer:
 
 1. Participate in a Vulnerability Disclosure program.
-2. Generate a Vulnerability Disclosure Report (VDR) listing all the known vulnerabilities and mitigation plans to meet Executive Order 14028 and OMB M-22-18 requirements.
+2. Generate a Vulnerability Disclosure Report (VDR) listing all the known vulnerabilities and mitigation plans to meet Executive Order 14028 and OMB M-22-18 requirements with the date the report was generated.
 3. Digitally sign the VDR artifact.
-4. Place the VDR and digital signature artifacts within an access-controlled location, i.e., a customer portal, and provide the end consumer with a link to these artifacts for downloading to the customers environment. 
+4. Submit the VDR and digital signature to the same SCITT instance, providing a common feed of supply chain information. 
+5. If the VDR contains critical vulnerabilities, a SCITT claim may be generated, identifying any potential mitigations such as new versions.
 
 ### Consumer Actions
 
