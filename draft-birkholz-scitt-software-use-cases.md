@@ -230,7 +230,17 @@ SoftAuto Ltd and Smart Cars Ltd are two different companies that source third-pa
 
 * This eventually leads to a loss of reputation and company closure for Vendor OS-X.
 
-
+# Summary of Problem Statements
+* Consumers want to understand and verify that an actual trust bond exists between the Supplier of a certain software component package and the Signing Authority of that software component package (4.1.1)
+* Consumers want to obtain statements from producers and third-parties related to the software product in a timely and unambiguous fashion (4.2.1)
+* Consumers want to attribute statements to an authoritative issuer (4.2.2)
+* Consumers want to associate statements with other statements in a meaningful manner (4.2.3)
+* Consumers want to consistently, efficiently, and homogeneously check the authenticity of statements (4.2.4)
+* Consumers want to understand if a particular provider is actually the original provider or a promoter (4.3.1)
+* Consumers want to know if and how the source, or resulting binary, of a promoted software component differs from the original software component (4.3.2)
+* Consumers want to check the provenance and history of a software component's source back to its origin (4.3.3)
+* Consumers want to assess whether to trust a promoter or not (4.3.4)
+* To be continued...
 --- back
 
 <!--
