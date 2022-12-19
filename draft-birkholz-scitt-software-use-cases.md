@@ -154,7 +154,7 @@ Over time, some providers no longer offer the exact same software component sour
 Some sources do not provide the exact same software component but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
 Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.
 
-A consumer wants:
+A consumer of a released software wants:
 
 * to understand if a particular provider is actually the original provider or a promoter,
 * to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,
@@ -167,6 +167,29 @@ There is no standardized way to:
 * track the provenance path from an original producer to a particular provider
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
+
+## Checking the History of Statements about Software by Auditors
+
+An organization has established procurement requirements and compliance policies for software use.
+In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
+Compliance and requirement checking includes audits of the results of organisational procedures and technical procedures, which can originate from checks conducted by the organization itself or checks conducted by trusted third parties.
+Consecutively, consumers of statements about a released software can be auditors.
+Examples of procedure results important to audits include: available fresh and applicable code reviews, certification documents (e.g., FIPS or Common Criteria), virus scans, vulnerability disclosure reports (fixed or not fixed), security impact or applicability justification statements.
+Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
+
+A consumer of a released software wants:
+
+* to provide methods with different levels of complexity to auditors of a released software
+* expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available
+* the cost of audits to be manageable and scale well
+* complete visibility and accessibility to documents required for audits
+
+There is no standardized way to:
+
+* discover and associate relevant documents and check results required for various types of audits
+* assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion
+* check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
+* allow for more than one level of complexity of audit procedures (potentially depending on criticality)
 
 ## Firmware Delivery to large set of constrained IoT Devices
 
