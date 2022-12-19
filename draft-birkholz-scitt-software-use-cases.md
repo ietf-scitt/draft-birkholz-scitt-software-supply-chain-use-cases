@@ -101,23 +101,23 @@ There is no standardized way to:
 
 ## Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems
 
-Authoritative entities, such as auditing or code-review companies, a certification entities or a government bodies, continuously produce endorsements about software products and identifiable software components.
-Endorsements can include statements vouching for the trustworthiness of a software product or the lack thereof.
-Consumers of these endorsements include entities, such as distributing entities, as well as end users.
-There can be one or more endorsing entities that produce endorsements relevant to one or more of these consumer groups.
-Discovery off all sources of endorsements and/or the identity of endorsing entities is creating significant cost not all consumer groups can afford.
-Some endorsers actively do not acknowledge other endorsers that highlight a lack of trustworthiness of certain released software products.
-In the end, identifying all relevant endorsements from multiple sources typically ends up to be a responsibility of the consumer.
+Authoritative entities, such as auditing or code-review companies, certification entities or government bodies, continuously produce statements about software products and identifiable software components.
+Such statements can vouch for the trustworthiness of a software product or the lack thereof.
+Consumers of these statements include entities, such as distributing entities, as well as end users.
+There can be one or more entities that produce statements relevant to one or more of these consumer groups.
+Discovery of all sources of statements and/or the identity of authoritative entities creates significant cost not all consumer groups can afford.
+Some authoritative entities actively do not acknowledge other authoritative entities that highlight a lack of trustworthiness of certain released software products.
+In the end, identifying all relevant statements from multiple sources typically ends up to be a responsibility of the consumer.
 
-As a consumer of released software wants:
-* to offload the burden of identifying all relevant authoritative or relevant endorsing entities to a entity they
-* to offload the burden to filter from and select all endorsements that are applicable to the released software product
-* to make informed decisions on which endorsing entities to believe based on the best visibility of all endorsing entities possible
+A consumer of released software wants:
+* to offload the burden of identifying all relevant authoritative entities to an entity who does this on their behalf
+* to offload the burden to filter from and select all statements that are applicable to the released software product to an entity who does this on their behalf
+* to make informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
 
 There is no standardized way to:
-* aggregate large numbers of related endorsements in one place and discover them there
-* of referencing other endorsements via an endorsement
-* identify or discover all (or at least a critical mass) relevant endorsing entities
+* aggregate large numbers of related statements in one place and discover them there
+* referencing other statements via a statement
+* identifing or discover all (or at least a critical mass) of relevant authoritative entities
 
 ## Updated Statements over Time
 
