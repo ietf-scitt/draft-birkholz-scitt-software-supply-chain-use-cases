@@ -254,7 +254,8 @@ Table of Contents
 
    *  how to attribute them to an authoritative issuer,
 
-   *  how to associate the statements in a meaningful manner, and
+   *  how to associate the statements in a meaningful manner via a set
+      of well-known semantic relationships, and
 
    *  how to consistently, efficiently, and homogeneously check their
       authenticity.
