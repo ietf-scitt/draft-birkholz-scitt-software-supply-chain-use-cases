@@ -135,7 +135,7 @@ A consumer of a released software wants:
 
 * to know where to get these statements from producers and third-parties related to the software product in a timely and unambiguous fashion,
 * how to attribute them to an authoritative issuer,
-* how to associate the statements in a meaningful manner, and
+* how to associate the statements in a meaningful manner via a set of well-known semantic relationships, and
 * how to consistently, efficiently, and homogeneously check their authenticity.
 
 There is no standardized way to:
