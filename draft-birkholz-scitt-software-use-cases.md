@@ -99,6 +99,26 @@ There is no standardized way to:
 
 * enable the consumer to verify that a trust bond for a certain software component package exists and is still valid.
 
+## Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems
+
+Authoritative entities, such as auditing or code-review companies, certification entities or government bodies, continuously produce statements about software products and identifiable software components.
+Such statements can vouch for the trustworthiness of a software product or the lack thereof.
+Consumers of these statements include entities, such as distributing entities, as well as end users.
+There can be one or more entities that produce statements relevant to one or more of these consumer groups.
+Discovery of all sources of statements and/or the identity of authoritative entities creates significant cost not all consumer groups can afford.
+Some authoritative entities actively do not acknowledge other authoritative entities that highlight a lack of trustworthiness of certain released software products.
+In the end, identifying all relevant statements from multiple sources typically ends up to be a responsibility of the consumer.
+
+A consumer of released software wants:
+* to offload the burden of identifying all relevant authoritative entities to an entity who does this on their behalf
+* to offload the burden to filter from and select all statements that are applicable to the released software product to an entity who does this on their behalf
+* to make informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
+
+There is no standardized way to:
+* aggregate large numbers of related statements in one place and discover them there
+* referencing other statements via a statement
+* identifing or discover all (or at least a critical mass) of relevant authoritative entities
+
 ## Updated Statements over Time
 
 A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed trustworthy by both producers and consumers.
@@ -134,7 +154,7 @@ Over time, some providers no longer offer the exact same software component sour
 Some sources do not provide the exact same software component but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
 Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.
 
-A consumer wants:
+A consumer of a released software wants:
 
 * to understand if a particular provider is actually the original provider or a promoter,
 * to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,
@@ -147,6 +167,48 @@ There is no standardized way to:
 * track the provenance path from an original producer to a particular provider
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
+
+## Checking the History of Statements about Software by Auditors
+
+An organization has established procurement requirements and compliance policies for software use.
+In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
+Compliance and requirement checking includes audits of the results of organisational procedures and technical procedures, which can originate from checks conducted by the organization itself or checks conducted by trusted third parties.
+Consecutively, consumers of statements about a released software can be auditors.
+Examples of procedure results important to audits include: available fresh and applicable code reviews, certification documents (e.g., FIPS or Common Criteria), virus scans, vulnerability disclosure reports (fixed or not fixed), security impact or applicability justification statements.
+Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
+
+A consumer of a released software wants:
+
+* to provide methods with different levels of complexity to auditors of a released software
+* expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available
+* the cost of audits to be manageable and scale well
+* complete visibility and accessibility to documents required for audits
+
+There is no standardized way to:
+
+* discover and associate relevant documents and check results required for various types of audits
+* assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion
+* check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
+* allow for more than one level of complexity of audit procedures (potentially depending on criticality)
+
+## Checking the Authenticity of Software Components in Isolated or Air-Gapped Infrastructure
+
+Some software is deployed on systems not connected to the Internet.
+Authenticity checks for off-line systems can occur at time of deployment of released software.
+Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
+If the off-line systems are operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.
+
+A consumer of a released software wants:
+
+* a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
+* a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
+* a simple and low cost way to update the configuration of a system component in charge of validity or authenticity cecking
+
+There is no standardized way to:
+
+* provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
+* enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
+* manage trust relationships with respect to the producers of authenticity statements in a fashion that scales from application such as global open source repositories down to off-line constrained devices
 
 ## Firmware Delivery to large set of constrained IoT Devices
 
@@ -210,7 +272,17 @@ SoftAuto Ltd and Smart Cars Ltd are two different companies that source third-pa
 
 * This eventually leads to a loss of reputation and company closure for Vendor OS-X.
 
-
+# Summary of Problem Statements
+* Consumers want to understand and verify that an actual trust bond exists between the Supplier of a certain software component package and the Signing Authority of that software component package (4.1.1)
+* Consumers want to obtain statements from producers and third-parties related to the software product in a timely and unambiguous fashion (4.2.1)
+* Consumers want to attribute statements to an authoritative issuer (4.2.2)
+* Consumers want to associate statements with other statements in a meaningful manner (4.2.3)
+* Consumers want to consistently, efficiently, and homogeneously check the authenticity of statements (4.2.4)
+* Consumers want to understand if a particular provider is actually the original provider or a promoter (4.3.1)
+* Consumers want to know if and how the source, or resulting binary, of a promoted software component differs from the original software component (4.3.2)
+* Consumers want to check the provenance and history of a software component's source back to its origin (4.3.3)
+* Consumers want to assess whether to trust a promoter or not (4.3.4)
+* To be continued...
 --- back
 
 <!--
