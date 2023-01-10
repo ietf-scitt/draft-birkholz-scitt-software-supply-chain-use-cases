@@ -1,0 +1,1223 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2023-01-10T00:31:57.813992+00:00",
+  "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 3,
+      "id": "I_kwDOIPKmOc5UrH23",
+      "title": "Discuss possible methods of SBOM Deployment ",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/3",
+      "state": "OPEN",
+      "author": "yogeshbdeshpande",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "SBOM's today are deployed by Suppliers through there designated portals.\r\n\r\nWhat are the possible methods/Secure methods, as to how this can be enhanced considering Supply Chain Security.",
+      "createdAt": "2022-10-24T10:19:36Z",
+      "updatedAt": "2022-10-24T10:19:36Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOIPKmOc5WqEmr",
+      "title": "Re-write Software Supply Chain Use case document",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/6",
+      "state": "OPEN",
+      "author": "kkarunakaran89",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Per IETF115, we need to rewrite our use case document to be compliant with IETF format. Opening this issue to track progress on the doc so we can discuss it at IETF SCITT working group meeting when we're ready. \r\n@yogeshbdeshpande \r\n\r\nReference use case: https://datatracker.ietf.org/doc/html/[draft-ietf-ace-usecases-05](https://datatracker.ietf.org/doc/html/draft-ietf-ace-usecases-05)",
+      "createdAt": "2022-11-17T19:28:49Z",
+      "updatedAt": "2022-11-17T19:29:23Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 12,
+      "id": "I_kwDOIPKmOc5ZlyQV",
+      "title": "Generic Problem Statement needs work (sec 2)",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/12",
+      "state": "OPEN",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> In Section 2 is not a problem description. You could turn it into one if you give a few example of attacks and describe those. I think that this would be useful.",
+      "createdAt": "2022-12-19T14:42:55Z",
+      "updatedAt": "2022-12-19T14:42:55Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 13,
+      "id": "I_kwDOIPKmOc5ZlywW",
+      "title": "(\"Empty\") Notational Implementation section is superfluous (sec 3)",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/13",
+      "state": "CLOSED",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> I would delete Section 3 since it contains no content and it is not clear to me that it would even fit in the document.\r\n",
+      "createdAt": "2022-12-19T14:44:28Z",
+      "updatedAt": "2023-01-09T09:09:13Z",
+      "closedAt": "2023-01-09T09:09:13Z",
+      "comments": []
+    },
+    {
+      "number": 14,
+      "id": "I_kwDOIPKmOc5ZlzRW",
+      "title": "Use of term \"trust\" in \"Trust Bond between Package Supplier and the Signing Authority\" (sec 4.1)",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/14",
+      "state": "OPEN",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> Every time you use the term \u201ctrust\u201d think about an alternative word that could be used. For example, if I \u2013 as a Supplier -- write a software library, such as Mbed TLS, why do I need to use a \u201cSigning Authority\u201d? What do I need to tell that party to sign my software package. What exactly does it tell the consumer when they receive a signed software package? If you tell me the answers, try to avoid the terms \u201ctrust bond\u201d and \u201ctrust\u201d.",
+      "createdAt": "2022-12-19T14:46:02Z",
+      "updatedAt": "2022-12-19T14:46:02Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 15,
+      "id": "I_kwDOIPKmOc5Zlzzk",
+      "title": "Comments on Consumer Requirements in \"Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems\" (sec 4.2)",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/15",
+      "state": "CLOSED",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> You write \u201chow to associate the statements in a meaningful manner, \u201c. Could you clarify with what the statements are associated with?\r\n> You write \u201chow to attribute them to an authoritative issuer,\u201d. You can attribute them (statements, I assume) to an issuer. How can you judge whether this issuer is authoritative?\r\n\r\n ",
+      "createdAt": "2022-12-19T14:47:43Z",
+      "updatedAt": "2023-01-09T09:14:59Z",
+      "closedAt": "2023-01-09T09:14:59Z",
+      "comments": [
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "> How can you judge whether this issuer is authoritative?\r\n\r\nI think that is the question left open as a consumer need? Worst case scenario probably would mean: not possible. The use case document is not intended to talk about solution approaches. So I assume this part of your review is not about the use case document itself? (but maybe about in which document would that be addressed?)",
+          "createdAt": "2023-01-09T09:13:49Z",
+          "updatedAt": "2023-01-09T09:13:49Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOIPKmOc5BSZvv",
+      "title": "Revision to the introduction and problem statement",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/1",
+      "state": "MERGED",
+      "author": "knight-brian",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Introduction: Removed excess carriage returns\r\nProblem Statement: Added new text (threats + artifacts) and illustration (threats)",
+      "createdAt": "2022-10-21T13:37:08Z",
+      "updatedAt": "2022-10-21T16:40:43Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "4ba5f3504ef2776d37414bf5d3043d8a25d31dd8",
+      "headRepository": "knight-brian/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "main",
+      "headRefOid": "1f257b2f72814b80fe82f06c69c0f0a5fac39311",
+      "closedAt": "2022-10-21T16:40:42Z",
+      "mergedAt": "2022-10-21T16:40:42Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "7d15b70670686b49c382b2166352b860dfacb5f0"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5Enrfs",
+          "commit": {
+            "abbreviatedOid": "1f257b2"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-10-21T16:36:30Z",
+          "updatedAt": "2022-10-21T16:36:30Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5Ensro",
+          "commit": {
+            "abbreviatedOid": "1f257b2"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM!",
+          "createdAt": "2022-10-21T16:40:10Z",
+          "updatedAt": "2022-10-21T16:40:10Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOIPKmOc5BSc2_",
+      "title": "Refine Issuer and Consumer Steps in the use case block",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/2",
+      "state": "CLOSED",
+      "author": "yogeshbdeshpande",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-10-21T13:46:55Z",
+      "updatedAt": "2022-10-24T16:57:45Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "7d15b70670686b49c382b2166352b860dfacb5f0",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "wip-branch",
+      "headRefOid": "191e54aa0b828d7c59b6062f2efc3ccdd7d90dd1",
+      "closedAt": "2022-10-24T16:57:44Z",
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "Yogesh, I think you are describing a different use case from the original. Perhaps we should show the two use cases, the original use case and the alternative use case you describe here.",
+          "createdAt": "2022-10-21T13:56:52Z",
+          "updatedAt": "2022-10-21T13:56:52Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@rjb4standards Lets discuss in the call today more on this before further work on this one!",
+          "createdAt": "2022-10-21T14:06:40Z",
+          "updatedAt": "2022-10-21T14:06:40Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "This PR will be addressed using PR #4 ",
+          "createdAt": "2022-10-24T16:57:44Z",
+          "updatedAt": "2022-10-24T16:57:44Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5Ems1n",
+          "commit": {
+            "abbreviatedOid": "a8b5703"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-10-21T13:49:43Z",
+          "updatedAt": "2022-10-21T13:49:44Z",
+          "comments": [
+            {
+              "originalPosition": 54,
+              "body": "```suggestion\r\n3. Using inclusion proofs it will cryptographically evaluate the presence of Supply Chain Artifacts (including SBOM)  for the software deliverable in the Transparency Service.\r\n```",
+              "createdAt": "2022-10-21T13:49:43Z",
+              "updatedAt": "2022-10-21T13:49:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5EmtKl",
+          "commit": {
+            "abbreviatedOid": "a8b5703"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-10-21T13:50:34Z",
+          "updatedAt": "2022-10-21T13:50:35Z",
+          "comments": [
+            {
+              "originalPosition": 58,
+              "body": "```suggestion\r\n7. The consumer can decode other claims to establish augmented trust on the received software. For example decode the specific claim to get the required instructions to build the software it has received. This way it can compare the computed hash for the binary compiled locally against the received hash from SCITT registry. Any mis-match can be reported as an inconsistency.\r\n```",
+              "createdAt": "2022-10-21T13:50:35Z",
+              "updatedAt": "2022-10-21T13:50:35Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5Entti",
+          "commit": {
+            "abbreviatedOid": "771958e"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-10-21T16:43:42Z",
+          "updatedAt": "2022-10-21T16:43:42Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5En1Dj",
+          "commit": {
+            "abbreviatedOid": "771958e"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "let it be bashed! \ud83d\ude42 This is good input for discussion",
+          "createdAt": "2022-10-21T17:05:54Z",
+          "updatedAt": "2022-10-21T17:05:54Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOIPKmOc5Bbj9X",
+      "title": "Final merge",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/4",
+      "state": "OPEN",
+      "author": "yogeshbdeshpande",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-10-24T16:56:35Z",
+      "updatedAt": "2022-12-19T17:00:07Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "8804bb910319992baef32a6625ca33f65d05fedb",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "final-merge",
+      "headRefOid": "7a49cac97be3135c964c09412ccd605e6755d788",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "body": "Not directly covered in this PR update, but a comment on the overall use case:\r\n\r\n- `Micro Coding Wizards (MCW)` - I happen to know MCW represents a few other companies (https://www.mcw.com/, https://www.mcwtech.com/). I might suggest we use some of the sample companies that we already have domains for, or can acquire to avoid conflicts with existing companies. \r\n- The VDR example, at first, seemed redundant with the SBOM scenario. I'd suggest the remaining difference is a VEX is a continual incremental disclosure of information, over the life of the artifact.\r\n\r\nI've created PR #5 for review",
+          "createdAt": "2022-10-24T18:22:57Z",
+          "updatedAt": "2022-10-24T19:44:35Z"
+        },
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "Steve, VEX is not supported in NIST Guidance. You should consider using VDR, Vulnerability Disclosure Report",
+          "createdAt": "2022-10-24T19:34:43Z",
+          "updatedAt": "2022-10-24T19:34:43Z"
+        },
+        {
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "body": "> Steve, VEX is not supported in NIST Guidance. You should consider using VDR, Vulnerability Disclosure Report\r\n\r\nOh, sorry, I transformed. I'm updating my comment from VEX to VDR.",
+          "createdAt": "2022-10-24T19:44:42Z",
+          "updatedAt": "2022-10-24T19:44:42Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5Ew4LF",
+          "commit": {
+            "abbreviatedOid": "e23ca78"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "Not sure, if we can merge that yet. Sorry for the TZ distortion due to traveling.",
+          "createdAt": "2022-10-24T19:31:18Z",
+          "updatedAt": "2022-10-24T19:45:38Z",
+          "comments": [
+            {
+              "originalPosition": 36,
+              "body": "is this text intentionally removed? ",
+              "createdAt": "2022-10-24T19:31:18Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 42,
+              "body": "is this intentionally changed back? ",
+              "createdAt": "2022-10-24T19:31:47Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 65,
+              "body": "This reads as if only one SBOM use case follows, but there are three software supply chain use cases?",
+              "createdAt": "2022-10-24T19:34:04Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 75,
+              "body": "Why suddenly protocol?",
+              "createdAt": "2022-10-24T19:34:24Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 76,
+              "body": "'Makes'? A bit colloquial and if... why not 'make'?",
+              "createdAt": "2022-10-24T19:35:17Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 77,
+              "body": "This leaves a lot to the imagination. Why would all these claims clumped together and not be... stand-alone claims?",
+              "createdAt": "2022-10-24T19:36:21Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 79,
+              "body": "Sign?",
+              "createdAt": "2022-10-24T19:37:02Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 82,
+              "body": "The test style seems a little bit out of place. Also, why is COSE (a solution) mentioned in a use case?",
+              "createdAt": "2022-10-24T19:41:54Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 87,
+              "body": "Why is the solution concept of a receipt introduced here in the use case scope?",
+              "createdAt": "2022-10-24T19:42:37Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            },
+            {
+              "originalPosition": 102,
+              "body": "Is it necessary to introduce another section depth here?",
+              "createdAt": "2022-10-24T19:43:06Z",
+              "updatedAt": "2022-10-24T19:45:39Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5Exdz0",
+          "commit": {
+            "abbreviatedOid": "e23ca78"
+          },
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-10-24T21:19:09Z",
+          "updatedAt": "2022-10-24T21:19:09Z",
+          "comments": [
+            {
+              "originalPosition": 36,
+              "body": "@yogeshbdeshpande, was this intentional, for brevity's sake?  ",
+              "createdAt": "2022-10-24T21:19:09Z",
+              "updatedAt": "2022-10-24T21:19:09Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5E0XCr",
+          "commit": {
+            "abbreviatedOid": "e23ca78"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-10-25T10:39:44Z",
+          "updatedAt": "2022-10-25T10:39:44Z",
+          "comments": [
+            {
+              "originalPosition": 36,
+              "body": "@SteveLasker @henkbirkholz I was just merging the same in the PR coming from the main line: Let me revisit the same!",
+              "createdAt": "2022-10-25T10:39:44Z",
+              "updatedAt": "2022-10-25T10:39:44Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOIPKmOc5Bb5UW",
+      "title": "Edits for brevity, VDR as an example of incremental information",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/5",
+      "state": "MERGED",
+      "author": "SteveLasker",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "- A few edits for brevity and conciseness\r\n- Differentiate the VDR as incremental information, where the SBOM is static at the time of initial distribution\r\nSigned-off-by: Steve Lasker <stevenlasker@hotmail.com>",
+      "createdAt": "2022-10-24T18:22:22Z",
+      "updatedAt": "2022-12-19T17:00:04Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "final-merge",
+      "baseRefOid": "e23ca784622c3b3483b38606db3f578687bbea7c",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "stevelasker-edits",
+      "headRefOid": "db2f54ad624fd3c4f54d927742bd0fa5fd7a15ab",
+      "closedAt": "2022-12-19T17:00:04Z",
+      "mergedAt": "2022-12-19T17:00:04Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "7a49cac97be3135c964c09412ccd605e6755d788"
+      },
+      "comments": [
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "A VDR is a living document that can be linked to an SBOM document directly, see SPDX V2.3 K.1.9; \r\nhttps://spdx.github.io/spdx-spec/v2.3/how-to-use/#k19-linking-to-an-sbom-vulnerability-report-for-a-software-product-per-nist-executive-order-14028 ",
+          "createdAt": "2022-10-24T19:37:51Z",
+          "updatedAt": "2022-10-24T19:37:51Z"
+        },
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "> A VDR is a living document that can be linked to an SBOM document directly, see SPDX V2.3 K.1.9; https://spdx.github.io/spdx-spec/v2.3/how-to-use/#k19-linking-to-an-sbom-vulnerability-report-for-a-software-product-per-nist-executive-order-14028\r\n\r\nIs there a proposed change associated with this comment?",
+          "createdAt": "2022-10-24T19:47:45Z",
+          "updatedAt": "2022-10-24T19:47:45Z"
+        },
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "Feels like an agreement to the \"Differentiate the VDR as incremental information, where the SBOM is static at the time of initial distribution\" above?",
+          "createdAt": "2022-10-24T19:49:04Z",
+          "updatedAt": "2022-10-24T19:49:04Z"
+        },
+        {
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "body": "Thanks @rjb4standards,\r\nI'd suggest the thing we want to capture with SCITT is the continual evolution of information. It's not ok to just update a document as there's no way to know what the state of the document was at a previous date.\r\n\r\nExample:\r\n1. Jan 1, 2022 - the `net-monitor:v1` software was deployed and the VDR showed (all is good). A SCITT claim was submitted, attesting to that current state\r\n1. Jan 10, 2022, the `net-monitor:v1` software was deployed, as there were no known issues. A SCITT claim\r\n1. On March 1, 2022 a new vulnerability was discovered that applied to the previous released and deployed software\r\n\r\nOn March 2, 2022, a security auditor might ask: \"Why did you deploy the net-monitor:v1` software when there's clearly a security problem?\r\nThe system has the VDR report from Jan 10, when the software was deployed, to indicate no known vulnerabilities were known at that point. \r\n\r\nSCITT and the underlying evidence store will need to provide the most recent version of an artifactType, with the ability to query the history as well.\r\n\r\nDoes this give you what you're looking for?\r\n ",
+          "createdAt": "2022-10-24T19:49:38Z",
+          "updatedAt": "2022-10-24T19:49:38Z"
+        },
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "Steve, each new VDR will have a different hash value, so any/all of the VDR artifacts can be checked for trustworthiness, but the \"most current VDR should always be registered in SCITT, IMO.",
+          "createdAt": "2022-10-24T19:52:39Z",
+          "updatedAt": "2022-10-24T19:52:39Z"
+        },
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "No additional changes are needed, just replace VEX with VDR and we're good to go.",
+          "createdAt": "2022-10-24T19:56:07Z",
+          "updatedAt": "2022-10-24T19:56:07Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5Exod3",
+          "commit": {
+            "abbreviatedOid": "db2f54a"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-10-24T21:59:16Z",
+          "updatedAt": "2022-10-24T21:59:16Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5HzdQa",
+          "commit": {
+            "abbreviatedOid": "db2f54a"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-12-05T14:39:25Z",
+          "updatedAt": "2022-12-05T14:39:25Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOIPKmOc5D03Hg",
+      "title": "Sw use case rewrite",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/7",
+      "state": "MERGED",
+      "author": "yogeshbdeshpande",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-11-28T18:16:54Z",
+      "updatedAt": "2022-12-12T16:44:32Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "6faeb7bad5fb2a1d0846f80ef6840659b8125402",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "sw-use-case-rewrite",
+      "headRefOid": "d1dbfa95d0012728e6ee1ca61043cfb6d439bc88",
+      "closedAt": "2022-12-12T16:44:32Z",
+      "mergedAt": "2022-12-12T16:44:32Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "d1dbfa95d0012728e6ee1ca61043cfb6d439bc88"
+      },
+      "comments": [
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Please note the template is based on:\r\nhttps://rfc-editor.org/rfc/rfc7744.html\r\n\r\nWe would like to stick to this template and progress this document!\r\n",
+          "createdAt": "2022-11-28T18:21:10Z",
+          "updatedAt": "2022-11-28T18:21:10Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 8,
+      "id": "PR_kwDOIPKmOc5EXRA1",
+      "title": "Continue refactoring in December 2022",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/8",
+      "state": "MERGED",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "continuing here until Yogesh is back",
+      "createdAt": "2022-12-05T16:29:21Z",
+      "updatedAt": "2022-12-12T16:44:29Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "6faeb7bad5fb2a1d0846f80ef6840659b8125402",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "Henks-additions",
+      "headRefOid": "fa0a72c755fe808a6e60b77a4a8d475ede440d28",
+      "closedAt": "2022-12-12T16:44:29Z",
+      "mergedAt": "2022-12-12T16:44:29Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "edebd96179288f3b69492fc4c2b83b62a3dd91b4"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5ICBue",
+          "commit": {
+            "abbreviatedOid": "b3f9e84"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-07T14:11:40Z",
+          "updatedAt": "2022-12-07T14:11:41Z",
+          "comments": [
+            {
+              "originalPosition": 97,
+              "body": "nice to see Stuxnet, but do we really want to invoke its name?",
+              "createdAt": "2022-12-07T14:11:41Z",
+              "updatedAt": "2022-12-07T14:11:50Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5ICCTv",
+          "commit": {
+            "abbreviatedOid": "b3f9e84"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "Looks good, happy to review again when its out of draft.",
+          "createdAt": "2022-12-07T14:13:02Z",
+          "updatedAt": "2022-12-07T14:13:02Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IHoFa",
+          "commit": {
+            "abbreviatedOid": "b3f9e84"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-08T11:57:11Z",
+          "updatedAt": "2022-12-08T11:57:12Z",
+          "comments": [
+            {
+              "originalPosition": 97,
+              "body": "no. will remove parenthesis for now",
+              "createdAt": "2022-12-08T11:57:11Z",
+              "updatedAt": "2022-12-08T11:57:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IHoic",
+          "commit": {
+            "abbreviatedOid": "b3f9e84"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-08T11:58:44Z",
+          "updatedAt": "2022-12-08T11:58:44Z",
+          "comments": [
+            {
+              "originalPosition": 97,
+              "body": "fixed in https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/commit/aff48d30f9f036439ca587e4824d18b8244b6cc1",
+              "createdAt": "2022-12-08T11:58:44Z",
+              "updatedAt": "2022-12-08T11:58:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IH5aj",
+          "commit": {
+            "abbreviatedOid": "e4b3121"
+          },
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-08T12:53:33Z",
+          "updatedAt": "2022-12-08T15:34:18Z",
+          "comments": [
+            {
+              "originalPosition": 61,
+              "body": "```suggestion\r\nA second update of the software product includes a patch to the affected software component created by the software product producer.\r\n```",
+              "createdAt": "2022-12-08T13:22:53Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 59,
+              "body": "```suggestion\r\nThe producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability ad-hoc.\r\n```",
+              "createdAt": "2022-12-08T13:24:20Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 60,
+              "body": "```suggestion\r\nLater, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.\r\n```",
+              "createdAt": "2022-12-08T13:24:31Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 58,
+              "body": "```suggestion\r\nOver time, a statement from another third-party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.\r\n```",
+              "createdAt": "2022-12-08T13:25:02Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 57,
+              "body": "We use third-party above, and 3rd party below. I don't have a preference, but let's be consistent.\r\n\r\n```suggestion\r\nAfter some time, new statements produced and published by third-parties show that a software component used in the software product contains a potential weakness.\r\n```",
+              "createdAt": "2022-12-08T13:25:41Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 56,
+              "body": "```suggestion\r\nA software product is released, accompanied by a set of complementary statements about its security compliance, and deemed secure by the producer and consumers.\r\n```",
+              "createdAt": "2022-12-08T13:26:32Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 41,
+              "body": "```suggestion\r\nDevSecOps often depends on third-party and open-source solutions. These dependencies can be quite complex throughout the supply chain and render the checking of lifecycle compliance difficult. There is a need for manageable auditability and accountability of digital products. Typically, the range of types of statements about digital products (and their dependencies) is vast, heterogeneous, and can differ between community policy requirements. Taking the type and structure of all statements about digital and products into account might not be possible. Examples of statements may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility. The following use case illustrates the scope of SCITT and elaborate on the generic problem statement above.\r\n```",
+              "createdAt": "2022-12-08T13:27:25Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 32,
+              "body": "Perhaps we should simplify that first sentence to avoid naming verticals. That said, I'm not sure my revision is great.\r\n\r\n```suggestion\r\nSupply chain security is a paramount prerequisite to successfully protect consumers and minimize economic, public health, and safety impacts. Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory. While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined. Recently, the global community has experienced numerous supply chain attacks targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.\r\n```",
+              "createdAt": "2022-12-08T13:31:12Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 16,
+              "body": "```suggestion\r\nThis document includes a collection of representative Software Supply Chain Use Case Descriptions. These use cases aim to identify software supply chain problems that the industry faces today and acts as a guideline for developing a comprehensive solution for these class of scenarios.\r\n```",
+              "createdAt": "2022-12-08T13:32:50Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 62,
+              "body": "```suggestion\r\nA third update includes an updated version of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.\r\n```",
+              "createdAt": "2022-12-08T13:42:12Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 68,
+              "body": "```suggestion\r\n* to know where to get these statements from producers and third-parties related to the software product in a timely and unambiguous fashion,\r\n```",
+              "createdAt": "2022-12-08T13:43:23Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 85,
+              "body": "```suggestion\r\n* check that the statement comes from a source with authority to issue that statement.\r\n```",
+              "createdAt": "2022-12-08T13:45:41Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 84,
+              "body": "```suggestion\r\n* how to related/link various heterogeneous statements in a simple fashion, and\r\n```",
+              "createdAt": "2022-12-08T13:45:47Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 93,
+              "body": "```suggestion\r\nOver time, there has been an increasing amount of providers of the same version of the software component source over the Internet.\r\n```",
+              "createdAt": "2022-12-08T13:46:58Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 94,
+              "body": "```suggestion\r\nSome popular providers package the software component and provide the package with proof of authenticity using their own issuer authority.\r\n```",
+              "createdAt": "2022-12-08T13:47:20Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 95,
+              "body": "```suggestion\r\nSome packages include the original statement of authenticity, and some do not.\r\n```",
+              "createdAt": "2022-12-08T13:47:34Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 96,
+              "body": "```suggestion\r\nOver time, some providers no longer offer the exact same software component source but pre-compiled software component binaries.\r\n```",
+              "createdAt": "2022-12-08T13:51:04Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 97,
+              "body": "```suggestion\r\nSome sources do not provide the exact same software component but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.\r\n```",
+              "createdAt": "2022-12-08T13:53:17Z",
+              "updatedAt": "2022-12-08T15:34:18Z"
+            },
+            {
+              "originalPosition": 98,
+              "body": "I'm unsure if this is better.\r\n\r\n```suggestion\r\nDue to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.\r\n```",
+              "createdAt": "2022-12-08T14:00:32Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 111,
+              "body": "```suggestion\r\n* to understand if a particular provider is actually the original provider or a promoter,\r\n```",
+              "createdAt": "2022-12-08T14:03:30Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 112,
+              "body": "```suggestion\r\n* to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,\r\n```",
+              "createdAt": "2022-12-08T14:04:38Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 114,
+              "body": "```suggestion\r\n* to assess whether to trust a promoter or not.\r\n```",
+              "createdAt": "2022-12-08T14:05:15Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 121,
+              "body": "```suggestion\r\n* track the provenance path from an original producer to a particular provider\r\n```",
+              "createdAt": "2022-12-08T14:12:21Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 139,
+              "body": "```suggestion\r\nFirmware is powerful. It runs in the highest privilege level possible and is often the bedrock on which the security story of the devices it powers.\r\n```",
+              "createdAt": "2022-12-08T14:26:22Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 136,
+              "body": "I removed PCs, phones, and watches to avoid any IoT definition debates.\r\n\r\n```suggestion\r\nFirmware is ubiquitous in IoT devices (e.g., appliances, televisions, smart LED bulbs, HVAC, automobiles), runs at the highest privilege level possible, and is often the bedrock on which the security story of the devices it powers.\r\n```",
+              "createdAt": "2022-12-08T14:36:58Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 139,
+              "body": "Incorporated this in the above sentence.\r\n\r\n```suggestion\r\n```",
+              "createdAt": "2022-12-08T14:37:25Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 152,
+              "body": "```suggestion\r\nPersonal health monitoring devices, i.e., eHealth devices, are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.\r\n```",
+              "createdAt": "2022-12-08T14:53:36Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 155,
+              "body": "```suggestion\r\nToday, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing installation.\r\n```",
+              "createdAt": "2022-12-08T14:54:25Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 161,
+              "body": "```suggestion\r\nEven with a robust firmware update system, the following problems remain as given below:\r\n```",
+              "createdAt": "2022-12-08T14:54:50Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 167,
+              "body": "```suggestion\r\n* How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?\r\n```",
+              "createdAt": "2022-12-08T14:55:14Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 170,
+              "body": "```suggestion\r\n* What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates?\r\n```",
+              "createdAt": "2022-12-08T14:56:25Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 174,
+              "body": "```suggestion\r\n* How does the publisher even know that their deliverable has been compromised? Can they trust their key protection or audit logging?\r\n```",
+              "createdAt": "2022-12-08T15:01:31Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 172,
+              "body": "```suggestion\r\n* How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise?\r\n```",
+              "createdAt": "2022-12-08T15:01:57Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 176,
+              "body": "```suggestion\r\n* How does the update client on an instance of a health monitoring system know that they have been given the same update as all other devices or one specially crafted for just a small subset of a fleet of devices?\r\n```",
+              "createdAt": "2022-12-08T15:03:56Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 181,
+              "body": "We may clarify this entire section further through some language simplification and the insertion of open questions.\r\n\r\n```suggestion\r\nSoftware Integration is a complex activity. It implies combining various software components from multiple suppliers and producing an integrated package deployed as part of device assembly and provisioning.\r\n```",
+              "createdAt": "2022-12-08T15:13:41Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 183,
+              "body": "```suggestion\r\nIntegration complexity creates a higher risk of security vulnerabilities to the delivered software.\r\n```",
+              "createdAt": "2022-12-08T15:14:15Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 185,
+              "body": "```suggestion\r\n### Assembly of Components in a Smart Car\r\n```",
+              "createdAt": "2022-12-08T15:14:34Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 36,
+              "body": "The SVG may not have displayed correctly.  Here is the PNG file source if there is interest in adapting this to an I-D approved format.\r\n\r\n![SCITT_SW_Use_Case](https://user-images.githubusercontent.com/100775190/206485067-f7e89d7c-b806-4a62-aa6b-da7a5f1f58f1.png)\r\n\r\n",
+              "createdAt": "2022-12-08T15:23:40Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 187,
+              "body": "```suggestion\r\nSoftAuto Ltd and Smart Cars Ltd are two different companies that source third-party integrated software for the autonomous vehicles they produce. Both these companies source integrated software solutions from Micro Coding Wizard (MCW), a fictitious company that sells integrated software solutions. MCW assembles the OS from Vendor OS-X that is built on top of firmware released by Component Vendor-A and then integrates a package manager and some open-source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car has been sold and is actively used by Customer-Y.\r\n```",
+              "createdAt": "2022-12-08T15:24:30Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 191,
+              "body": "```suggestion\r\n* While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. Customer-Y is prompted with a \"Warning Indicator\" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.\r\n```",
+              "createdAt": "2022-12-08T15:25:26Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 193,
+              "body": "```suggestion\r\n* Smart Cars Ltd, has little insight into the root cause of the error, communicates to MCW, and requests them to look into the problem.\r\n```",
+              "createdAt": "2022-12-08T15:27:23Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 195,
+              "body": "```suggestion\r\n* MCW does an initial investigation and suspects that the binary received from Vendor OS-X has some problems. It demands specific environment and architectural details associated with the built operating systems binary to ascertain that the software was produced without tampering by Vendor OS-X.\r\n```",
+              "createdAt": "2022-12-08T15:28:00Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 197,
+              "body": "```suggestion\r\n* Unfortunately, there is no way for the integrator to know if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.\r\n```",
+              "createdAt": "2022-12-08T15:28:16Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 199,
+              "body": "```suggestion\r\n* Vendor OS-X attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.\r\n```",
+              "createdAt": "2022-12-08T15:29:03Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 201,
+              "body": "```suggestion\r\n* However, there are no \"Verifiable Proofs\" of the statement made by Vendor OS-X.\r\n```",
+              "createdAt": "2022-12-08T15:29:27Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 203,
+              "body": "```suggestion\r\n* MCW, Smart Cars Ltd., and Customer-Y now have to trust without the ability to verify the claims made by Vendor OS-X.\r\n```",
+              "createdAt": "2022-12-08T15:30:18Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            },
+            {
+              "originalPosition": 209,
+              "body": "```suggestion\r\n* This eventually leads to a loss of reputation and company closure for Vendor OS-X.\r\n```",
+              "createdAt": "2022-12-08T15:30:36Z",
+              "updatedAt": "2022-12-08T15:34:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IKiOu",
+          "commit": {
+            "abbreviatedOid": "24f21ca"
+          },
+          "author": "roywill",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-08T20:14:51Z",
+          "updatedAt": "2022-12-08T20:14:52Z",
+          "comments": [
+            {
+              "originalPosition": 16,
+              "body": "Ok, but I think grammatically it is \"for these classes\" ",
+              "createdAt": "2022-12-08T20:14:51Z",
+              "updatedAt": "2022-12-08T20:14:52Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IKnAa",
+          "commit": {
+            "abbreviatedOid": "24f21ca"
+          },
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "Approved with Roy's suggestion.",
+          "createdAt": "2022-12-08T20:32:15Z",
+          "updatedAt": "2022-12-08T20:32:15Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IKqme",
+          "commit": {
+            "abbreviatedOid": "24f21ca"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-08T20:45:31Z",
+          "updatedAt": "2022-12-08T20:45:31Z",
+          "comments": [
+            {
+              "originalPosition": 16,
+              "body": "```suggestion\r\nThis document includes a collection of representative Software Supply Chain Use Case Descriptions. These use cases aim to identify software supply chain problems that the industry faces today and acts as a guideline for developing a comprehensive solution for these classes of scenarios.\r\n```",
+              "createdAt": "2022-12-08T20:45:31Z",
+              "updatedAt": "2022-12-08T20:45:31Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IKrGO",
+          "commit": {
+            "abbreviatedOid": "24f21ca"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-12-08T20:47:12Z",
+          "updatedAt": "2022-12-08T20:47:12Z",
+          "comments": [
+            {
+              "originalPosition": 16,
+              "body": "fixed in https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/8/commits/fa0a72c755fe808a6e60b77a4a8d475ede440d28",
+              "createdAt": "2022-12-08T20:47:12Z",
+              "updatedAt": "2022-12-08T20:47:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5IKrqM",
+          "commit": {
+            "abbreviatedOid": "fa0a72c"
+          },
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-12-08T20:49:25Z",
+          "updatedAt": "2022-12-08T20:49:25Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOIPKmOc5FkgUZ",
+      "title": "additional use cases for 2022-12-19 meeting",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/9",
+      "state": "MERGED",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-12-15T18:21:25Z",
+      "updatedAt": "2023-01-09T09:03:40Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "edebd96179288f3b69492fc4c2b83b62a3dd91b4",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "Henks-additions",
+      "headRefOid": "115d549a493be64d3f22448ed29bbb00cc3862f7",
+      "closedAt": "2023-01-09T09:03:40Z",
+      "mergedAt": "2023-01-09T09:03:39Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "524fae790ba5ff887fa78979cbb3e8791c8075c8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOIPKmOc5FmotT",
+      "title": "Edits for readability - 'scalable determination of trustworthiness'",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/10",
+      "state": "MERGED",
+      "author": "kaywilliams",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Modified the 'Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems' use case to improve lay person understanding by reducing the number of terms introduced.",
+      "createdAt": "2022-12-16T03:33:35Z",
+      "updatedAt": "2022-12-19T14:35:32Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "Henks-additions",
+      "baseRefOid": "776eb07cb92d4c310e73502c999fd27a43d57a06",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "kaywilliams-patch-1",
+      "headRefOid": "46f299401d5a31fa89a95769a0a8686f67826129",
+      "closedAt": "2022-12-19T14:35:32Z",
+      "mergedAt": "2022-12-19T14:35:32Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "bea5a137175a17bcff9a4a27e8615ace00b7ac5c"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5IvgIW",
+          "commit": {
+            "abbreviatedOid": "46f2994"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "thank you! lgtm",
+          "createdAt": "2022-12-16T07:51:40Z",
+          "updatedAt": "2022-12-16T07:51:40Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOIPKmOc5Fmsc0",
+      "title": "Added placeholder 'Summary of Problem Statements'",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/11",
+      "state": "MERGED",
+      "author": "kaywilliams",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Added a placeholder section to aggregate problem statements across use cases. Refine and complete this section as use cases stabilize.",
+      "createdAt": "2022-12-16T03:57:20Z",
+      "updatedAt": "2022-12-19T14:35:49Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "Henks-additions",
+      "baseRefOid": "776eb07cb92d4c310e73502c999fd27a43d57a06",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "kaywilliams-patch-2",
+      "headRefOid": "e72645396595c61b778e1a88800724df5ec8bd21",
+      "closedAt": "2022-12-19T14:35:49Z",
+      "mergedAt": "2022-12-19T14:35:49Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "5d92679253282a2fe64482fae0e3b5c708e36b34"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5I5aEE",
+          "commit": {
+            "abbreviatedOid": "e726453"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": ":ship: it",
+          "createdAt": "2022-12-19T14:34:47Z",
+          "updatedAt": "2022-12-19T14:34:57Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
