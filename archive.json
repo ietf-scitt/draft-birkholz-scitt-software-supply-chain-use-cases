@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-12-20T00:29:03.747607+00:00",
+  "timestamp": "2023-01-10T00:31:57.813992+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -103,15 +103,15 @@
       "id": "I_kwDOIPKmOc5ZlywW",
       "title": "(\"Empty\") Notational Implementation section is superfluous (sec 3)",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/13",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> I would delete Section 3 since it contains no content and it is not clear to me that it would even fit in the document.\r\n",
       "createdAt": "2022-12-19T14:44:28Z",
-      "updatedAt": "2022-12-19T14:44:28Z",
-      "closedAt": null,
+      "updatedAt": "2023-01-09T09:09:13Z",
+      "closedAt": "2023-01-09T09:09:13Z",
       "comments": []
     },
     {
@@ -135,16 +135,24 @@
       "id": "I_kwDOIPKmOc5Zlzzk",
       "title": "Comments on Consumer Requirements in \"Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems\" (sec 4.2)",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/15",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> You write \u201chow to associate the statements in a meaningful manner, \u201c. Could you clarify with what the statements are associated with?\r\n> You write \u201chow to attribute them to an authoritative issuer,\u201d. You can attribute them (statements, I assume) to an issuer. How can you judge whether this issuer is authoritative?\r\n\r\n ",
       "createdAt": "2022-12-19T14:47:43Z",
-      "updatedAt": "2022-12-19T14:47:43Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-01-09T09:14:59Z",
+      "closedAt": "2023-01-09T09:14:59Z",
+      "comments": [
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "> How can you judge whether this issuer is authoritative?\r\n\r\nI think that is the question left open as a consumer need? Worst case scenario probably would mean: not possible. The use case document is not intended to talk about solution approaches. So I assume this part of your review is not about the use case document itself? (but maybe about in which document would that be addressed?)",
+          "createdAt": "2023-01-09T09:13:49Z",
+          "updatedAt": "2023-01-09T09:13:49Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -1104,24 +1112,26 @@
       "id": "PR_kwDOIPKmOc5FkgUZ",
       "title": "additional use cases for 2022-12-19 meeting",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/9",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2022-12-15T18:21:25Z",
-      "updatedAt": "2022-12-19T15:34:37Z",
+      "updatedAt": "2023-01-09T09:03:40Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "edebd96179288f3b69492fc4c2b83b62a3dd91b4",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "Henks-additions",
       "headRefOid": "115d549a493be64d3f22448ed29bbb00cc3862f7",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-01-09T09:03:40Z",
+      "mergedAt": "2023-01-09T09:03:39Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "524fae790ba5ff887fa78979cbb3e8791c8075c8"
+      },
       "comments": [],
       "reviews": []
     },
