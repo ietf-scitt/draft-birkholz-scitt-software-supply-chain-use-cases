@@ -85,21 +85,21 @@ deployment chain diagram here
 
 # Software Supply Chain Use Cases
 
-## Trust Bond between Package Supplier and the Signing Authority
+## Trustworthiness Relationship between Product Supplier and the Signer of the Product
 
 A certain software component product is created and packaged by a Supplier.
 The package by itself does not include a proof of authenticity.
 A signing authority is tasked with adding a proof of authenticity.
-Trust has to be established from the Supplier towards the Signing Authority - and vice versa.
-The mutual trust relationship (trust bond) between Supplier and Signing Authority is established per each individual software component package.
+Trustworthiness has to be established from the Supplier towards the Signing Authority - and vice versa.
+The mutual trustworthiness relationship between Supplier and Signing Authority is established per each individual software component package.
 
 A consumer of a released software wants:
 
-* to understand and verify that an actual trust bond exists between the Supplier of a certain software component package and the Signing Authority of that software component package.
+* to understand and verify that an actual trustworthiness relationship exists between the Supplier of a certain software component package and the Signing Authority of that software component package.
 
 There is no standardized way to:
 
-* enable the consumer to verify that a trust bond for a certain software component package exists and is still valid.
+* enable the consumer to verify that a trustworthiness relationship for a certain software component package exists and is still valid.
 
 ## Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems
 
