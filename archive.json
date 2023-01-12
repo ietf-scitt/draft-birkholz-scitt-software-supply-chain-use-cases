@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-01-10T00:31:57.813992+00:00",
+  "timestamp": "2023-01-12T00:30:21.150429+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -331,21 +331,21 @@
       "id": "PR_kwDOIPKmOc5Bbj9X",
       "title": "Final merge",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "yogeshbdeshpande",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2022-10-24T16:56:35Z",
-      "updatedAt": "2022-12-19T17:00:07Z",
+      "updatedAt": "2023-01-10T23:39:29Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "8804bb910319992baef32a6625ca33f65d05fedb",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "final-merge",
       "headRefOid": "7a49cac97be3135c964c09412ccd605e6755d788",
-      "closedAt": null,
+      "closedAt": "2023-01-10T23:39:29Z",
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
@@ -370,6 +370,13 @@
           "body": "> Steve, VEX is not supported in NIST Guidance. You should consider using VDR, Vulnerability Disclosure Report\r\n\r\nOh, sorry, I transformed. I'm updating my comment from VEX to VDR.",
           "createdAt": "2022-10-24T19:44:42Z",
           "updatedAt": "2022-10-24T19:44:42Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Closing this PR as all the changes have been taken in the recent edits made by Henk",
+          "createdAt": "2023-01-10T23:39:29Z",
+          "updatedAt": "2023-01-10T23:39:29Z"
         }
       ],
       "reviews": [
@@ -1215,6 +1222,46 @@
           "body": ":ship: it",
           "createdAt": "2022-12-19T14:34:47Z",
           "updatedAt": "2022-12-19T14:34:57Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "id": "PR_kwDOIPKmOc5HLpm4",
+      "title": "Action Item: Dick, Charlie, and Henk improve wording in first use case",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/16",
+      "state": "OPEN",
+      "author": "henkbirkholz",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
+      "createdAt": "2023-01-11T18:43:36Z",
+      "updatedAt": "2023-01-11T19:03:29Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "db2af361d5d7e99005672dda3cc23da4e7b2c679",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "trust-bond-refinement",
+      "headRefOid": "3a8464ee7a24e9ceb4284c9c1adcb5ec7255d33f",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5KLP2e",
+          "commit": {
+            "abbreviatedOid": "3a8464e"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM! I am in the process of reviewing the entire document!",
+          "createdAt": "2023-01-11T19:03:29Z",
+          "updatedAt": "2023-01-11T19:03:29Z",
           "comments": []
         }
       ]
