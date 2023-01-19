@@ -112,14 +112,16 @@ Some authoritative entities actively do not acknowledge other authoritative enti
 In the end, identifying all relevant statements from multiple sources typically ends up to be a responsibility of the consumer.
 
 A consumer of released software wants:
+
 * to offload the burden of identifying all relevant authoritative entities to an entity who does this on their behalf
 * to offload the burden to filter from and select all statements that are applicable to the released software product to an entity who does this on their behalf
 * to make informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
 
 There is no standardized way to:
+
 * aggregate large numbers of related statements in one place and discover them there
 * referencing other statements via a statement
-* identifing or discover all (or at least a critical mass) of relevant authoritative entities
+* identifying or discover all (or at least a critical mass) of relevant authoritative entities
 
 ## Updated Statements over Time
 
