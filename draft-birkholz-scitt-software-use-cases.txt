@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 13 July 2023                                                ARM
+Expires: 23 July 2023                                                ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                          9 January 2023
+                                                         19 January 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 July 2023.
+   This Internet-Draft will expire on 23 July 2023.
 
 Copyright Notice
 
@@ -211,18 +211,28 @@ Table of Contents
    relevant statements from multiple sources typically ends up to be a
    responsibility of the consumer.
 
-   A consumer of released software wants: * to offload the burden of
-   identifying all relevant authoritative entities to an entity who does
-   this on their behalf * to offload the burden to filter from and
-   select all statements that are applicable to the released software
-   product to an entity who does this on their behalf * to make informed
-   decisions on which authoritative entities to believe based on the
-   best visibility of all authoritative entities possible
+   A consumer of released software wants:
 
-   There is no standardized way to: * aggregate large numbers of related
-   statements in one place and discover them there * referencing other
-   statements via a statement * identifing or discover all (or at least
-   a critical mass) of relevant authoritative entities
+   *  to offload the burden of identifying all relevant authoritative
+      entities to an entity who does this on their behalf
+
+   *  to offload the burden to filter from and select all statements
+      that are applicable to the released software product to an entity
+      who does this on their behalf
+
+   *  to make informed decisions on which authoritative entities to
+      believe based on the best visibility of all authoritative entities
+      possible
+
+   There is no standardized way to:
+
+   *  aggregate large numbers of related statements in one place and
+      discover them there
+
+   *  referencing other statements via a statement
+
+   *  identifying or discover all (or at least a critical mass) of
+      relevant authoritative entities
 
 3.3.  Updated Statements over Time
 
