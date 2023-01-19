@@ -170,6 +170,27 @@ There is no standardized way to:
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
 
+## Trustworthy Reference Values for After-The-Fact Analysis
+
+In contrast to common operating systems or user space software components, during boot-cycles of bigger systems firmware components are often already executed (as part of that bigger system) before there is an opportunity to authenticate them.
+Authentication takes place, for example, by checking an accompanying signature or by creating a hash measurement and comparing it to a reference value.
+Corresponding procedures are often called authenticated, measured, or secure boot.
+The output of these high assurance boot procedures is often used as input to more complex remote attestation procedures.
+If measurements before execution are not possible, static after-the-fact analysis is required.
+In these cases measurements (e.g., a hash digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs) on the bigger system itself.
+After finishing a high assurance boot sequence, these measurements about fundamental firmware are retrieved after-the-fact from their shielded locations and are required to be compared to reference values that are part of reference integrity measurements (RIM).
+A verifying system appraising the integrity of a high assurance boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
+
+A consumer of a released software wants:
+* to easily identify sources for RIMs and be able to make trust decisions about them
+* to select appropriate RIMs and download them for the appraisal of measurements
+* to be able to assure the authenticity, applicability, and freshness of RIMs over time
+
+There is no standardized way to:
+* identify, locate, retrieve and authenticate RIMs in a uniform fashion
+* to enable decision making to decide between multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
+* to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in secure and believable fashion
+
 ## Checking the History of Statements about Software by Auditors
 
 An organization has established procurement requirements and compliance policies for software use.
