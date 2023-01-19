@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 19 June 2023                                                ARM
+Expires: 23 July 2023                                                ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                        16 December 2022
+                                                         19 January 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,11 +58,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 June 2023.
+   This Internet-Draft will expire on 23 July 2023.
 
 Copyright Notice
 
-   Copyright (c) 2022 IETF Trust and the persons identified as the
+   Copyright (c) 2023 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -79,23 +79,27 @@ Table of Contents
    1.  Introduction
      1.1.  Terminology
    2.  Generic Problem Statement
-   3.  Notational Implementation
-   4.  Software Supply Chain Use Cases
-     4.1.  Trust Bond between Package Supplier and the Signing
+   3.  Software Supply Chain Use Cases
+     3.1.  Trust Bond between Package Supplier and the Signing
            Authority
-     4.2.  Scalable Determination of Trustworthiness in
+     3.2.  Scalable Determination of Trustworthiness in
            Multi-Stakeholder Ecosystems
-     4.3.  Updated Statements over Time
-     4.4.  Authenticity of Promoted Software Products
-     4.5.  Firmware Delivery to large set of constrained IoT Devices
-       4.5.1.  Introduction
-       4.5.2.  Personal Health Monitoring Systems
-     4.6.  Software Integrator assembling a software product for a
+     3.3.  Updated Statements over Time
+     3.4.  Authenticity of Promoted Software Products
+     3.5.  Trustworthy Reference Values for After-The-Fact Analysis
+     3.6.  Checking the History of Statements about Software by
+           Auditors
+     3.7.  Checking the Authenticity of Software Components in
+           Isolated or Air-Gapped Infrastructure
+     3.8.  Firmware Delivery to large set of constrained IoT Devices
+       3.8.1.  Introduction
+       3.8.2.  Personal Health Monitoring Systems
+     3.9.  Software Integrator assembling a software product for a
            smart car
-       4.6.1.  Assembly of Components in a Smart Car
-       4.6.2.  Software Problem Summary
-   5.  Summary of Problem Statements
-   6.  Normative References
+       3.9.1.  Assembly of Components in a Smart Car
+       3.9.2.  Software Problem Summary
+   4.  Summary of Problem Statements
+   5.  Normative References
    Appendix A.  TODO List
    Authors' Addresses
 
@@ -166,17 +170,9 @@ Table of Contents
    accessibility.  The following use case illustrates the scope of SCITT
    and elaborate on the generic problem statement above.
 
-3.  Notational Implementation
+3.  Software Supply Chain Use Cases
 
-   TBD
-
-   deployment chain diagram here
-
-       Figure 2: Deployment Example of SCITT in Software Development
-
-4.  Software Supply Chain Use Cases
-
-4.1.  Trust Bond between Package Supplier and the Signing Authority
+3.1.  Trust Bond between Package Supplier and the Signing Authority
 
    A certain software component product is created and packaged by a
    Supplier.  The package by itself does not include a proof of
@@ -197,38 +193,39 @@ Table of Contents
    *  enable the consumer to verify that a trust bond for a certain
       software component package exists and is still valid.
 
-4.2.  Scalable Determination of Trustworthiness in Multi-Stakeholder
+3.2.  Scalable Determination of Trustworthiness in Multi-Stakeholder
       Ecosystems
 
-   Authoritative entities, such as auditing or code-review companies, a
-   certification entities or a government bodies, continuously produce
-   endorsements about software products and identifiable software
-   components.  Endorsements can include statements vouching for the
-   trustworthiness of a software product or the lack thereof.  Consumers
-   of these endorsements include entities, such as distributing
-   entities, as well as end users.  There can be one or more endorsing
-   entities that produce endorsements relevant to one or more of these
-   consumer groups.  Discovery off all sources of endorsements and/or
-   the identity of endorsing entities is creating significant cost not
-   all consumer groups can afford.  Some endorsers actively do not
-   acknowledge other endorsers that highlight a lack of trustworthiness
-   of certain released software products.  In the end, identifying all
-   relevant endorsements from multiple sources typically ends up to be a
+   Authoritative entities, such as auditing or code-review companies,
+   certification entities or government bodies, continuously produce
+   statements about software products and identifiable software
+   components.  Such statements can vouch for the trustworthiness of a
+   software product or the lack thereof.  Consumers of these statements
+   include entities, such as distributing entities, as well as end
+   users.  There can be one or more entities that produce statements
+   relevant to one or more of these consumer groups.  Discovery of all
+   sources of statements and/or the identity of authoritative entities
+   creates significant cost not all consumer groups can afford.  Some
+   authoritative entities actively do not acknowledge other
+   authoritative entities that highlight a lack of trustworthiness of
+   certain released software products.  In the end, identifying all
+   relevant statements from multiple sources typically ends up to be a
    responsibility of the consumer.
 
-   As a consumer of released software wants: * to offload the burden of
-   identifying all relevant authoritative or relevant endorsing entities
-   to a entity they * to offload the burden to filter from and select
-   all endorsements that are applicable to the released software product
-   * to make informed decisions on which endorsing entities to believe
-   based on the best visibility of all endorsing entities possible
+   A consumer of released software wants: * to offload the burden of
+   identifying all relevant authoritative entities to an entity who does
+   this on their behalf * to offload the burden to filter from and
+   select all statements that are applicable to the released software
+   product to an entity who does this on their behalf * to make informed
+   decisions on which authoritative entities to believe based on the
+   best visibility of all authoritative entities possible
 
    There is no standardized way to: * aggregate large numbers of related
-   endorsements in one place and discover them there * of referencing
-   other endorsements via an endorsement * identify or discover all (or
-   at least a critical mass) relevant endorsing entities
+   statements in one place and discover them there * referencing other
+   statements via a statement * identifing or discover all (or at least
+   a critical mass) of relevant authoritative entities
 
-4.3.  Updated Statements over Time
+3.3.  Updated Statements over Time
 
    A released software product is accompanied by a set of complementary
    statements about it's security compliance and is deemed trustworthy
@@ -258,7 +255,8 @@ Table of Contents
 
    *  how to attribute them to an authoritative issuer,
 
-   *  how to associate the statements in a meaningful manner, and
+   *  how to associate the statements in a meaningful manner via a set
+      of well-known semantic relationships, and
 
    *  how to consistently, efficiently, and homogeneously check their
       authenticity.
@@ -275,7 +273,7 @@ Table of Contents
    *  check that the statement comes from a source with authority to
       issue that statement.
 
-4.4.  Authenticity of Promoted Software Products
+3.4.  Authenticity of Promoted Software Products
 
    A software component source (e.g., a library) released by a certain
    original producer is becoming popular.  The released software
@@ -294,7 +292,7 @@ Table of Contents
    and promotion lifecycle scenarios, the original software component
    takes myriad forms.
 
-   A consumer wants:
+   A consumer of a released software wants:
 
    *  to understand if a particular provider is actually the original
       provider or a promoter,
@@ -321,9 +319,128 @@ Table of Contents
    *  to check the integrity of modifications or transformations done by
       a provider
 
-4.5.  Firmware Delivery to large set of constrained IoT Devices
+3.5.  Trustworthy Reference Values for After-The-Fact Analysis
 
-4.5.1.  Introduction
+   In contrast to common operating systems or user space software
+   components, during boot-cycles of bigger systems firmware components
+   are often already executed (as part of that bigger system) before
+   there is an opportunity to authenticate them.  Authentication takes
+   place, for example, by checking an accompanying signature or by
+   creating a hash measurement and comparing it to a reference value.
+   Corresponding procedures are often called authenticated, measured, or
+   secure boot.  The output of these high assurance boot procedures is
+   often used as input to more complex remote attestation procedures.
+   If measurements before execution are not possible, static after-the-
+   fact analysis is required.  In these cases measurements (e.g., a hash
+   digests) are stored in a protected or shielded environment (e.g.,
+   TEEs or TPMs) on the bigger system itself.  After finishing a high
+   assurance boot sequence, these measurements about fundamental
+   firmware are retrieved after-the-fact from their shielded locations
+   and are required to be compared to reference values that are part of
+   reference integrity measurements (RIM).  A verifying system
+   appraising the integrity of a high assurance boot sequence must
+   identify, locate, retrieve, and authenticate corresponding RIMs.
+
+   A consumer of a released software wants: * to easily identify sources
+   for RIMs and be able to make trust decisions about them * to select
+   appropriate RIMs and download them for the appraisal of measurements
+   * to be able to assure the authenticity, applicability, and freshness
+   of RIMs over time
+
+   There is no standardized way to: * identify, locate, retrieve and
+   authenticate RIMs in a uniform fashion * to enable decision making to
+   decide between multiple potential available RIMs (e.g., by age,
+   source, signing authority, etc.) * to store RIMs in a fashion that
+   enables their usage in appraisal procedures years after they were
+   created in secure and believable fashion
+
+3.6.  Checking the History of Statements about Software by Auditors
+
+   An organization has established procurement requirements and
+   compliance policies for software use.  In order to allow the
+   acquisition and deployment of software in certain security domains of
+   the organization, a check of software quality and characteristics
+   must succeed.  Compliance and requirement checking includes audits of
+   the results of organisational procedures and technical procedures,
+   which can originate from checks conducted by the organization itself
+   or checks conducted by trusted third parties.  Consecutively,
+   consumers of statements about a released software can be auditors.
+   Examples of procedure results important to audits include: available
+   fresh and applicable code reviews, certification documents (e.g.,
+   FIPS or Common Criteria), virus scans, vulnerability disclosure
+   reports (fixed or not fixed), security impact or applicability
+   justification statements.  Relevant compliance, requirement, and
+   check result documents originate from various sources and include a
+   wide range of representations and formats.
+
+   A consumer of a released software wants:
+
+   *  to provide methods with different levels of complexity to auditors
+      of a released software
+
+   *  expects the creator or distributor of released software to enable
+      audit procedures and make corresponding documents visible and
+      available
+
+   *  the cost of audits to be manageable and scale well
+
+   *  complete visibility and accessibility to documents required for
+      audits
+
+   There is no standardized way to:
+
+   *  discover and associate relevant documents and check results
+      required for various types of audits
+
+   *  assert the authenticity and provenance of documents relevant to
+      audits in a deterministic and uniform fashion
+
+   *  check the validity of identity statements about relevant documents
+      after the fact (when they were made) in a consistent, long-term
+      fashion
+
+   *  allow for more than one level of complexity of audit procedures
+      (potentially depending on criticality)
+
+3.7.  Checking the Authenticity of Software Components in Isolated or
+      Air-Gapped Infrastructure
+
+   Some software is deployed on systems not connected to the Internet.
+   Authenticity checks for off-line systems can occur at time of
+   deployment of released software.  Off-line systems require
+   appropriate configuration and maintenance to be able to conduct
+   useful authenticity checks.  If the off-line systems are operation
+   are part of constrained node environments, they do not possess the
+   capabilities to process and evaluate all kinds of different
+   authenticity proofs that come with a released software.
+
+   A consumer of a released software wants:
+
+   *  a proof of authenticity that can be checked by an off-line system
+      for vast periods of time after system deployment
+
+   *  a proof of authenticity to be small and as uniform as possible to
+      allow for application in constrained node environments
+
+   *  a simple and low cost way to update the configuration of a system
+      component in charge of validity or authenticity cecking
+
+   There is no standardized way to:
+
+   *  provide an authenticity proof that can be checked by off-line
+      systems in a simple and uniform fashion
+
+   *  enable rich systems, regular systems, and constrained systems to
+      conduct authenticity checks via the same procedure / code base
+
+   *  manage trust relationships with respect to the producers of
+      authenticity statements in a fashion that scales from application
+      such as global open source repositories down to off-line
+      constrained devices
+
+3.8.  Firmware Delivery to large set of constrained IoT Devices
+
+3.8.1.  Introduction
 
    Firmware is ubiquitous in IoT devices (e.g., appliances, televisions,
    smart LED bulbs, HVAC, automobiles), runs at the highest privilege
@@ -334,7 +451,7 @@ Table of Contents
    possible and is often the bedrock on which the security story of the
    devices it powers.
 
-4.5.2.  Personal Health Monitoring Systems
+3.8.2.  Personal Health Monitoring Systems
 
    Personal health monitoring devices, i.e., eHealth devices, are
    generally battery driven and offer health telemetry monitoring, such
@@ -350,7 +467,7 @@ Table of Contents
    also provide an update framework, which verifies the integrity and
    authenticity of firmware updates before allowing installation.
 
-4.5.2.1.  Firmware Delivery Problem Summary
+3.8.2.1.  Firmware Delivery Problem Summary
 
    Even with a robust firmware update system, the following problems
    remain as given below:
@@ -374,7 +491,7 @@ Table of Contents
       devices or one specially crafted for just a small subset of a
       fleet of devices?
 
-4.6.  Software Integrator assembling a software product for a smart car
+3.9.  Software Integrator assembling a software product for a smart car
 
    ### Introduction
 
@@ -386,7 +503,7 @@ Table of Contents
    Integration complexity creates a higher risk of security
    vulnerabilities to the delivered software.
 
-4.6.1.  Assembly of Components in a Smart Car
+3.9.1.  Assembly of Components in a Smart Car
 
    SoftAuto Ltd and Smart Cars Ltd are two different companies that
    source third-party integrated software for the autonomous vehicles
@@ -399,7 +516,7 @@ Table of Contents
    is loaded onto a car manufactured by Smart Cars Ltd. The car has been
    sold and is actively used by Customer-Y.
 
-4.6.2.  Software Problem Summary
+3.9.2.  Software Problem Summary
 
    *  While the software runs on the automated vehicle, periodic
       vulnerability scanning software detects a known security issue
@@ -440,7 +557,7 @@ Table of Contents
    *  This eventually leads to a loss of reputation and company closure
       for Vendor OS-X.
 
-5.  Summary of Problem Statements
+4.  Summary of Problem Statements
 
    *  Consumers want to understand and verify that an actual trust bond
       exists between the Supplier of a certain software component
@@ -475,7 +592,7 @@ Table of Contents
 
    *  To be continued...
 
-6.  Normative References
+5.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
