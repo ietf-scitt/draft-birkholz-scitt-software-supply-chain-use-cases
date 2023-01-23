@@ -84,14 +84,13 @@ Table of Contents
      3.2.  Multi party Evaluation of a Released Software Component
      3.3.  Security Analysis of a Software Product
      3.4.  Promotion of a Software Component by mutliple entities
-     3.5.  Auditing of Software Product
+     3.5.  Auditing of a Software Product
      3.6.  Authentic Software Components in Air-Gapped Infrastructure
      3.7.  Firmware Delivery to large set of constrained IoT Devices
        3.7.1.  Personal Health Monitoring Systems
      3.8.  Software Integrator assembling a software product for a
            smart car
-       3.8.1.  Assembly of Components in a Smart Car
-       3.8.2.  Software Problem Summary
+       3.8.1.  Software Problem Summary
    4.  Summary of Problem Statements
    5.  Normative References
    Appendix A.  TODO List
@@ -175,8 +174,8 @@ Table of Contents
    as to what relationship exists between the original package producer
    and the distributor.
 
-   Often it is relied implicity by the statement made by the distributor
-   about the supplier.
+   Often it is relied implicitly by the statement made by the
+   distributor about the supplier.
 
    A consumer of a released software wants:
 
@@ -328,7 +327,7 @@ Table of Contents
    *  to check the integrity of modifications or transformations done by
       a provider
 
-3.5.  Auditing of Software Product
+3.5.  Auditing of a Software Product
 
    An organization has established procurement requirements and
    compliance policies for software use.  In order to allow the
@@ -467,61 +466,51 @@ Table of Contents
    provisioning.
 
    Integration complexity creates a higher risk of security
-   vulnerabilities to the delivered software.
+   vulnerabilities to the delivered software.  Often there are
+   situations where, software is comprised of Firmware, Operating System
+   and various packages all combined to make a complicated executables
+   that runs on a sophisticated machine, like a smart car.
 
-3.8.1.  Assembly of Components in a Smart Car
-
-   SoftAuto Ltd and Smart Cars Ltd are two different companies that
-   source third-party integrated software for the autonomous vehicles
-   they produce.  Both these companies source integrated software
-   solutions from Micro Coding Wizard (MCW), a fictitious company that
-   sells integrated software solutions.  MCW assembles the OS from
-   Vendor OS-X that is built on top of firmware released by Component
-   Vendor-A and then integrates a package manager and some open-source
-   libraries to make the final software product.  The assembled software
-   is loaded onto a car manufactured by Smart Cars Ltd. The car has been
-   sold and is actively used by Customer-Y.
-
-3.8.2.  Software Problem Summary
+3.8.1.  Software Problem Summary
 
    *  While the software runs on the automated vehicle, periodic
       vulnerability scanning software detects a known security issue
-      with one component.  Customer-Y is prompted with a "Warning
-      Indicator" on the dashboard.  As a result, Customer-Y reports the
-      problem to Smart Cars Ltd.
+      with one component.  Customer is prompted with a "Warning
+      Indicator" on the dashboard.  As a result, Customer reports the
+      problem to the car manufacturer.
 
-   *  Smart Cars Ltd, has little insight into the root cause of the
-      error, communicates to MCW, and requests them to look into the
-      problem.
+   *  The car manufacturer, has little insight into the root cause of
+      the error, communicates to software integrator, and requests them
+      to look into the problem.
 
-   *  MCW does an initial investigation and suspects that the binary
-      received from Vendor OS-X has some problems.  It demands specific
+   *  Integrator has little visibility then communicates to the Software
+      vendor who has shipped the Operating System.  It demands specific
       environment and architectural details associated with the built
       operating systems binary to ascertain that the software was
-      produced without tampering by Vendor OS-X.
+      produced without tampering by Software Vendor.
 
    *  Unfortunately, there is no way for the integrator to know if the
       binary was compromised, so the integrator is concerned they may
       have delivered malware unknowingly to their customers.
 
-   *  Vendor OS-X attempts to show that it did all the steps correctly.
-      It does disclose information about the binary they delivered.  In
-      addition, they also reveal their build environment and the
-      architecture they used during the build.
+   *  Software vendor attmepts to show that it did all the steps
+      correctly.  It does disclose information about the binary they
+      delivered.  In addition, they also reveal their build environment
+      and the architecture they used during the build.
 
    *  However, there are no "Verifiable Proofs" of the statement made by
-      Vendor OS-X.
+      Software Vendor.
 
-   *  MCW, Smart Cars Ltd., and Customer-Y now have to trust without the
-      ability to verify the claims made by Vendor OS-X.
+   *  The car manufacturer or software integrators have no means to
+      verify the claims made by Software Vendor.
 
-   *  Vendor OS-X thinks there is some mistake on the part of MCW that
-      has led to this situation.
+   *  Software Vendor thinks there is some mistake on the part of
+      software integrator.
 
    *  The deadlock continues, with no clear resolution.
 
-   *  This eventually leads to a loss of reputation and company closure
-      for Vendor OS-X.
+   *  This eventually leads to a loss of reputation and ultimately
+      closure of software vendor.
 
 4.  Summary of Problem Statements
 
