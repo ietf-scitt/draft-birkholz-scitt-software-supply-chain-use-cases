@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-01-22T00:32:00.819828+00:00",
+  "timestamp": "2023-01-24T00:31:14.666958+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -1359,7 +1359,7 @@
       "labels": [],
       "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
       "createdAt": "2023-01-19T17:29:52Z",
-      "updatedAt": "2023-01-19T17:29:52Z",
+      "updatedAt": "2023-01-22T22:57:28Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "1eea6effb92e82f0ca58f7519da533ff7d48fab4",
@@ -1370,7 +1370,56 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "Looks good.",
+          "createdAt": "2023-01-22T22:57:28Z",
+          "updatedAt": "2023-01-22T22:57:28Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 18,
+      "id": "PR_kwDOIPKmOc5IUHCV",
+      "title": "Software use case rewrite",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/18",
+      "state": "OPEN",
+      "author": "yogeshbdeshpande",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-01-23T10:31:15Z",
+      "updatedAt": "2023-01-23T14:18:29Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "1eea6effb92e82f0ca58f7519da533ff7d48fab4",
+      "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "software-use-case-rewrite",
+      "headRefOid": "36978d166c253cceaafd5cd10a4cdd0eda724807",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "@yogeshbdeshpande the revisions seem to place greater emphasis on package managers, removing the original intent. The original intent was much broader and could be applied to a wide swath of software distribution, i.e. GitHub, app stores, and package manager repos. ",
+          "createdAt": "2023-01-23T14:14:34Z",
+          "updatedAt": "2023-01-23T14:14:34Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> @yogeshbdeshpande the revisions seem to place greater emphasis on package managers, removing the original intent. The original intent was much broader and could be applied to a wide swath of software distribution, i.e. GitHub, app stores, and package manager repos.\r\n\r\nSure, we can broaden the scope. Not a problem!",
+          "createdAt": "2023-01-23T14:18:29Z",
+          "updatedAt": "2023-01-23T14:18:29Z"
+        }
+      ],
       "reviews": []
     }
   ]
