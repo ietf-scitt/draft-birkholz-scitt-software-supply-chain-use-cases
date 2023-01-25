@@ -81,7 +81,7 @@ Table of Contents
    2.  Generic Problem Statement
    3.  Software Supply Chain Use Cases
      3.1.  Verifiable Authenticity in Software Distribution Systems
-     3.2.  Multi Party Evaluation of a Released Software Product
+     3.2.  Multi Stakeholder Evaluation of a Released Software Product
      3.3.  Security Analysis of a Software Product
      3.4.  Promotion of a Software Component by mutliple entities
      3.5.  Auditing of Software Product
@@ -190,7 +190,7 @@ Table of Contents
       certain software component package exists between the supplier and
       the signing authority and is still valid.
 
-3.2.  Multi Party Evaluation of a Released Software Product
+3.2.  Multi Stakeholder Evaluation of a Released Software Product
 
    In IT industry it is a common practice that once a software product
    is released, it is evaluated on various aspects.  For example, an
