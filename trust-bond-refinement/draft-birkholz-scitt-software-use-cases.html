@@ -32,7 +32,7 @@
     requests 2.28.1
     setuptools 65.6.0
     six 1.16.0
-    wcwidth 0.2.5
+    wcwidth 0.2.6
 -->
 <link href="draft-birkholz-scitt-software-use-cases.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -376,7 +376,7 @@ dl {
 dl > dt {
   float: left;
   margin-right: 1em;
-  min-width: 12ch;
+  min-width: 8ch;
 }
 dl.dlNewline > dt {
   float: none;
@@ -407,11 +407,11 @@ dl > dd > dl {
 a, a[href].selfRef:hover {
   text-decoration: none;
 }
-a[href].selfRef {
-  color: var(--text-color);
-}
 a[href] {
   color: var(--link-color);
+}
+a[href].selfRef, .iref + a[href].internal {
+  color: var(--text-color);
 }
 a[href]:hover {
   text-decoration: underline;
@@ -1045,7 +1045,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Birkholz, et al.</td>
-<td class="center">Expires 15 July 2023</td>
+<td class="center">Expires 29 July 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1058,12 +1058,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-birkholz-scitt-software-use-cases-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-01-11" class="published">11 January 2023</time>
+<time datetime="2023-01-25" class="published">25 January 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-07-15">15 July 2023</time></dd>
+<dd class="expires"><time datetime="2023-07-29">29 July 2023</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1128,7 +1128,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 15 July 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 29 July 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1172,7 +1172,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-software-supply-chain-use-c" class="internal xref">Software Supply Chain Use Cases</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
-                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-trustworthiness-relationshi" class="internal xref">Trustworthiness Relationship between Product Supplier and the Signer of the Product</a></p>
+                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-trustworthiness-relationshi" class="internal xref">Trustworthiness Relationship between Product Supplier and the Distributor of the Product</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-scalable-determination-of-t" class="internal xref">Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems</a></p>
@@ -1273,19 +1273,19 @@ generic supply chain threats diagram here
       <h2 id="name-software-supply-chain-use-c">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-software-supply-chain-use-c" class="section-name selfRef">Software Supply Chain Use Cases</a>
       </h2>
-<div id="trustworthiness-relationship-between-product-supplier-and-the-signer-of-the-product">
+<div id="trustworthiness-relationship-between-product-supplier-and-the-distributor-of-the-product">
 <section id="section-3.1">
         <h3 id="name-trustworthiness-relationshi">
-<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-trustworthiness-relationshi" class="section-name selfRef">Trustworthiness Relationship between Product Supplier and the Signer of the Product</a>
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-trustworthiness-relationshi" class="section-name selfRef">Trustworthiness Relationship between Product Supplier and the Distributor of the Product</a>
         </h3>
 <p id="section-3.1-1">A certain software component product is created and packaged by a Supplier.
 The package by itself does not include a proof of authenticity.
 A signing authority is tasked with adding a proof of authenticity.
-Trustworthiness has to be established from the Supplier towards the Signing Authority - and vice versa.
-The mutual trustworthiness relationship between Supplier and Signing Authority is established per each individual software component package.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+Trustworthiness has to be established from the Supplier towards the Distributor - and vice versa.
+The mutual trustworthiness relationship between Supplier and Distributor is established per each individual software component package.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.1-2">A consumer of a released software wants:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.1-3.1">to understand and verify that an actual trustworthiness relationship exists between the Supplier of a certain software component package and the Signing Authority of that software component package.<a href="#section-3.1-3.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.1-3.1">to understand and verify that an actual trustworthiness relationship exists between the Supplier of a certain software component package and the Distributor of that software component package.<a href="#section-3.1-3.1" class="pilcrow">¶</a>
 </li>
         </ul>
 <p id="section-3.1-4">There is no standardized way to:<a href="#section-3.1-4" class="pilcrow">¶</a></p>

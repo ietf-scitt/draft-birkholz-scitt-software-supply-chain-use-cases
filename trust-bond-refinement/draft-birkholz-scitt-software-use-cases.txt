@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 15 July 2023                                                ARM
+Expires: 29 July 2023                                                ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                         11 January 2023
+                                                         25 January 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 15 July 2023.
+   This Internet-Draft will expire on 29 July 2023.
 
 Copyright Notice
 
@@ -81,7 +81,7 @@ Table of Contents
    2.  Generic Problem Statement
    3.  Software Supply Chain Use Cases
      3.1.  Trustworthiness Relationship between Product Supplier and
-           the Signer of the Product
+           the Distributor of the Product
      3.2.  Scalable Determination of Trustworthiness in
            Multi-Stakeholder Ecosystems
      3.3.  Updated Statements over Time
@@ -172,22 +172,22 @@ Table of Contents
 3.  Software Supply Chain Use Cases
 
 3.1.  Trustworthiness Relationship between Product Supplier and the
-      Signer of the Product
+      Distributor of the Product
 
    A certain software component product is created and packaged by a
    Supplier.  The package by itself does not include a proof of
    authenticity.  A signing authority is tasked with adding a proof of
    authenticity.  Trustworthiness has to be established from the
-   Supplier towards the Signing Authority - and vice versa.  The mutual
-   trustworthiness relationship between Supplier and Signing Authority
-   is established per each individual software component package.
+   Supplier towards the Distributor - and vice versa.  The mutual
+   trustworthiness relationship between Supplier and Distributor is
+   established per each individual software component package.
 
    A consumer of a released software wants:
 
    *  to understand and verify that an actual trustworthiness
       relationship exists between the Supplier of a certain software
-      component package and the Signing Authority of that software
-      component package.
+      component package and the Distributor of that software component
+      package.
 
    There is no standardized way to:
 
