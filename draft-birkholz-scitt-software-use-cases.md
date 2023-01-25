@@ -85,57 +85,51 @@ deployment chain diagram here
 
 # Software Supply Chain Use Cases
 
-## Trustworthiness Relationship between Product Supplier and the Distributor of the Product
+## Verifiable Authenticity in Software Distribution Systems
 
-A certain software component product is created and packaged by a Supplier.
-The package by itself does not include a proof of authenticity.
-A signing authority is tasked with adding a proof of authenticity.
-Trustworthiness has to be established from the Supplier towards the Distributor - and vice versa.
-The mutual trustworthiness relationship between Supplier and Distributor is established per each individual software component package.
+Package producers (suppliers) release packages to distributors. The package by itself does not include a proof of authenticity. A signing authority, is tasked with adding a proof of authenticity. There is no verifiable information as to what relationship exists between the original package producer (suppliers), the signing authority, and the distributor. Often this information is relied upon implicitly by the statement made by the distributor about the supplier. Even in scenarios where supplier and signing authority are the same entity they sometimes identify using different names. The same scenario can exist between supplier and the distributor.
 
 A consumer of a released software wants:
 
-* to understand and verify that an actual trustworthiness relationship exists between the Supplier of a certain software component package and the Distributor of that software component package.
+* to understand and verify that an actual relationship link exists between the supplier of a certain software component package and the authorized signing authority that signs the package.
 
 There is no standardized way to:
 
-* enable the consumer to verify that a trustworthiness relationship for a certain software component package exists and is still valid.
+* enable the consumer to verify that a relationship link for a certain software component package exists between the supplier and the signing authority and is still valid.
 
-## Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems
+## Multi Party Evaluation of a Released Software Product
 
-Authoritative entities, such as auditing or code-review companies, certification entities or government bodies, continuously produce statements about software products and identifiable software components.
-Such statements can vouch for the trustworthiness of a software product or the lack thereof.
-Consumers of these statements include entities, such as distributing entities, as well as end users.
-There can be one or more entities that produce statements relevant to one or more of these consumer groups.
-Discovery of all sources of statements and/or the identity of authoritative entities creates significant cost not all consumer groups can afford.
-Some authoritative entities actively do not acknowledge other authoritative entities that highlight a lack of trustworthiness of certain released software products.
-In the end, identifying all relevant statements from multiple sources typically ends up to be a responsibility of the consumer.
+In IT industry it is a common practice that once a software product is released, it is evaluated on various aspects. For example, an auditing company, a code review company or a government body will examine the software product and issue authoritative reports about the product. The end users (consumers or distribution entities) use these report to make an accurate assessment as to whether the software product is deemed fit to use.
 
-A consumer of released software wants:
+There are multiple such authoritative bodies that make such assessments. There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them. Discovery of all sources of such reports and/or identity of the authoritaitve bodies adds a significant cost to the end user or consumer of the product.
 
-* to offload the burden of identifying all relevant authoritative entities to an entity who does this on their behalf
-* to offload the burden to filter from and select all statements that are applicable to the released software product to an entity who does this on their behalf
-* to make informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
+A consumer of released software component wants:
+
+* to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
+* to offload the burden to filter from and select all statements that are applicable to a particular release of a multi release software product, to an entity who does this on their behalf
+* to make an informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
 
 There is no standardized way to:
 
-* aggregate large numbers of related statements in one place and discover them there
+* aggregate large numbers of related statements in one place and discover them
 * referencing other statements via a statement
 * identifying or discover all (or at least a critical mass) of relevant authoritative entities
 
-## Updated Statements over Time
+## Security Analysis of a Software Product
 
-A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed trustworthy by both producers and consumers.
-After some time, new statements produced and published by third-parties show that a software component used in the software product contains a potential weakness.
-Over time, a statement from another third-party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.
-The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability ad-hoc.
-Later, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
-A second update of the software product includes a patch to the affected software component created by the software product producer.
-A third update includes an updated version of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.
+This use case is a specialization of the use case above.
+
+A released software product is often accompanied by a set of complementary statements about it's security compliance. This gives enough confidence to both producers and consumers that the released software has a good security standard and is suitable to use.
+
+Subsequently, multiple security researchers often run sophisticated security analysis tools on the same product. The intention is to identify any security weaknesses or vulnerabilities in the package.
+
+Initially a particluar analysis can identify itself as a simple weakness in a software component. Over a period of time, a statement from another third-party illustrates that the weakness is exposed in the same software component in a way that it is an exploitable vulnerability. The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
+At first, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
+Later, A second update of the software product includes a security patch to the affected software component from the software producer. Finally, A third update includes a new release (updated version) of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.
 
 A consumer of a released software wants:
 
-* to know where to get these statements from producers and third-parties related to the software product in a timely and unambiguous fashion,
+* to know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion,
 * how to attribute them to an authoritative issuer,
 * how to associate the statements in a meaningful manner via a set of well-known semantic relationships, and
 * how to consistently, efficiently, and homogeneously check their authenticity.
@@ -147,12 +141,13 @@ There is no standardized way to:
 * how to related/link various heterogeneous statements in a simple fashion, and
 * check that the statement comes from a source with authority to issue that statement.
 
-## Authenticity of Promoted Software Products
+## Promotion of a Software Component by mutliple entities
 
 A software component source (e.g., a library) released by a certain original producer is becoming popular.
 The released software component source is accompanied by a statement of authenticity (e.g., a detached signature).
-Over time, there has been an increasing amount of providers of the same version of the software component source over the Internet.
-Some popular providers package the software component and provide the package with proof of authenticity using their own issuer authority.
+Over time, due to its enhanced applicability to various products, there has been an increasing amount of multiple providers of the same software component version on the internet.
+
+Some providers include this particular software component as part of their release package bundle and provide the package with proof of authenticity using their own issuer authority.
 Some packages include the original statement of authenticity, and some do not.
 Over time, some providers no longer offer the exact same software component source but pre-compiled software component binaries.
 Some sources do not provide the exact same software component but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
@@ -172,7 +167,7 @@ There is no standardized way to:
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
 
-## Checking the History of Statements about Software by Auditors
+## Auditing of Software Product
 
 An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
@@ -195,12 +190,12 @@ There is no standardized way to:
 * check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
 * allow for more than one level of complexity of audit procedures (potentially depending on criticality)
 
-## Checking the Authenticity of Software Components in Isolated or Air-Gapped Infrastructure
+## Authentic Software Components in Air-Gapped Infrastructure
 
 Some software is deployed on systems not connected to the Internet.
 Authenticity checks for off-line systems can occur at time of deployment of released software.
 Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
-If the off-line systems are operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.
+If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.
 
 A consumer of a released software wants:
 
@@ -216,22 +211,15 @@ There is no standardized way to:
 
 ## Firmware Delivery to large set of constrained IoT Devices
 
-### Introduction
-
-Firmware is ubiquitous in IoT devices (e.g., appliances, televisions, smart LED bulbs, HVAC, automobiles), runs at the highest privilege level possible, and is often the bedrock on which the security story of the devices it powers.
-
-Firmware is powerful. It runs in the highest privilege level possible and is often the bedrock on which the security story of the devices it powers.
-
-
 ### Personal Health Monitoring Systems
+
+Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers.
 
 Personal health monitoring devices, i.e., eHealth devices, are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.
 
 Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing installation.
 
-#### Firmware Delivery Problem Summary
-
-Even with a robust firmware update system, the following problems remain as given below:
+The various stake holders of a firmware update system wants to ascertain:
 
 * How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?
 
@@ -244,35 +232,22 @@ Even with a robust firmware update system, the following problems remain as give
 * How does the update client on an instance of a health monitoring system know that they have been given the same update as all other devices or one specially crafted for just a small subset of a fleet of devices?
 
 ## Software Integrator assembling a software product for a smart car
-### Introduction
 
-Software Integration is a complex activity. It implies combining various software components from multiple suppliers and producing an integrated package deployed as part of device assembly and provisioning.
+Software Integration is a complex activity. This typically involves getting various software components from multiple suppliers and producing an integrated package deployed as part of device assembly.
 
-Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
-
-### Assembly of Components in a Smart Car
-
-SoftAuto Ltd and Smart Cars Ltd are two different companies that source third-party integrated software for the autonomous vehicles they produce. Both these companies source integrated software solutions from Micro Coding Wizard (MCW), a fictitious company that sells integrated software solutions. MCW assembles the OS from Vendor OS-X that is built on top of firmware released by Component Vendor-A and then integrates a package manager and some open-source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car has been sold and is actively used by Customer-Y.
+Car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources. Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
 
 ### Software Problem Summary
 
-* While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. Customer-Y is prompted with a "Warning Indicator" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.
+* While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. End User gets a "Warning Indicator" on the dashboard. As a result it reports the problem to the car manufacturer. It is then subsequently notified to the integrator.
 
-* Smart Cars Ltd, has little insight into the root cause of the error, communicates to MCW, and requests them to look into the problem.
-
-* MCW does an initial investigation and suspects that the binary received from Vendor OS-X has some problems. It demands specific environment and architectural details associated with the built operating systems binary to ascertain that the software was produced without tampering by Vendor OS-X.
+* Integrator analysis leads to a suspected issue with the supplied Operating System (OS) software from an Independent Software Vendor (ISV). It demands specific environment and architectural details associated with the built OS binary to ascertain that the software was produced without tampering by Vendor
 
 * Unfortunately, there is no way for the integrator to know if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.
 
-* Vendor OS-X attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.
+* ISV attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.
 
-* However, there are no "Verifiable Proofs" of the statement made by Vendor OS-X.
-
-* MCW, Smart Cars Ltd., and Customer-Y now have to trust without the ability to verify the claims made by Vendor OS-X.
-
-* Vendor OS-X thinks there is some mistake on the part of MCW that has led to this situation.
-
-* The deadlock continues, with no clear resolution.
+* However, there are no "Verifiable Proofs" of the statement made by ISV. All the stakeholders, in the ecosystem (end user, car manufacturer and the integrator) has to trust without any ability to verify the claims made by the ISV.
 
 * This eventually leads to a loss of reputation and company closure for Vendor OS-X.
 
@@ -286,7 +261,7 @@ SoftAuto Ltd and Smart Cars Ltd are two different companies that source third-pa
 * Consumers want to know if and how the source, or resulting binary, of a promoted software component differs from the original software component (4.3.2)
 * Consumers want to check the provenance and history of a software component's source back to its origin (4.3.3)
 * Consumers want to assess whether to trust a promoter or not (4.3.4)
-* To be continued...
+* Consumers and other stakeholders in the system wants to verify the claims made by a software supplier by recreating the build environment to ascertain that the delivered binary is precisely the same one as claimed by the supplier
 --- back
 
 <!--
