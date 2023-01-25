@@ -407,11 +407,11 @@ dl > dd > dl {
 a, a[href].selfRef:hover {
   text-decoration: none;
 }
-a[href].selfRef {
-  color: var(--text-color);
-}
 a[href] {
   color: var(--link-color);
+}
+a[href].selfRef, .iref + a[href].internal {
+  color: var(--text-color);
 }
 a[href]:hover {
   text-decoration: underline;
@@ -1045,7 +1045,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Birkholz, et al.</td>
-<td class="center">Expires 27 July 2023</td>
+<td class="center">Expires 29 July 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1058,12 +1058,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-birkholz-scitt-software-use-cases-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-01-23" class="published">23 January 2023</time>
+<time datetime="2023-01-25" class="published">25 January 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-07-27">27 July 2023</time></dd>
+<dd class="expires"><time datetime="2023-07-29">29 July 2023</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1128,7 +1128,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 27 July 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 29 July 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1172,28 +1172,31 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-software-supply-chain-use-c" class="internal xref">Software Supply Chain Use Cases</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
-                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-release-of-package-managers" class="internal xref">Release of Package Managers</a></p>
+                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-trustworthiness-relationshi" class="internal xref">Trustworthiness Relationship between Product Supplier and the Distributor of the Product</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
-                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-multi-party-evaluation-of-a" class="internal xref">Multi party Evaluation of a Released Software Component</a></p>
+                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-scalable-determination-of-t" class="internal xref">Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
-                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-security-analysis-of-a-soft" class="internal xref">Security Analysis of a Software Product</a></p>
+                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-updated-statements-over-tim" class="internal xref">Updated Statements over Time</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4">
-                <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="auto internal xref">3.4</a>.  <a href="#name-promotion-of-a-software-com" class="internal xref">Promotion of a Software Component by mutliple entities</a></p>
+                <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="auto internal xref">3.4</a>.  <a href="#name-authenticity-of-promoted-so" class="internal xref">Authenticity of Promoted Software Products</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.5">
-                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="auto internal xref">3.5</a>.  <a href="#name-auditing-of-a-software-prod" class="internal xref">Auditing of a Software Product</a></p>
+                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="auto internal xref">3.5</a>.  <a href="#name-checking-the-history-of-sta" class="internal xref">Checking the History of Statements about Software by Auditors</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.6">
-                <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="auto internal xref">3.6</a>.  <a href="#name-authentic-software-componen" class="internal xref">Authentic Software Components in Air-Gapped Infrastructure</a></p>
+                <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="auto internal xref">3.6</a>.  <a href="#name-checking-the-authenticity-o" class="internal xref">Checking the Authenticity of Software Components in Isolated or Air-Gapped Infrastructure</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.7">
                 <p id="section-toc.1-1.3.2.7.1"><a href="#section-3.7" class="auto internal xref">3.7</a>.  <a href="#name-firmware-delivery-to-large-" class="internal xref">Firmware Delivery to large set of constrained IoT Devices</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.7.2.1">
-                    <p id="section-toc.1-1.3.2.7.2.1.1"><a href="#section-3.7.1" class="auto internal xref">3.7.1</a>.  <a href="#name-personal-health-monitoring-" class="internal xref">Personal Health Monitoring Systems</a></p>
+                    <p id="section-toc.1-1.3.2.7.2.1.1"><a href="#section-3.7.1" class="auto internal xref">3.7.1</a>.  <a href="#name-introduction-2" class="internal xref">Introduction</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.7.2.2">
+                    <p id="section-toc.1-1.3.2.7.2.2.1"><a href="#section-3.7.2" class="auto internal xref">3.7.2</a>.  <a href="#name-personal-health-monitoring-" class="internal xref">Personal Health Monitoring Systems</a></p>
 </li>
                 </ul>
 </li>
@@ -1201,7 +1204,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
                 <p id="section-toc.1-1.3.2.8.1"><a href="#section-3.8" class="auto internal xref">3.8</a>.  <a href="#name-software-integrator-assembl" class="internal xref">Software Integrator assembling a software product for a smart car</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.8.2.1">
-                    <p id="section-toc.1-1.3.2.8.2.1.1"><a href="#section-3.8.1" class="auto internal xref">3.8.1</a>.  <a href="#name-software-problem-summary" class="internal xref">Software Problem Summary</a></p>
+                    <p id="section-toc.1-1.3.2.8.2.1.1"><a href="#section-3.8.1" class="auto internal xref">3.8.1</a>.  <a href="#name-assembly-of-components-in-a" class="internal xref">Assembly of Components in a Smart Car</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.8.2.2">
+                    <p id="section-toc.1-1.3.2.8.2.2.1"><a href="#section-3.8.2" class="auto internal xref">3.8.2</a>.  <a href="#name-software-problem-summary" class="internal xref">Software Problem Summary</a></p>
 </li>
                 </ul>
 </li>
@@ -1267,124 +1273,137 @@ generic supply chain threats diagram here
       <h2 id="name-software-supply-chain-use-c">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-software-supply-chain-use-c" class="section-name selfRef">Software Supply Chain Use Cases</a>
       </h2>
-<div id="release-of-package-managers">
+<div id="trustworthiness-relationship-between-product-supplier-and-the-distributor-of-the-product">
 <section id="section-3.1">
-        <h3 id="name-release-of-package-managers">
-<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-release-of-package-managers" class="section-name selfRef">Release of Package Managers</a>
+        <h3 id="name-trustworthiness-relationshi">
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-trustworthiness-relationshi" class="section-name selfRef">Trustworthiness Relationship between Product Supplier and the Distributor of the Product</a>
         </h3>
-<p id="section-3.1-1">Package producers (Suppliers) release packages to distributors. The package by itself does not include a proof of authenticity. A signing authority, coming from the distributor is tasked with adding a proof of authenticity. However there is no verifiable information as to what relationship exists between the original package producer and the distributor.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">Often it is relied implicitly by the statement made by the distributor about the supplier.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
-<p id="section-3.1-3">A consumer of a released software wants:<a href="#section-3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1-1">A certain software component product is created and packaged by a Supplier.
+The package by itself does not include a proof of authenticity.
+A signing authority is tasked with adding a proof of authenticity.
+Trustworthiness has to be established from the Supplier towards the Distributor - and vice versa.
+The mutual trustworthiness relationship between Supplier and Distributor is established per each individual software component package.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">A consumer of a released software wants:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.1-4.1">to understand and verify that an actual relationship link exists between the Supplier of a certain software component package and the Signing Authority of that software component package.<a href="#section-3.1-4.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.1-3.1">to understand and verify that an actual trustworthiness relationship exists between the Supplier of a certain software component package and the Distributor of that software component package.<a href="#section-3.1-3.1" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.1-5">There is no standardized way to:<a href="#section-3.1-5" class="pilcrow">¶</a></p>
+<p id="section-3.1-4">There is no standardized way to:<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.1-6.1">enable the consumer to verify that a relationship link for a certain software component package  between the supplier and the distributor(its signing authority) exists and is still valid.<a href="#section-3.1-6.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.1-5.1">enable the consumer to verify that a trustworthiness relationship for a certain software component package exists and is still valid.<a href="#section-3.1-5.1" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
 </div>
-<div id="multi-party-evaluation-of-a-released-software-component">
+<div id="scalable-determination-of-trustworthiness-in-multi-stakeholder-ecosystems">
 <section id="section-3.2">
-        <h3 id="name-multi-party-evaluation-of-a">
-<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-multi-party-evaluation-of-a" class="section-name selfRef">Multi party Evaluation of a Released Software Component</a>
+        <h3 id="name-scalable-determination-of-t">
+<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-scalable-determination-of-t" class="section-name selfRef">Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems</a>
         </h3>
-<p id="section-3.2-1">In IT industry it is a common practice that once a Software product is released, it is evaluated on various aspects. For example, an auditing company, a code review company or a government body will examine the software product and issue authoritative reports about the product. The end users (consumers or distribution entities)
-uses these report to make an accurate assessment as to whether the software product is deemed fit to use or of low quality.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.2-2">There are multiple such authoritative bodies that make such assessments. Discovery of all sources of such reports and/or identity of the authoritaitve bodies adds a significant cost to the end user or consumer of the product.<a href="#section-3.2-2" class="pilcrow">¶</a></p>
-<p id="section-3.2-3">A consumer of released software component wants:<a href="#section-3.2-3" class="pilcrow">¶</a></p>
+<p id="section-3.2-1">Authoritative entities, such as auditing or code-review companies, certification entities or government bodies, continuously produce statements about software products and identifiable software components.
+Such statements can vouch for the trustworthiness of a software product or the lack thereof.
+Consumers of these statements include entities, such as distributing entities, as well as end users.
+There can be one or more entities that produce statements relevant to one or more of these consumer groups.
+Discovery of all sources of statements and/or the identity of authoritative entities creates significant cost not all consumer groups can afford.
+Some authoritative entities actively do not acknowledge other authoritative entities that highlight a lack of trustworthiness of certain released software products.
+In the end, identifying all relevant statements from multiple sources typically ends up to be a responsibility of the consumer.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.2-2">A consumer of released software wants:<a href="#section-3.2-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.2-4.1">to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf<a href="#section-3.2-4.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.2-3.1">to offload the burden of identifying all relevant authoritative entities to an entity who does this on their behalf<a href="#section-3.2-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.2-4.2">to offload the burden to filter from and select all statements that are applicable to a particular release of a multi release software product, to an entity who does this on their behalf<a href="#section-3.2-4.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.2-3.2">to offload the burden to filter from and select all statements that are applicable to the released software product to an entity who does this on their behalf<a href="#section-3.2-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.2-4.3">to make an informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible<a href="#section-3.2-4.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.2-3.3">to make informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible<a href="#section-3.2-3.3" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.2-5">There is no standardized way to:
-* aggregate large numbers of related statements in one place and discover them
-* referencing other statements via a statement
-* identifing or discover all (or at least a critical mass) of relevant authoritative entities<a href="#section-3.2-5" class="pilcrow">¶</a></p>
+<p id="section-3.2-4">There is no standardized way to:<a href="#section-3.2-4" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.2-5.1">aggregate large numbers of related statements in one place and discover them there<a href="#section-3.2-5.1" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.2-5.2">referencing other statements via a statement<a href="#section-3.2-5.2" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.2-5.3">identifying or discover all (or at least a critical mass) of relevant authoritative entities<a href="#section-3.2-5.3" class="pilcrow">¶</a>
+</li>
+        </ul>
 </section>
 </div>
-<div id="security-analysis-of-a-software-product">
+<div id="updated-statements-over-time">
 <section id="section-3.3">
-        <h3 id="name-security-analysis-of-a-soft">
-<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-security-analysis-of-a-soft" class="section-name selfRef">Security Analysis of a Software Product</a>
+        <h3 id="name-updated-statements-over-tim">
+<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-updated-statements-over-tim" class="section-name selfRef">Updated Statements over Time</a>
         </h3>
-<p id="section-3.3-1">This use case is a specialization of the use case above.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
-<p id="section-3.3-2">A released software product is often accompanied by a set of complementary statements about it's security compliance. This gives enough confidence to both producers and consumers that the released software has a good security standard and is suitable to use.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
-<p id="section-3.3-3">Subsequently, multiple security researchers often run sophisticated security analysis tools on the same product. The intention is to identify any security weaknesses or vulnerabilities in the package.<a href="#section-3.3-3" class="pilcrow">¶</a></p>
-<p id="section-3.3-4">Initially a particluar analysis can identify itself as a simple weakness in a software component. Over a period of time, a statement from another third-party illustrates that the weakness is exposed in the same software component in a way that it is an exploitable vulnerability. The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
-At first, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
-Later, A second update of the software product includes a security patch to the affected software component from the software producer. Finally, A third update includes a new release (updated version) of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.<a href="#section-3.3-4" class="pilcrow">¶</a></p>
-<p id="section-3.3-5">A consumer of a released software wants:<a href="#section-3.3-5" class="pilcrow">¶</a></p>
+<p id="section-3.3-1">A released software product is accompanied by a set of complementary statements about it's security compliance and is deemed trustworthy by both producers and consumers.
+After some time, new statements produced and published by third-parties show that a software component used in the software product contains a potential weakness.
+Over time, a statement from another third-party illustrates that the weakness is exposed in the software product in a way that it is an exploitable vulnerability.
+The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability ad-hoc.
+Later, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
+A second update of the software product includes a patch to the affected software component created by the software product producer.
+A third update includes an updated version of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-2">A consumer of a released software wants:<a href="#section-3.3-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.3-6.1">to know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion,<a href="#section-3.3-6.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.3-3.1">to know where to get these statements from producers and third-parties related to the software product in a timely and unambiguous fashion,<a href="#section-3.3-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.3-6.2">how to attribute them to an authoritative issuer,<a href="#section-3.3-6.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.3-3.2">how to attribute them to an authoritative issuer,<a href="#section-3.3-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.3-6.3">how to associate the statements in a meaningful manner via a set of well-known semantic relationships, and<a href="#section-3.3-6.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.3-3.3">how to associate the statements in a meaningful manner via a set of well-known semantic relationships, and<a href="#section-3.3-3.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.3-6.4">how to consistently, efficiently, and homogeneously check their authenticity.<a href="#section-3.3-6.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.3-3.4">how to consistently, efficiently, and homogeneously check their authenticity.<a href="#section-3.3-3.4" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.3-7">There is no standardized way to:<a href="#section-3.3-7" class="pilcrow">¶</a></p>
+<p id="section-3.3-4">There is no standardized way to:<a href="#section-3.3-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.3-8.1">know the various sources of statements,<a href="#section-3.3-8.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.3-5.1">know the various sources of statements,<a href="#section-3.3-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.3-8.2">how to express the provenance and historicity of statements,<a href="#section-3.3-8.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.3-5.2">how to express the provenance and historicity of statements,<a href="#section-3.3-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.3-8.3">how to related/link various heterogeneous statements in a simple fashion, and<a href="#section-3.3-8.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.3-5.3">how to related/link various heterogeneous statements in a simple fashion, and<a href="#section-3.3-5.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.3-8.4">check that the statement comes from a source with authority to issue that statement.<a href="#section-3.3-8.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.3-5.4">check that the statement comes from a source with authority to issue that statement.<a href="#section-3.3-5.4" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
 </div>
-<div id="promotion-of-a-software-component-by-mutliple-entities">
+<div id="authenticity-of-promoted-software-products">
 <section id="section-3.4">
-        <h3 id="name-promotion-of-a-software-com">
-<a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-promotion-of-a-software-com" class="section-name selfRef">Promotion of a Software Component by mutliple entities</a>
+        <h3 id="name-authenticity-of-promoted-so">
+<a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-authenticity-of-promoted-so" class="section-name selfRef">Authenticity of Promoted Software Products</a>
         </h3>
 <p id="section-3.4-1">A software component source (e.g., a library) released by a certain original producer is becoming popular.
 The released software component source is accompanied by a statement of authenticity (e.g., a detached signature).
-Over time, due to its enhanced applicability to various products, there has been an increasing amount of multiple providers of the same software component version on the internet.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
-<p id="section-3.4-2">Some providers include this particular software component as part of their release package bundle and provide the package with proof of authenticity using their own issuer authority.
+Over time, there has been an increasing amount of providers of the same version of the software component source over the Internet.
+Some popular providers package the software component and provide the package with proof of authenticity using their own issuer authority.
 Some packages include the original statement of authenticity, and some do not.
 Over time, some providers no longer offer the exact same software component source but pre-compiled software component binaries.
 Some sources do not provide the exact same software component but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
-Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.<a href="#section-3.4-2" class="pilcrow">¶</a></p>
-<p id="section-3.4-3">A consumer of a released software wants:<a href="#section-3.4-3" class="pilcrow">¶</a></p>
+Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
+<p id="section-3.4-2">A consumer of a released software wants:<a href="#section-3.4-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.4-4.1">to understand if a particular provider is actually the original provider or a promoter,<a href="#section-3.4-4.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.4-3.1">to understand if a particular provider is actually the original provider or a promoter,<a href="#section-3.4-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.4-4.2">to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,<a href="#section-3.4-4.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.4-3.2">to know if and how the source, or resulting binary, of a promoted software component differs from the original software component,<a href="#section-3.4-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.4-4.3">to check the provenance and history of a software component's source back to its origin, and<a href="#section-3.4-4.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.4-3.3">to check the provenance and history of a software component's source back to its origin, and<a href="#section-3.4-3.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.4-4.4">to assess whether to trust a promoter or not.<a href="#section-3.4-4.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.4-3.4">to assess whether to trust a promoter or not.<a href="#section-3.4-3.4" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.4-5">There is no standardized way to:<a href="#section-3.4-5" class="pilcrow">¶</a></p>
+<p id="section-3.4-4">There is no standardized way to:<a href="#section-3.4-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.4-6.1">to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,<a href="#section-3.4-6.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.4-5.1">to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,<a href="#section-3.4-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.4-6.2">track the provenance path from an original producer to a particular provider<a href="#section-3.4-6.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.4-5.2">track the provenance path from an original producer to a particular provider<a href="#section-3.4-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.4-6.3">to check for the trustworthiness of a provider<a href="#section-3.4-6.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.4-5.3">to check for the trustworthiness of a provider<a href="#section-3.4-5.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.4-6.4">to check the integrity of modifications or transformations done by a provider<a href="#section-3.4-6.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.4-5.4">to check the integrity of modifications or transformations done by a provider<a href="#section-3.4-5.4" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
 </div>
-<div id="auditing-of-a-software-product">
+<div id="checking-the-history-of-statements-about-software-by-auditors">
 <section id="section-3.5">
-        <h3 id="name-auditing-of-a-software-prod">
-<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-auditing-of-a-software-prod" class="section-name selfRef">Auditing of a Software Product</a>
+        <h3 id="name-checking-the-history-of-sta">
+<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-checking-the-history-of-sta" class="section-name selfRef">Checking the History of Statements about Software by Auditors</a>
         </h3>
 <p id="section-3.5-1">An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
@@ -1416,22 +1435,22 @@ Relevant compliance, requirement, and check result documents originate from vari
         </ul>
 </section>
 </div>
-<div id="authentic-software-components-in-air-gapped-infrastructure">
+<div id="checking-the-authenticity-of-software-components-in-isolated-or-air-gapped-infrastructure">
 <section id="section-3.6">
-        <h3 id="name-authentic-software-componen">
-<a href="#section-3.6" class="section-number selfRef">3.6. </a><a href="#name-authentic-software-componen" class="section-name selfRef">Authentic Software Components in Air-Gapped Infrastructure</a>
+        <h3 id="name-checking-the-authenticity-o">
+<a href="#section-3.6" class="section-number selfRef">3.6. </a><a href="#name-checking-the-authenticity-o" class="section-name selfRef">Checking the Authenticity of Software Components in Isolated or Air-Gapped Infrastructure</a>
         </h3>
-<p id="section-3.6-1">Some software is deployed on systems not connected to the internet.
+<p id="section-3.6-1">Some software is deployed on systems not connected to the Internet.
 Authenticity checks for off-line systems can occur at time of deployment of released software.
 Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
-If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.<a href="#section-3.6-1" class="pilcrow">¶</a></p>
+If the off-line systems are operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.<a href="#section-3.6-1" class="pilcrow">¶</a></p>
 <p id="section-3.6-2">A consumer of a released software wants:<a href="#section-3.6-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3.6-3.1">a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment<a href="#section-3.6-3.1" class="pilcrow">¶</a>
 </li>
           <li class="normal" id="section-3.6-3.2">a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments<a href="#section-3.6-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.6-3.3">a simple and low cost way to update the configuration of a system component as part of validity or authenticity checking<a href="#section-3.6-3.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-3.3">a simple and low cost way to update the configuration of a system component in charge of validity or authenticity cecking<a href="#section-3.6-3.3" class="pilcrow">¶</a>
 </li>
         </ul>
 <p id="section-3.6-4">There is no standardized way to:<a href="#section-3.6-4" class="pilcrow">¶</a></p>
@@ -1450,30 +1469,38 @@ If the off-line systems in operation are part of constrained node environments, 
         <h3 id="name-firmware-delivery-to-large-">
 <a href="#section-3.7" class="section-number selfRef">3.7. </a><a href="#name-firmware-delivery-to-large-" class="section-name selfRef">Firmware Delivery to large set of constrained IoT Devices</a>
         </h3>
-<div id="personal-health-monitoring-systems">
+<div id="introduction">
 <section id="section-3.7.1">
-          <h4 id="name-personal-health-monitoring-">
-<a href="#section-3.7.1" class="section-number selfRef">3.7.1. </a><a href="#name-personal-health-monitoring-" class="section-name selfRef">Personal Health Monitoring Systems</a>
+          <h4 id="name-introduction-2">
+<a href="#section-3.7.1" class="section-number selfRef">3.7.1. </a><a href="#name-introduction-2" class="section-name selfRef">Introduction</a>
           </h4>
-<p id="section-3.7.1-1">Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers.<a href="#section-3.7.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.7.1-2">Personal health monitoring devices, i.e., eHealth devices, are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.<a href="#section-3.7.1-2" class="pilcrow">¶</a></p>
-<p id="section-3.7.1-3">Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing installation.<a href="#section-3.7.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.7.1-1">Firmware is ubiquitous in IoT devices (e.g., appliances, televisions, smart LED bulbs, HVAC, automobiles), runs at the highest privilege level possible, and is often the bedrock on which the security story of the devices it powers.<a href="#section-3.7.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.7.1-2">Firmware is powerful. It runs in the highest privilege level possible and is often the bedrock on which the security story of the devices it powers.<a href="#section-3.7.1-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="personal-health-monitoring-systems">
+<section id="section-3.7.2">
+          <h4 id="name-personal-health-monitoring-">
+<a href="#section-3.7.2" class="section-number selfRef">3.7.2. </a><a href="#name-personal-health-monitoring-" class="section-name selfRef">Personal Health Monitoring Systems</a>
+          </h4>
+<p id="section-3.7.2-1">Personal health monitoring devices, i.e., eHealth devices, are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.<a href="#section-3.7.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.7.2-2">Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing installation.<a href="#section-3.7.2-2" class="pilcrow">¶</a></p>
 <div id="firmware-delivery-problem-summary">
-<section id="section-3.7.1.1">
+<section id="section-3.7.2.1">
             <h5 id="name-firmware-delivery-problem-s">
-<a href="#section-3.7.1.1" class="section-number selfRef">3.7.1.1. </a><a href="#name-firmware-delivery-problem-s" class="section-name selfRef">Firmware Delivery Problem Summary</a>
+<a href="#section-3.7.2.1" class="section-number selfRef">3.7.2.1. </a><a href="#name-firmware-delivery-problem-s" class="section-name selfRef">Firmware Delivery Problem Summary</a>
             </h5>
-<p id="section-3.7.1.1-1">Even with a robust firmware update system, the following problems remain as given below:<a href="#section-3.7.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.7.2.1-1">Even with a robust firmware update system, the following problems remain as given below:<a href="#section-3.7.2.1-1" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.7.1.1-2.1">How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?<a href="#section-3.7.1.1-2.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.7.2.1-2.1">How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?<a href="#section-3.7.2.1-2.1" class="pilcrow">¶</a>
 </li>
-              <li class="normal" id="section-3.7.1.1-2.2">What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates?<a href="#section-3.7.1.1-2.2" class="pilcrow">¶</a>
+              <li class="normal" id="section-3.7.2.1-2.2">What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates?<a href="#section-3.7.2.1-2.2" class="pilcrow">¶</a>
 </li>
-              <li class="normal" id="section-3.7.1.1-2.3">How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise?<a href="#section-3.7.1.1-2.3" class="pilcrow">¶</a>
+              <li class="normal" id="section-3.7.2.1-2.3">How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise?<a href="#section-3.7.2.1-2.3" class="pilcrow">¶</a>
 </li>
-              <li class="normal" id="section-3.7.1.1-2.4">How does the publisher even know that their deliverable has been compromised? Can they trust their key protection or audit logging?<a href="#section-3.7.1.1-2.4" class="pilcrow">¶</a>
+              <li class="normal" id="section-3.7.2.1-2.4">How does the publisher even know that their deliverable has been compromised? Can they trust their key protection or audit logging?<a href="#section-3.7.2.1-2.4" class="pilcrow">¶</a>
 </li>
-              <li class="normal" id="section-3.7.1.1-2.5">How does the update client on an instance of a health monitoring system know that they have been given the same update as all other devices or one specially crafted for just a small subset of a fleet of devices?<a href="#section-3.7.1.1-2.5" class="pilcrow">¶</a>
+              <li class="normal" id="section-3.7.2.1-2.5">How does the update client on an instance of a health monitoring system know that they have been given the same update as all other devices or one specially crafted for just a small subset of a fleet of devices?<a href="#section-3.7.2.1-2.5" class="pilcrow">¶</a>
 </li>
             </ul>
 </section>
@@ -1489,33 +1516,40 @@ If the off-line systems in operation are part of constrained node environments, 
         </h3>
 <p id="section-3.8-1">### Introduction<a href="#section-3.8-1" class="pilcrow">¶</a></p>
 <p id="section-3.8-2">Software Integration is a complex activity. It implies combining various software components from multiple suppliers and producing an integrated package deployed as part of device assembly and provisioning.<a href="#section-3.8-2" class="pilcrow">¶</a></p>
-<p id="section-3.8-3">Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
-Often there are situations where, software is comprised of Firmware, Operating System and various packages all combined to make a complicated executables that runs on a sophisticated machine, like a smart car.<a href="#section-3.8-3" class="pilcrow">¶</a></p>
-<div id="software-problem-summary">
+<p id="section-3.8-3">Integration complexity creates a higher risk of security vulnerabilities to the delivered software.<a href="#section-3.8-3" class="pilcrow">¶</a></p>
+<div id="assembly-of-components-in-a-smart-car">
 <section id="section-3.8.1">
+          <h4 id="name-assembly-of-components-in-a">
+<a href="#section-3.8.1" class="section-number selfRef">3.8.1. </a><a href="#name-assembly-of-components-in-a" class="section-name selfRef">Assembly of Components in a Smart Car</a>
+          </h4>
+<p id="section-3.8.1-1">SoftAuto Ltd and Smart Cars Ltd are two different companies that source third-party integrated software for the autonomous vehicles they produce. Both these companies source integrated software solutions from Micro Coding Wizard (MCW), a fictitious company that sells integrated software solutions. MCW assembles the OS from Vendor OS-X that is built on top of firmware released by Component Vendor-A and then integrates a package manager and some open-source libraries to make the final software product. The assembled software is loaded onto a car manufactured by Smart Cars Ltd. The car has been sold and is actively used by Customer-Y.<a href="#section-3.8.1-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="software-problem-summary">
+<section id="section-3.8.2">
           <h4 id="name-software-problem-summary">
-<a href="#section-3.8.1" class="section-number selfRef">3.8.1. </a><a href="#name-software-problem-summary" class="section-name selfRef">Software Problem Summary</a>
+<a href="#section-3.8.2" class="section-number selfRef">3.8.2. </a><a href="#name-software-problem-summary" class="section-name selfRef">Software Problem Summary</a>
           </h4>
 <ul class="normal">
-<li class="normal" id="section-3.8.1-1.1">While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. Customer is prompted with a "Warning Indicator" on the dashboard. As a result, Customer reports the problem to the car manufacturer.<a href="#section-3.8.1-1.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.8.2-1.1">While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. Customer-Y is prompted with a "Warning Indicator" on the dashboard. As a result, Customer-Y reports the problem to Smart Cars Ltd.<a href="#section-3.8.2-1.1" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.2">The car manufacturer, has little insight into the root cause of the error, communicates to software integrator, and requests them to look into the problem.<a href="#section-3.8.1-1.2" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.2">Smart Cars Ltd, has little insight into the root cause of the error, communicates to MCW, and requests them to look into the problem.<a href="#section-3.8.2-1.2" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.3">Integrator has little visibility then communicates to the Software vendor who has shipped the Operating System. It demands specific environment and architectural details associated with the built operating systems binary to ascertain that the software was produced without tampering by Software Vendor.<a href="#section-3.8.1-1.3" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.3">MCW does an initial investigation and suspects that the binary received from Vendor OS-X has some problems. It demands specific environment and architectural details associated with the built operating systems binary to ascertain that the software was produced without tampering by Vendor OS-X.<a href="#section-3.8.2-1.3" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.4">Unfortunately, there is no way for the integrator to know if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.<a href="#section-3.8.1-1.4" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.4">Unfortunately, there is no way for the integrator to know if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.<a href="#section-3.8.2-1.4" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.5">Software vendor attmepts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.<a href="#section-3.8.1-1.5" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.5">Vendor OS-X attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.<a href="#section-3.8.2-1.5" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.6">However, there are no "Verifiable Proofs" of the statement made by Software Vendor.<a href="#section-3.8.1-1.6" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.6">However, there are no "Verifiable Proofs" of the statement made by Vendor OS-X.<a href="#section-3.8.2-1.6" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.7">The car manufacturer or software integrators have no means to verify the claims made by Software Vendor.<a href="#section-3.8.1-1.7" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.7">MCW, Smart Cars Ltd., and Customer-Y now have to trust without the ability to verify the claims made by Vendor OS-X.<a href="#section-3.8.2-1.7" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.8">Software Vendor thinks there is some mistake on the part of software integrator.<a href="#section-3.8.1-1.8" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.8">Vendor OS-X thinks there is some mistake on the part of MCW that has led to this situation.<a href="#section-3.8.2-1.8" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.9">The deadlock continues, with no clear resolution.<a href="#section-3.8.1-1.9" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.9">The deadlock continues, with no clear resolution.<a href="#section-3.8.2-1.9" class="pilcrow">¶</a>
 </li>
-            <li class="normal" id="section-3.8.1-1.10">This eventually leads to a loss of reputation and ultimately closure of software vendor.<a href="#section-3.8.1-1.10" class="pilcrow">¶</a>
+            <li class="normal" id="section-3.8.2-1.10">This eventually leads to a loss of reputation and company closure for Vendor OS-X.<a href="#section-3.8.2-1.10" class="pilcrow">¶</a>
 </li>
           </ul>
 </section>
