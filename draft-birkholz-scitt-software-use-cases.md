@@ -97,7 +97,7 @@ There is no standardized way to:
 
 * enable the consumer to verify that a relationship link for a certain software component package exists between the supplier and the signing authority and is still valid.
 
-## Multi Party Evaluation of a Released Software Product
+## Multi Stakeholder Evaluation of a Released Software Product
 
 In IT industry it is a common practice that once a software product is released, it is evaluated on various aspects. For example, an auditing company, a code review company or a government body will examine the software product and issue authoritative reports about the product. The end users (consumers or distribution entities) use these report to make an accurate assessment as to whether the software product is deemed fit to use.
 
