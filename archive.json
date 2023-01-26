@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-01-24T00:31:14.666958+00:00",
+  "timestamp": "2023-01-26T00:28:52.660093+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -1239,24 +1239,26 @@
       "id": "PR_kwDOIPKmOc5HLpm4",
       "title": "Action Item: Dick, Charlie, and Henk improve wording in first use case",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/16",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
       "createdAt": "2023-01-11T18:43:36Z",
-      "updatedAt": "2023-01-19T17:35:26Z",
+      "updatedAt": "2023-01-25T14:10:36Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "db2af361d5d7e99005672dda3cc23da4e7b2c679",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "trust-bond-refinement",
-      "headRefOid": "3a8464ee7a24e9ceb4284c9c1adcb5ec7255d33f",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "c916ca1ebfdf1a1f4807d205d3fe2b27a1974bc7",
+      "closedAt": "2023-01-25T14:10:32Z",
+      "mergedAt": "2023-01-25T14:10:32Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "bc2459fb6b1c11fcbb87e32da6a802e11a46f0fc"
+      },
       "comments": [
         {
           "author": "rjb4standards",
@@ -1300,7 +1302,7 @@
             "abbreviatedOid": "3a8464e"
           },
           "author": "joshuagl",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "From discussion with Henk I believe the use-case here is an app store-like promotion scenario. If that's true, I recommend we refer to this as the relationship between a supplier/producer and the distributor. While signing is a property of the relationship between an app creator and an app store we can increase the clarity of the use-case by describing the roles in the relationship (producer/distributor/consumer).\r\n\r\nI've made some suggestions on the PR to replace \"Signing Authority\" with \"Distributor\".",
           "createdAt": "2023-01-18T12:08:08Z",
@@ -1344,6 +1346,26 @@
           "createdAt": "2023-01-19T17:18:38Z",
           "updatedAt": "2023-01-19T17:18:38Z",
           "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5Lqd42",
+          "commit": {
+            "abbreviatedOid": "3a8464e"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-25T14:09:30Z",
+          "updatedAt": "2023-01-25T14:09:30Z",
+          "comments": [
+            {
+              "originalPosition": 18,
+              "body": "Accepting this for now however effectively we have 3 roles , \r\n* Supplier\r\n* Signer \r\n* Distributor\r\n",
+              "createdAt": "2023-01-25T14:09:30Z",
+              "updatedAt": "2023-01-25T14:09:31Z"
+            }
+          ]
         }
       ]
     },
@@ -1393,13 +1415,13 @@
       "labels": [],
       "body": "",
       "createdAt": "2023-01-23T10:31:15Z",
-      "updatedAt": "2023-01-23T14:18:29Z",
+      "updatedAt": "2023-01-25T18:25:07Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
-      "baseRefOid": "1eea6effb92e82f0ca58f7519da533ff7d48fab4",
+      "baseRefOid": "bc2459fb6b1c11fcbb87e32da6a802e11a46f0fc",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "software-use-case-rewrite",
-      "headRefOid": "36978d166c253cceaafd5cd10a4cdd0eda724807",
+      "headRefOid": "cee7e72e40660e54d386e90c005db05b3a0796d3",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -1418,9 +1440,124 @@
           "body": "> @yogeshbdeshpande the revisions seem to place greater emphasis on package managers, removing the original intent. The original intent was much broader and could be applied to a wide swath of software distribution, i.e. GitHub, app stores, and package manager repos.\r\n\r\nSure, we can broaden the scope. Not a problem!",
           "createdAt": "2023-01-23T14:18:29Z",
           "updatedAt": "2023-01-23T14:18:29Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> should be on satisfying lower-level use case\r\n\r\nWe had a detail discussion about this between me and Henk. Basically, I was all for the support of going to depict a real world example for each of the situation. However, this makes the document excessively long and verbose. \r\n\r\nWe should make a judgment as a team as to:\r\n\r\n1. Where should the Use Case document reside ? Some members feel within Arch. Document, some feel as a separate RFC.\r\n2. Given the number of scenarios, should we abstract it to generic use case or we depict a specific example, next to each of them ?\r\n3. Is too long a document (when a separate RFC) acceptable to the group ?\r\n\r\n",
+          "createdAt": "2023-01-24T09:51:13Z",
+          "updatedAt": "2023-01-24T09:51:13Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@henkbirkholz @rjb4standards @kaywilliams I have redone the PR post our meeting today. \r\n\r\nPlease have a look..",
+          "createdAt": "2023-01-25T18:15:55Z",
+          "updatedAt": "2023-01-25T18:15:55Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> > @yogeshbdeshpande the revisions seem to place greater emphasis on package managers, removing the original intent. The original intent was much broader and could be applied to a wide swath of software distribution, i.e. GitHub, app stores, and package manager repos.\r\n> \r\n> Sure, we can broaden the scope. Not a problem!\r\n\r\nThis has been resolved now!",
+          "createdAt": "2023-01-25T18:16:37Z",
+          "updatedAt": "2023-01-25T18:16:37Z"
         }
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5LgYN5",
+          "commit": {
+            "abbreviatedOid": "36978d1"
+          },
+          "author": "kaywilliams",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "Previously I had suggested focusing on lower-level use cases, but after reviewing the document with Yogesh and Henk, I believe the current approach works.",
+          "createdAt": "2023-01-24T04:57:33Z",
+          "updatedAt": "2023-01-24T16:03:06Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5LkIyK",
+          "commit": {
+            "abbreviatedOid": "36978d1"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-24T15:47:57Z",
+          "updatedAt": "2023-01-24T15:47:58Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "```suggestion\r\n## Multi Stakeholder Evaluation of a Released Software Component\r\n```",
+              "createdAt": "2023-01-24T15:47:57Z",
+              "updatedAt": "2023-01-24T15:47:58Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5LkLH0",
+          "commit": {
+            "abbreviatedOid": "36978d1"
+          },
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-24T15:53:00Z",
+          "updatedAt": "2023-01-24T15:53:00Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "There is no requirement that the distributor be the signing authority. The signing authority is whomever the software supplier chooses, and many cases the supplier and signing authority are the same entity. That's how it is with our SAG-PM software; REA is both supplier and signing authority. ",
+              "createdAt": "2023-01-24T15:53:00Z",
+              "updatedAt": "2023-01-24T15:53:00Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5LkOy2",
+          "commit": {
+            "abbreviatedOid": "36978d1"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-24T16:00:46Z",
+          "updatedAt": "2023-01-24T16:00:47Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "@rjb4standards are you available sometime tomorrow to have a discussion with me and Henk?\r\nAlso what is your email address? We want to schedule a meeting with you..",
+              "createdAt": "2023-01-24T16:00:46Z",
+              "updatedAt": "2023-01-24T16:00:47Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5LkQPQ",
+          "commit": {
+            "abbreviatedOid": "36978d1"
+          },
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-24T16:03:53Z",
+          "updatedAt": "2023-01-24T16:03:54Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "dick@reliableenergyanalytics.com   I can meet tomorrow",
+              "createdAt": "2023-01-24T16:03:54Z",
+              "updatedAt": "2023-01-24T16:03:54Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
