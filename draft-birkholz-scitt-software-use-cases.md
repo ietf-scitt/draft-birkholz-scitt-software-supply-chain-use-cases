@@ -85,17 +85,17 @@ deployment chain diagram here
 
 # Software Supply Chain Use Cases
 
-## Verifiable Authenticity in Software Distribution Systems
+## Verification that Signing Certificate is Authorized by Supplier
 
-Package producers (suppliers) release packages to distributors. The package by itself does not include a proof of authenticity. A signing authority, is tasked with adding a proof of authenticity. There is no verifiable information as to what relationship exists between the original package producer (suppliers), the signing authority, and the distributor. Often this information is relied upon implicitly by the statement made by the distributor about the supplier. Even in scenarios where supplier and signing authority are the same entity they sometimes identify using different names. The same scenario can exist between supplier and the distributor.
+Consumers wish to verify the authenticity and integrity of software they use before installation. To do this today, they rely on the digital signature of the software. This can be misleading, however, as there is no guarantee that the certificate used to sign the software is authorized by the Supplier for signing. For example, a malicious actor may obtain a signing certificate from a reputable organization and use that certificate to sign malicious software. The consumer, believing the software originated from the reputable organization, would then install malicious software.
 
-A consumer of a released software wants:
+A consumer of software wants:
 
-* to understand and verify that an actual relationship link exists between the supplier of a certain software component package and the authorized signing authority that signs the package.
+* to verify the authenticity and integrity of software they use before installation.
 
 There is no standardized way to:
 
-* enable the consumer to verify that a relationship link for a certain software component package exists between the supplier and the signing authority and is still valid.
+* enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the Supplier.
 
 ## Multi Stakeholder Evaluation of a Released Software Product
 
