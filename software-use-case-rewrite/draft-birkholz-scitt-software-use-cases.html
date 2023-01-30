@@ -1045,7 +1045,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Birkholz, et al.</td>
-<td class="center">Expires 29 July 2023</td>
+<td class="center">Expires 3 August 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1058,12 +1058,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-birkholz-scitt-software-use-cases-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-01-25" class="published">25 January 2023</time>
+<time datetime="2023-01-30" class="published">30 January 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-07-29">29 July 2023</time></dd>
+<dd class="expires"><time datetime="2023-08-03">3 August 2023</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1128,7 +1128,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 29 July 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 3 August 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1172,7 +1172,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-software-supply-chain-use-c" class="internal xref">Software Supply Chain Use Cases</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
-                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-verifiable-authenticity-in-" class="internal xref">Verifiable Authenticity in Software Distribution Systems</a></p>
+                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-verification-that-signing-c" class="internal xref">Verification that Signing Certificate is Authorized by Supplier</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-multi-stakeholder-evaluatio" class="internal xref">Multi Stakeholder Evaluation of a Released Software Product</a></p>
@@ -1267,20 +1267,20 @@ generic supply chain threats diagram here
       <h2 id="name-software-supply-chain-use-c">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-software-supply-chain-use-c" class="section-name selfRef">Software Supply Chain Use Cases</a>
       </h2>
-<div id="verifiable-authenticity-in-software-distribution-systems">
+<div id="verification-that-signing-certificate-is-authorized-by-supplier">
 <section id="section-3.1">
-        <h3 id="name-verifiable-authenticity-in-">
-<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-verifiable-authenticity-in-" class="section-name selfRef">Verifiable Authenticity in Software Distribution Systems</a>
+        <h3 id="name-verification-that-signing-c">
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-verification-that-signing-c" class="section-name selfRef">Verification that Signing Certificate is Authorized by Supplier</a>
         </h3>
-<p id="section-3.1-1">Package producers (suppliers) release packages to distributors. The package by itself does not include a proof of authenticity. A signing authority, is tasked with adding a proof of authenticity. There is no verifiable information as to what relationship exists between the original package producer (suppliers), the signing authority, and the distributor. Often this information is relied upon implicitly by the statement made by the distributor about the supplier. Even in scenarios where supplier and signing authority are the same entity they sometimes identify using different names. The same scenario can exist between supplier and the distributor.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">A consumer of a released software wants:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-1">Consumers wish to verify the authenticity and integrity of software they use before installation. To do this today, they rely on the digital signature of the software. This can be misleading, however, as there is no guarantee that the certificate used to sign the software is authorized by the Supplier for signing. For example, a malicious actor may obtain a signing certificate from a reputable organization and use that certificate to sign malicious software. The consumer, believing the software originated from the reputable organization, would then install malicious software.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">A consumer of software wants:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.1-3.1">to understand and verify that an actual relationship link exists between the supplier of a certain software component package and the authorized signing authority that signs the package.<a href="#section-3.1-3.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.1-3.1">to verify the authenticity and integrity of software they use before installation.<a href="#section-3.1-3.1" class="pilcrow">¶</a>
 </li>
         </ul>
 <p id="section-3.1-4">There is no standardized way to:<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.1-5.1">enable the consumer to verify that a relationship link for a certain software component package exists between the supplier and the signing authority and is still valid.<a href="#section-3.1-5.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.1-5.1">enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the Supplier.<a href="#section-3.1-5.1" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
