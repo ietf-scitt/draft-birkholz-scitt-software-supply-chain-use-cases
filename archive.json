@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-01-26T00:28:52.660093+00:00",
+  "timestamp": "2023-01-31T00:32:18.215678+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -1415,13 +1415,13 @@
       "labels": [],
       "body": "",
       "createdAt": "2023-01-23T10:31:15Z",
-      "updatedAt": "2023-01-25T18:25:07Z",
+      "updatedAt": "2023-01-30T21:09:06Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "bc2459fb6b1c11fcbb87e32da6a802e11a46f0fc",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "software-use-case-rewrite",
-      "headRefOid": "cee7e72e40660e54d386e90c005db05b3a0796d3",
+      "headRefOid": "e0f8b8f4612c502b7d5690956e2fe99cc140b4ab",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -1556,6 +1556,92 @@
               "updatedAt": "2023-01-24T16:03:54Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5MBv53",
+          "commit": {
+            "abbreviatedOid": "cee7e72"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-30T16:33:42Z",
+          "updatedAt": "2023-01-30T16:33:42Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "I like the section header change",
+              "createdAt": "2023-01-30T16:33:42Z",
+              "updatedAt": "2023-01-30T16:33:43Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5MBwhx",
+          "commit": {
+            "abbreviatedOid": "cee7e72"
+          },
+          "author": "kaywilliams",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-30T16:35:10Z",
+          "updatedAt": "2023-01-30T16:35:11Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "+1",
+              "createdAt": "2023-01-30T16:35:10Z",
+              "updatedAt": "2023-01-30T16:35:11Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5MBxJV",
+          "commit": {
+            "abbreviatedOid": "cee7e72"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-01-30T16:36:34Z",
+          "updatedAt": "2023-01-30T16:36:34Z",
+          "comments": [
+            {
+              "originalPosition": 187,
+              "body": "I like the change.",
+              "createdAt": "2023-01-30T16:36:34Z",
+              "updatedAt": "2023-01-30T16:36:34Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5MBxXX",
+          "commit": {
+            "abbreviatedOid": "cee7e72"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "great improvements",
+          "createdAt": "2023-01-30T16:37:03Z",
+          "updatedAt": "2023-01-30T16:37:03Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5MB0rE",
+          "commit": {
+            "abbreviatedOid": "cee7e72"
+          },
+          "author": "kaywilliams",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-01-30T16:43:23Z",
+          "updatedAt": "2023-01-30T16:43:23Z",
+          "comments": []
         }
       ]
     }
