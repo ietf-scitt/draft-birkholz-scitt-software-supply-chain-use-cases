@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-01-31T00:32:18.215678+00:00",
+  "timestamp": "2023-02-02T00:31:40.151961+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -161,6 +161,22 @@
           "updatedAt": "2023-01-09T09:13:49Z"
         }
       ]
+    },
+    {
+      "number": 19,
+      "id": "I_kwDOIPKmOc5dRoYx",
+      "title": "Minor proposed change in use case 3.2",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/19",
+      "state": "OPEN",
+      "author": "rjb4standards",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "I have no concerns with the revised language for 3.1. One minor nit on 3.2 to be consistent with the use case title\r\nREPLACE:\r\nA consumer of released software component wants:\r\nWITH\r\nA consumer of released software product wants:\r\n",
+      "createdAt": "2023-01-31T19:47:45Z",
+      "updatedAt": "2023-01-31T19:47:45Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
@@ -1408,24 +1424,26 @@
       "id": "PR_kwDOIPKmOc5IUHCV",
       "title": "Software use case rewrite",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/18",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "yogeshbdeshpande",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-01-23T10:31:15Z",
-      "updatedAt": "2023-01-30T21:09:06Z",
+      "updatedAt": "2023-01-31T18:55:33Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "bc2459fb6b1c11fcbb87e32da6a802e11a46f0fc",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "software-use-case-rewrite",
       "headRefOid": "e0f8b8f4612c502b7d5690956e2fe99cc140b4ab",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-01-31T18:55:32Z",
+      "mergedAt": "2023-01-31T18:55:32Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "c3c0ae0a1434c925e36878d003fdc06968a66a9b"
+      },
       "comments": [
         {
           "author": "rjb4standards",
