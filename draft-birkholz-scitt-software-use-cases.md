@@ -207,7 +207,7 @@ There is no standardized way to:
 
 * provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
 * enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
-* manage trust relationships with respect to the producers of authenticity statements in a fashion that scales from application such as global open source repositories down to off-line constrained devices
+* to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices
 
 ## Firmware Delivery to large set of constrained IoT Devices
 
@@ -252,7 +252,7 @@ Car manufacturers source integrated software for their autonomous vehicles from 
 * This eventually leads to a loss of reputation and company closure for Vendor OS-X.
 
 # Summary of Problem Statements
-* Consumers want to understand and verify that an actual trust bond exists between the Supplier of a certain software component package and the Signing Authority of that software component package (4.1.1)
+* Consumers want to verify the authenticity and integrity of software they use before installation (4.1.1)
 * Consumers want to obtain statements from producers and third-parties related to the software product in a timely and unambiguous fashion (4.2.1)
 * Consumers want to attribute statements to an authoritative issuer (4.2.2)
 * Consumers want to associate statements with other statements in a meaningful manner (4.2.3)
