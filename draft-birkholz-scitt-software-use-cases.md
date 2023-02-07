@@ -95,7 +95,7 @@ A consumer of software wants:
 
 There is no standardized way to:
 
-* enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the Supplier.
+* enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the supplier, and is still valid.
 
 ## Multi Stakeholder Evaluation of a Released Software Product
 
@@ -103,7 +103,7 @@ In IT industry it is a common practice that once a software product is released,
 
 There are multiple such authoritative bodies that make such assessments. There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them. Discovery of all sources of such reports and/or identity of the authoritaitve bodies adds a significant cost to the end user or consumer of the product.
 
-A consumer of released software component wants:
+A consumer of released software product wants:
 
 * to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
 * to offload the burden to filter from and select all statements that are applicable to a particular release of a multi release software product, to an entity who does this on their behalf
@@ -211,45 +211,38 @@ There is no standardized way to:
 
 ## Firmware Delivery to large set of constrained IoT Devices
 
-### Personal Health Monitoring Systems
+Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers. For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.
 
-Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers.
+Consumer of a firmware update system wants:
 
-Personal health monitoring devices, i.e., eHealth devices, are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.
+* to know that the received firmware for system update is not faulty or malicious
+* to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
+* to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
+* to confirm that the publishers know if their deliverable has been compromised. Can they trust their key protection or audit logging?
+* to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
 
-Today, the best-in-class firmware vendors who supply the firmware also provide an update framework, which verifies the integrity and authenticity of firmware updates before allowing installation.
+There is no standardized way to:
 
-The various stake holders of a firmware update system wants to ascertain:
-
-* How does the client applying the firmware update on the system know that the received firmware is not faulty or malicious?
-
-* What if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates?
-
-* How can one ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise?
-
-* How does the publisher even know that their deliverable has been compromised? Can they trust their key protection or audit logging?
-
-* How does the update client on an instance of a health monitoring system know that they have been given the same update as all other devices or one specially crafted for just a small subset of a fleet of devices?
+* provide an update framework which allows verification of integrity and authenticity of firmware updates before installation
+* reliabily discern an update that has been signed by the appropriate and intended signing identity
+* clearly communicate firmware revisioning and security checks completed to ensure the firmware is safe for install
 
 ## Software Integrator assembling a software product for a smart car
 
-Software Integration is a complex activity. This typically involves getting various software components from multiple suppliers and producing an integrated package deployed as part of device assembly.
+Software Integration is a complex activity. This typically involves getting various software components from multiple suppliers and producing an integrated package deployed as part of device assembly. For example, car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources. Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
 
-Car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources. Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
+Consumer of an integrated software wants:
 
-### Software Problem Summary
+* Bill of material capturing all software components used, with the SBOM stored in a secure tamperproof location
+* Verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security
+* Vulnerability scan reports and approved malware mitigation plan before integration
 
-* While the software runs on the automated vehicle, periodic vulnerability scanning software detects a known security issue with one component. End User gets a "Warning Indicator" on the dashboard. As a result it reports the problem to the car manufacturer. It is then subsequently notified to the integrator.
+There is no standardized way to:
 
-* Integrator analysis leads to a suspected issue with the supplied Operating System (OS) software from an Independent Software Vendor (ISV). It demands specific environment and architectural details associated with the built OS binary to ascertain that the software was produced without tampering by Vendor
+* Provide SBOMs in a tamperproof ledger for customer consumption
+* Provide valid attestations on build integrity to ensure conformance
+* provide a tiered framework which allows verification of integrity and authenticity of the integrated software at both component and product level before installation 
 
-* Unfortunately, there is no way for the integrator to know if the binary was compromised, so the integrator is concerned they may have delivered malware unknowingly to their customers.
-
-* ISV attempts to show that it did all the steps correctly. It does disclose information about the binary they delivered. In addition, they also reveal their build environment and the architecture they used during the build.
-
-* However, there are no "Verifiable Proofs" of the statement made by ISV. All the stakeholders, in the ecosystem (end user, car manufacturer and the integrator) has to trust without any ability to verify the claims made by the ISV.
-
-* This eventually leads to a loss of reputation and company closure for Vendor OS-X.
 
 # Summary of Problem Statements
 * Consumers want to verify the authenticity and integrity of software they use before installation (4.1.1)
