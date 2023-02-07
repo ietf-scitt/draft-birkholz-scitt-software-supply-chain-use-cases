@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-02T00:31:40.151961+00:00",
+  "timestamp": "2023-02-07T00:30:53.465560+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -55,31 +55,46 @@
       "id": "I_kwDOIPKmOc5UrH23",
       "title": "Discuss possible methods of SBOM Deployment ",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "yogeshbdeshpande",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "SBOM's today are deployed by Suppliers through there designated portals.\r\n\r\nWhat are the possible methods/Secure methods, as to how this can be enhanced considering Supply Chain Security.",
       "createdAt": "2022-10-24T10:19:36Z",
-      "updatedAt": "2022-10-24T10:19:36Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-02-06T16:41:55Z",
+      "closedAt": "2023-02-06T16:41:55Z",
+      "comments": [
+        {
+          "author": "hannestschofenig",
+          "authorAssociation": "NONE",
+          "body": "Is this a topic for a use case document?",
+          "createdAt": "2023-02-06T16:40:27Z",
+          "updatedAt": "2023-02-06T16:40:27Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "No We will close this!",
+          "createdAt": "2023-02-06T16:41:48Z",
+          "updatedAt": "2023-02-06T16:41:48Z"
+        }
+      ]
     },
     {
       "number": 6,
       "id": "I_kwDOIPKmOc5WqEmr",
       "title": "Re-write Software Supply Chain Use case document",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/6",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "kkarunakaran89",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Per IETF115, we need to rewrite our use case document to be compliant with IETF format. Opening this issue to track progress on the doc so we can discuss it at IETF SCITT working group meeting when we're ready. \r\n@yogeshbdeshpande \r\n\r\nReference use case: https://datatracker.ietf.org/doc/html/[draft-ietf-ace-usecases-05](https://datatracker.ietf.org/doc/html/draft-ietf-ace-usecases-05)",
       "createdAt": "2022-11-17T19:28:49Z",
-      "updatedAt": "2023-01-20T09:44:52Z",
-      "closedAt": null,
+      "updatedAt": "2023-02-06T17:46:23Z",
+      "closedAt": "2023-02-06T17:46:23Z",
       "comments": [
         {
           "author": "yogeshbdeshpande",
@@ -87,6 +102,13 @@
           "body": "We are working on this task:\r\n\r\nHere are my comments on the document!\r\n(Please note that I will make these comments on github also).\r\n\r\nGeneral Comment:\r\nWe need to harmonize the format so that the shape and style of description of each use case looks similar. \r\n\r\nSpecific Comments:\r\n\r\nUse Case 1: Trust Bond between Package Supplier and the Signing Authority\r\n\r\n(a)\tMissing bits: Needs to map the problem with real use case in hand? The use case starts more with a problem rather than describing a proper industry use case.\r\n(b)\tRemove the usage of word Trust and Trustworthiness but use lack of information on aspects that can be assertively verified by the end user, so that the trust factor is \u201cimplicitly\u201d  established.\r\n\r\nUse Case 2: Scalable Determination of Trustworthiness in Multi-Stakeholder Ecosystems\r\n(a)\tTitle is very mis-leading: There is no scalability again in Trustworthiness. There is incremental mechanism of further deeper verification that grows the trust.\r\n(b)\tNeed to re-write the title taking specific industry and its use case built into it.\r\n(c)\tAgain need to highlight a real use case and then come to the problem what the use case exposes.\r\n\r\nUse Case 4:  This use case is not clear to me at all??  Specifically, the comment:\r\n Over time, there has been an increasing amount of providers of the same version of the software component source over the Internet \uf0e8 How can the same version of the software component source is produced by multiple vendors ?\r\nNeed to re-write the use case completely.\r\n\r\nUse Case 5: Checking the History of Statements about Software by Auditors\r\nAgain, Better to demonstrate a real world example use case rather than jumping into the problem domain.\r\n\r\n",
           "createdAt": "2023-01-20T09:44:52Z",
           "updatedAt": "2023-01-20T09:44:52Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "The document re-write with new format, style and harmonization effort is now complete!\r\n\r\nAll the changes have been merged!",
+          "createdAt": "2023-02-06T17:46:23Z",
+          "updatedAt": "2023-02-06T17:46:23Z"
         }
       ]
     },
@@ -95,16 +117,38 @@
       "id": "I_kwDOIPKmOc5ZlyQV",
       "title": "Generic Problem Statement needs work (sec 2)",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/12",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> In Section 2 is not a problem description. You could turn it into one if you give a few example of attacks and describe those. I think that this would be useful.",
       "createdAt": "2022-12-19T14:42:55Z",
-      "updatedAt": "2022-12-19T14:42:55Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-02-06T17:45:33Z",
+      "closedAt": "2023-02-06T17:45:33Z",
+      "comments": [
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@henkbirkholz : This has been addressed!",
+          "createdAt": "2023-02-06T16:30:51Z",
+          "updatedAt": "2023-02-06T16:30:51Z"
+        },
+        {
+          "author": "hannestschofenig",
+          "authorAssociation": "NONE",
+          "body": "Please close the issue.",
+          "createdAt": "2023-02-06T16:40:04Z",
+          "updatedAt": "2023-02-06T16:40:04Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Rework started with edits from @henkbirkholz. @yogeshbdeshpande and @kaywilliams \r\n\r\nThe document is now having final reviews. This issue has been addresses, hence closing the issue!",
+          "createdAt": "2023-02-06T17:45:33Z",
+          "updatedAt": "2023-02-06T17:45:33Z"
+        }
+      ]
     },
     {
       "number": 13,
@@ -127,16 +171,38 @@
       "id": "I_kwDOIPKmOc5ZlzRW",
       "title": "Use of term \"trust\" in \"Trust Bond between Package Supplier and the Signing Authority\" (sec 4.1)",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/14",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Hannes highlighted in https://mailarchive.ietf.org/arch/msg/scitt/XbpBlVZvzDToC0oPnmzYC62fQFE:\r\n\r\n> Every time you use the term \u201ctrust\u201d think about an alternative word that could be used. For example, if I \u2013 as a Supplier -- write a software library, such as Mbed TLS, why do I need to use a \u201cSigning Authority\u201d? What do I need to tell that party to sign my software package. What exactly does it tell the consumer when they receive a signed software package? If you tell me the answers, try to avoid the terms \u201ctrust bond\u201d and \u201ctrust\u201d.",
       "createdAt": "2022-12-19T14:46:02Z",
-      "updatedAt": "2022-12-19T14:46:02Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-02-06T17:44:29Z",
+      "closedAt": "2023-02-06T17:44:29Z",
+      "comments": [
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "TO DO: Few places Trust is reffered..\r\n\r\nNeed to correct using a PR.",
+          "createdAt": "2023-02-06T16:28:41Z",
+          "updatedAt": "2023-02-06T16:28:52Z"
+        },
+        {
+          "author": "hannestschofenig",
+          "authorAssociation": "NONE",
+          "body": "Kay volunteered",
+          "createdAt": "2023-02-06T16:29:08Z",
+          "updatedAt": "2023-02-06T16:29:08Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "The Pull Request above is now Merged hence closing this issue!",
+          "createdAt": "2023-02-06T17:44:29Z",
+          "updatedAt": "2023-02-06T17:44:29Z"
+        }
+      ]
     },
     {
       "number": 15,
@@ -174,9 +240,41 @@
       "labels": [],
       "body": "I have no concerns with the revised language for 3.1. One minor nit on 3.2 to be consistent with the use case title\r\nREPLACE:\r\nA consumer of released software component wants:\r\nWITH\r\nA consumer of released software product wants:\r\n",
       "createdAt": "2023-01-31T19:47:45Z",
-      "updatedAt": "2023-01-31T19:47:45Z",
+      "updatedAt": "2023-02-06T16:16:46Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "kaywilliams",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "LGTM",
+          "createdAt": "2023-02-06T16:16:45Z",
+          "updatedAt": "2023-02-06T16:16:45Z"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "id": "I_kwDOIPKmOc5dvxzc",
+      "title": "Slight modification to use case 3.1",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/20",
+      "state": "OPEN",
+      "author": "rjb4standards",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Please add \"and is still valid\" - see new proposed langauge\r\n\r\nenable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the Supplier, and is still valid",
+      "createdAt": "2023-02-06T15:39:15Z",
+      "updatedAt": "2023-02-06T16:13:18Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "kaywilliams",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "+1 to this change",
+          "createdAt": "2023-02-06T16:13:18Z",
+          "updatedAt": "2023-02-06T16:13:18Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -1397,13 +1495,13 @@
       "labels": [],
       "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
       "createdAt": "2023-01-19T17:29:52Z",
-      "updatedAt": "2023-01-22T22:57:28Z",
+      "updatedAt": "2023-02-06T15:32:34Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
-      "baseRefOid": "1eea6effb92e82f0ca58f7519da533ff7d48fab4",
+      "baseRefOid": "c3c0ae0a1434c925e36878d003fdc06968a66a9b",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "after-the-fact",
-      "headRefOid": "411f83062bf3cdda8ac3635639e0e0c0b55df9cb",
+      "headRefOid": "bc04236004cecc7d6dbf2760bffac4e0ea48c0fb",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -1659,6 +1757,48 @@
           "body": "",
           "createdAt": "2023-01-30T16:43:23Z",
           "updatedAt": "2023-01-30T16:43:23Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "id": "PR_kwDOIPKmOc5JXGaN",
+      "title": "Remove 'trust bond' and 'trust relationship' terminology in favor of 'verify authenticity and integrity'",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/21",
+      "state": "MERGED",
+      "author": "kaywilliams",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Addresses Issue #14: https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/14",
+      "createdAt": "2023-02-06T17:25:40Z",
+      "updatedAt": "2023-02-06T17:36:15Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "c3c0ae0a1434c925e36878d003fdc06968a66a9b",
+      "headRepository": null,
+      "headRefName": "kaywilliams-patch-1",
+      "headRefOid": "8c9ef11343962f0e9c80bc7559c47160f93f533f",
+      "closedAt": "2023-02-06T17:36:15Z",
+      "mergedAt": "2023-02-06T17:36:15Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "df050ebb5266277060e8a12d18473f858de9ce4a"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5Moe16",
+          "commit": {
+            "abbreviatedOid": "8c9ef11"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM!",
+          "createdAt": "2023-02-06T17:36:06Z",
+          "updatedAt": "2023-02-06T17:36:06Z",
           "comments": []
         }
       ]
