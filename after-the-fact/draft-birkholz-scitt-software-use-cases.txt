@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 10 August 2023                                              ARM
+Expires: 13 August 2023                                              ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                         6 February 2023
+                                                         9 February 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 August 2023.
+   This Internet-Draft will expire on 13 August 2023.
 
 Copyright Notice
 
@@ -85,7 +85,7 @@ Table of Contents
      3.2.  Multi Stakeholder Evaluation of a Released Software Product
      3.3.  Security Analysis of a Software Product
      3.4.  Promotion of a Software Component by mutliple entities
-     3.5.  Trustworthy Reference Values for After-The-Fact Analysis
+     3.5.  Verifying Firmware Provenance for large and complex systems
      3.6.  Auditing of Software Product
      3.7.  Authentic Software Components in Air-Gapped Infrastructure
      3.8.  Firmware Delivery to large set of constrained IoT Devices
@@ -334,40 +334,57 @@ Table of Contents
    *  to check the integrity of modifications or transformations done by
       a provider
 
-3.5.  Trustworthy Reference Values for After-The-Fact Analysis
+3.5.  Verifying Firmware Provenance for large and complex systems
 
-   In contrast to common operating systems or user space software
-   components, during boot-cycles of bigger systems firmware components
-   are often already executed (as part of that bigger system) before
-   there is an opportunity to authenticate them.  Authentication takes
-   place, for example, by checking an accompanying signature or by
-   creating a hash measurement and comparing it to a reference value.
-   Corresponding procedures are often called authenticated, measured, or
-   secure boot.  The output of these high assurance boot procedures is
-   often used as input to more complex remote attestation procedures.
+   In contrast to operating systems or user space software components of
+   a large and complex systems, firmware components are often already
+   executed during boot-cycles before there is an opportunity to
+   authenticate them.
+
+   Authentication takes place, for example, by checking an accompanying
+   signature or by creating a hash of measurements and comparing them to
+   a reference value.  Corresponding procedures are often called
+   authenticated, measured, or secure boot.  The output of these high
+   assurance boot procedures is often used as input to more complex
+   remote attestation procedures.
+
    If measurements before execution are not possible, static after-the-
-   fact analysis is required.  In these cases measurements (e.g., a hash
-   digests) are stored in a protected or shielded environment (e.g.,
-   TEEs or TPMs) on the bigger system itself.  After finishing a high
-   assurance boot sequence, these measurements about fundamental
-   firmware are retrieved after-the-fact from their shielded locations
-   and are required to be compared to reference values that are part of
-   reference integrity measurements (RIM).  A verifying system
-   appraising the integrity of a high assurance boot sequence must
-   identify, locate, retrieve, and authenticate corresponding RIMs.
+   fact analysis is required.
 
-   A consumer of a released software wants: * to easily identify sources
-   for RIMs and be able to make trust decisions about them * to select
-   appropriate RIMs and download them for the appraisal of measurements
-   * to be able to assure the authenticity, applicability, and freshness
-   of RIMs over time
+   In these cases measurements (e.g., a hash or digests) are stored in a
+   protected or shielded environment (e.g., TEEs or TPMs) on these
+   systems itself.
 
-   There is no standardized way to: * identify, locate, retrieve and
-   authenticate RIMs in a uniform fashion * to enable decision making to
-   decide between multiple potential available RIMs (e.g., by age,
-   source, signing authority, etc.) * to store RIMs in a fashion that
-   enables their usage in appraisal procedures years after they were
-   created in secure and believable fashion
+   After finishing a high assurance boot sequence, these measurements
+   about fundamental firmware are retrieved after-the-fact from their
+   shielded locations and are required to be compared to reference
+   values that are part of Reference Integrity Measurements (RIMs).
+
+   A verifying system appraising the integrity of a high assurance boot
+   sequence must identify, locate, retrieve, and authenticate
+   corresponding RIMs.
+
+   A consumer of a released software wants:
+
+   *  to easily identify sources for RIMs
+
+   *  to select appropriate RIMs and download them for the appraisal of
+      measurements
+
+   *  to be able to assure the authenticity, applicability, and
+      freshness of RIMs over time
+
+   There is no standardized way to:
+
+   *  identify, locate, retrieve and authenticate RIMs in a uniform
+      fashion
+
+   *  to uniquely identify among multiple potential available RIMs
+      (e.g., by age, source, signing authority, etc.)
+
+   *  to store RIMs in a fashion that enables their usage in appraisal
+      procedures years after they were created in a secure and
+      believable fashion
 
 3.6.  Auditing of Software Product
 

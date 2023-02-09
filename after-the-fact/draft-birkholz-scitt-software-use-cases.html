@@ -1045,7 +1045,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Birkholz, et al.</td>
-<td class="center">Expires 10 August 2023</td>
+<td class="center">Expires 13 August 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1058,12 +1058,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-birkholz-scitt-software-use-cases-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-02-06" class="published">6 February 2023</time>
+<time datetime="2023-02-09" class="published">9 February 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-08-10">10 August 2023</time></dd>
+<dd class="expires"><time datetime="2023-08-13">13 August 2023</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1128,7 +1128,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 10 August 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 13 August 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1184,7 +1184,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
                 <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="auto internal xref">3.4</a>.  <a href="#name-promotion-of-a-software-com" class="internal xref">Promotion of a Software Component by mutliple entities</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.5">
-                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="auto internal xref">3.5</a>.  <a href="#name-trustworthy-reference-value" class="internal xref">Trustworthy Reference Values for After-The-Fact Analysis</a></p>
+                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="auto internal xref">3.5</a>.  <a href="#name-verifying-firmware-provenan" class="internal xref">Verifying Firmware Provenance for large and complex systems</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.6">
                 <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="auto internal xref">3.6</a>.  <a href="#name-auditing-of-software-produc" class="internal xref">Auditing of Software Product</a></p>
@@ -1387,27 +1387,36 @@ Due to complex distribution and promotion lifecycle scenarios, the original soft
         </ul>
 </section>
 </div>
-<div id="trustworthy-reference-values-for-after-the-fact-analysis">
+<div id="verifying-firmware-provenance-for-large-and-complex-systems">
 <section id="section-3.5">
-        <h3 id="name-trustworthy-reference-value">
-<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-trustworthy-reference-value" class="section-name selfRef">Trustworthy Reference Values for After-The-Fact Analysis</a>
+        <h3 id="name-verifying-firmware-provenan">
+<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-verifying-firmware-provenan" class="section-name selfRef">Verifying Firmware Provenance for large and complex systems</a>
         </h3>
-<p id="section-3.5-1">In contrast to common operating systems or user space software components, during boot-cycles of bigger systems firmware components are often already executed (as part of that bigger system) before there is an opportunity to authenticate them.
-Authentication takes place, for example, by checking an accompanying signature or by creating a hash measurement and comparing it to a reference value.
-Corresponding procedures are often called authenticated, measured, or secure boot.
-The output of these high assurance boot procedures is often used as input to more complex remote attestation procedures.
-If measurements before execution are not possible, static after-the-fact analysis is required.
-In these cases measurements (e.g., a hash digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs) on the bigger system itself.
-After finishing a high assurance boot sequence, these measurements about fundamental firmware are retrieved after-the-fact from their shielded locations and are required to be compared to reference values that are part of reference integrity measurements (RIM).
-A verifying system appraising the integrity of a high assurance boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.<a href="#section-3.5-1" class="pilcrow">¶</a></p>
-<p id="section-3.5-2">A consumer of a released software wants:
-* to easily identify sources for RIMs and be able to make trust decisions about them
-* to select appropriate RIMs and download them for the appraisal of measurements
-* to be able to assure the authenticity, applicability, and freshness of RIMs over time<a href="#section-3.5-2" class="pilcrow">¶</a></p>
-<p id="section-3.5-3">There is no standardized way to:
-* identify, locate, retrieve and authenticate RIMs in a uniform fashion
-* to enable decision making to decide between multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
-* to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in secure and believable fashion<a href="#section-3.5-3" class="pilcrow">¶</a></p>
+<p id="section-3.5-1">In contrast to operating systems or user space software components of a large and complex systems, firmware components are often already executed during boot-cycles before there is an opportunity to authenticate them.<a href="#section-3.5-1" class="pilcrow">¶</a></p>
+<p id="section-3.5-2">Authentication takes place, for example, by checking an accompanying signature or by creating a hash of measurements and comparing them to a reference value.
+Corresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input to more complex remote attestation procedures.<a href="#section-3.5-2" class="pilcrow">¶</a></p>
+<p id="section-3.5-3">If measurements before execution are not possible, static after-the-fact analysis is required.<a href="#section-3.5-3" class="pilcrow">¶</a></p>
+<p id="section-3.5-4">In these cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs) on these systems itself.<a href="#section-3.5-4" class="pilcrow">¶</a></p>
+<p id="section-3.5-5">After finishing a high assurance boot sequence, these measurements about fundamental firmware are retrieved after-the-fact from their shielded locations and are required to be compared to reference values that are part of Reference Integrity Measurements (RIMs).<a href="#section-3.5-5" class="pilcrow">¶</a></p>
+<p id="section-3.5-6">A verifying system appraising the integrity of a high assurance boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.<a href="#section-3.5-6" class="pilcrow">¶</a></p>
+<p id="section-3.5-7">A consumer of a released software wants:<a href="#section-3.5-7" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.5-8.1">to easily identify sources for RIMs<a href="#section-3.5-8.1" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-8.2">to select appropriate RIMs and download them for the appraisal of measurements<a href="#section-3.5-8.2" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-8.3">to be able to assure the authenticity, applicability, and freshness of RIMs over time<a href="#section-3.5-8.3" class="pilcrow">¶</a>
+</li>
+        </ul>
+<p id="section-3.5-9">There is no standardized way to:<a href="#section-3.5-9" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.5-10.1">identify, locate, retrieve and authenticate RIMs in a uniform fashion<a href="#section-3.5-10.1" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-10.2">to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)<a href="#section-3.5-10.2" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-10.3">to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion<a href="#section-3.5-10.3" class="pilcrow">¶</a>
+</li>
+        </ul>
 </section>
 </div>
 <div id="auditing-of-software-product">
