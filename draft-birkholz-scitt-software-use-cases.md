@@ -226,7 +226,7 @@ There is no standardized way to:
 * provide an update framework that allows validation of authenticity of firmware revisions
 * to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices.
 * reliably discern an update that has been signed by the appropriate and intended signing identity
-* clearly communicate firmware revisioning and security checks completed to ensure the firmware is safe for install
+* Make an informed judgement on all available information about firmware at the install time. For example, the firmware is still in a good state or otherwise?
 
 ## Software Integrator assembling a software product for a smart car
 
