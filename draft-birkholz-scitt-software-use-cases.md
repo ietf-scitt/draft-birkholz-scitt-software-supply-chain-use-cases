@@ -223,7 +223,8 @@ Consumers and other interested parties of a firmware update system wants:
 
 There is no standardized way to:
 
-* provide an update framework which allows verification of integrity and authenticity of firmware updates before installation
+* provide an update framework that allows validation of authenticity of firmware revisions
+* to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices.
 * reliably discern an update that has been signed by the appropriate and intended signing identity
 * clearly communicate firmware revisioning and security checks completed to ensure the firmware is safe for install
 
