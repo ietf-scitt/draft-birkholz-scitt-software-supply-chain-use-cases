@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 10 August 2023                                              ARM
+Expires: 14 August 2023                                              ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                         6 February 2023
+                                                        10 February 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 August 2023.
+   This Internet-Draft will expire on 14 August 2023.
 
 Copyright Notice
 
@@ -186,7 +186,8 @@ Table of Contents
    There is no standardized way to:
 
    *  enable the consumer to verify that software originated from a
-      'duly authorized signing party' on behalf of the Supplier.
+      'duly authorized signing party' on behalf of the supplier and is
+      still valid.
 
 3.2.  Multi Stakeholder Evaluation of a Released Software Product
 
@@ -205,7 +206,7 @@ Table of Contents
    identity of the authoritaitve bodies adds a significant cost to the
    end user or consumer of the product.
 
-   A consumer of released software component wants:
+   A consumer of released software product wants:
 
    *  to offload the burden of identifying all relevant authoritative
       entities to an entity who does it on their behalf
