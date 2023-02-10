@@ -240,7 +240,7 @@ Consumer of an integrated software wants:
 
 There is no standardized way to:
 
-* provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation 
+* provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation
 * notify software integrators of vulnerabilities identified during security scans of running software
 * provide valid annotations on build integrity to ensure conformance
 
