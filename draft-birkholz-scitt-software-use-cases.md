@@ -101,7 +101,7 @@ There is no standardized way to:
 
 In IT industry it is a common practice that once a software product is released, it is evaluated on various aspects. For example, an auditing company, a code review company or a government body will examine the software product and issue authoritative reports about the product. The end users (consumers or distribution entities) use these report to make an accurate assessment as to whether the software product is deemed fit to use.
 
-There are multiple such authoritative bodies that make such assessments. There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them. Discovery of all sources of such reports and/or identity of the authoritaitve bodies adds a significant cost to the end user or consumer of the product.
+There are multiple such authoritative bodies that make such assessments. There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them. Discovery of all sources of such reports and/or identity of the authoritative bodies adds a significant cost to the end user or consumer of the product.
 
 A consumer of released software product wants:
 
@@ -123,7 +123,7 @@ A released software product is often accompanied by a set of complementary state
 
 Subsequently, multiple security researchers often run sophisticated security analysis tools on the same product. The intention is to identify any security weaknesses or vulnerabilities in the package.
 
-Initially a particluar analysis can identify itself as a simple weakness in a software component. Over a period of time, a statement from another third-party illustrates that the weakness is exposed in the same software component in a way that it is an exploitable vulnerability. The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
+Initially a particular analysis can identify itself as a simple weakness in a software component. Over a period of time, a statement from another third-party illustrates that the weakness is exposed in the same software component in a way that it is an exploitable vulnerability. The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
 At first, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
 Later, A second update of the software product includes a security patch to the affected software component from the software producer. Finally, A third update includes a new release (updated version) of the formerly insecure software component. For this release, both the software product and the affected software component are deemed secure by the producer and consumers.
 
@@ -141,7 +141,7 @@ There is no standardized way to:
 * how to related/link various heterogeneous statements in a simple fashion, and
 * check that the statement comes from a source with authority to issue that statement.
 
-## Promotion of a Software Component by mutliple entities
+## Promotion of a Software Component by multiple entities
 
 A software component source (e.g., a library) released by a certain original producer is becoming popular.
 The released software component source is accompanied by a statement of authenticity (e.g., a detached signature).
@@ -201,7 +201,7 @@ A consumer of a released software wants:
 
 * a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
 * a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
-* a simple and low cost way to update the configuration of a system component in charge of validity or authenticity cecking
+* a simple and low cost way to update the configuration of a system component in charge of validity or authenticity checking
 
 There is no standardized way to:
 
