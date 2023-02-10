@@ -182,7 +182,7 @@ After finishing a high assurance boot sequence, these measurements about foundat
 
 A verifying system appraising the integrity of a high assurance boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
 
-A consumer of a released software wants:
+A consumer of published software wants:
 
 * to easily identify sources for RIMs
 * to select appropriate RIMs and download them for the appraisal of measurements
