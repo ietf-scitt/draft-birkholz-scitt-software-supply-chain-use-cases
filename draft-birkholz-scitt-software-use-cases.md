@@ -178,7 +178,7 @@ If measurements before execution are not possible, static after-the-fact analysi
 
 In these cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs) on these systems itself.
 
-After finishing a high assurance boot sequence, these measurements about fundamental firmware are retrieved after-the-fact from their shielded locations and are required to be compared to reference values that are part of Reference Integrity Measurements (RIMs).
+After finishing a high assurance boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of Reference Integrity Measurements (RIMs).
 
 A verifying system appraising the integrity of a high assurance boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
 
