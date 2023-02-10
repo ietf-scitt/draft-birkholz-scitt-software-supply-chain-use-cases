@@ -364,7 +364,7 @@ Table of Contents
    sequence must identify, locate, retrieve, and authenticate
    corresponding RIMs.
 
-   A consumer of a released software wants:
+   A consumer of published software wants:
 
    *  to easily identify sources for RIMs
 
