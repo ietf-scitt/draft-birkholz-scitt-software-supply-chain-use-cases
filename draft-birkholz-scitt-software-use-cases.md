@@ -95,7 +95,7 @@ A consumer of software wants:
 
 There is no standardized way to:
 
-* enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the Supplier.
+* enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the supplier and is still valid.
 
 ## Multi Stakeholder Evaluation of a Released Software Product
 
@@ -103,7 +103,7 @@ In IT industry it is a common practice that once a software product is released,
 
 There are multiple such authoritative bodies that make such assessments. There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them. Discovery of all sources of such reports and/or identity of the authoritaitve bodies adds a significant cost to the end user or consumer of the product.
 
-A consumer of released software component wants:
+A consumer of released software product wants:
 
 * to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
 * to offload the burden to filter from and select all statements that are applicable to a particular release of a multi release software product, to an entity who does this on their behalf
