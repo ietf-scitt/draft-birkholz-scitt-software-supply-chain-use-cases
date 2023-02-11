@@ -213,10 +213,10 @@ There is no standardized way to:
 
 Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers. For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.
 
-Consumers and other interested parties of a firmware update system wants:
+Consumers and other interested parties of a firmware update ecosystem wants:
 
 * to know that the received firmware for system update is not faulty or malicious
-* to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates ?
+* to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
 * to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
 * to confirm that the publishers know if their deliverable has been compromised. Can they trust their key protection or audit logging?
 * to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
