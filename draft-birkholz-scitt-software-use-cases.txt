@@ -84,7 +84,7 @@ Table of Contents
            Supplier
      3.2.  Multi Stakeholder Evaluation of a Released Software Product
      3.3.  Security Analysis of a Software Product
-     3.4.  Promotion of a Software Component by mutliple entities
+     3.4.  Promotion of a Software Component by multiple entities
      3.5.  Auditing of Software Product
      3.6.  Authentic Software Components in Air-Gapped Infrastructure
      3.7.  Firmware Delivery to large set of constrained IoT Devices
@@ -200,7 +200,7 @@ Table of Contents
    assessments.  There is no assurance that all the bodies may be aware
    of statements from other authoritative entities or actively
    acknowledge them.  Discovery of all sources of such reports and/or
-   identity of the authoritaitve bodies adds a significant cost to the
+   identity of the authoritative bodies adds a significant cost to the
    end user or consumer of the product.
 
    A consumer of released software product wants:
@@ -239,7 +239,7 @@ Table of Contents
    security analysis tools on the same product.  The intention is to
    identify any security weaknesses or vulnerabilities in the package.
 
-   Initially a particluar analysis can identify itself as a simple
+   Initially a particular analysis can identify itself as a simple
    weakness in a software component.  Over a period of time, a statement
    from another third-party illustrates that the weakness is exposed in
    the same software component in a way that it is an exploitable
@@ -283,7 +283,7 @@ Table of Contents
    *  check that the statement comes from a source with authority to
       issue that statement.
 
-3.4.  Promotion of a Software Component by mutliple entities
+3.4.  Promotion of a Software Component by multiple entities
 
    A software component source (e.g., a library) released by a certain
    original producer is becoming popular.  The released software
@@ -399,7 +399,7 @@ Table of Contents
       allow for application in constrained node environments
 
    *  a simple and low cost way to update the configuration of a system
-      component in charge of validity or authenticity cecking
+      component in charge of validity or authenticity checking
 
    There is no standardized way to:
 
