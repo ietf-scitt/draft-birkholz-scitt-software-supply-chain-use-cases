@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-07T00:30:53.465560+00:00",
+  "timestamp": "2023-02-12T00:33:20.089682+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -233,15 +233,15 @@
       "id": "I_kwDOIPKmOc5dRoYx",
       "title": "Minor proposed change in use case 3.2",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/19",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "rjb4standards",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "I have no concerns with the revised language for 3.1. One minor nit on 3.2 to be consistent with the use case title\r\nREPLACE:\r\nA consumer of released software component wants:\r\nWITH\r\nA consumer of released software product wants:\r\n",
       "createdAt": "2023-01-31T19:47:45Z",
-      "updatedAt": "2023-02-06T16:16:46Z",
-      "closedAt": null,
+      "updatedAt": "2023-02-09T16:38:01Z",
+      "closedAt": "2023-02-09T16:38:01Z",
       "comments": [
         {
           "author": "kaywilliams",
@@ -249,6 +249,13 @@
           "body": "LGTM",
           "createdAt": "2023-02-06T16:16:45Z",
           "updatedAt": "2023-02-06T16:16:45Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "This issue has been resolved in the above PR.",
+          "createdAt": "2023-02-09T16:38:01Z",
+          "updatedAt": "2023-02-09T16:38:01Z"
         }
       ]
     },
@@ -257,15 +264,15 @@
       "id": "I_kwDOIPKmOc5dvxzc",
       "title": "Slight modification to use case 3.1",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/20",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "rjb4standards",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Please add \"and is still valid\" - see new proposed langauge\r\n\r\nenable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the Supplier, and is still valid",
       "createdAt": "2023-02-06T15:39:15Z",
-      "updatedAt": "2023-02-06T16:13:18Z",
-      "closedAt": null,
+      "updatedAt": "2023-02-09T16:37:34Z",
+      "closedAt": "2023-02-09T16:37:33Z",
       "comments": [
         {
           "author": "kaywilliams",
@@ -273,6 +280,13 @@
           "body": "+1 to this change",
           "createdAt": "2023-02-06T16:13:18Z",
           "updatedAt": "2023-02-06T16:13:18Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Closing as been addressed now!",
+          "createdAt": "2023-02-09T16:37:33Z",
+          "updatedAt": "2023-02-09T16:37:33Z"
         }
       ]
     }
@@ -1495,13 +1509,13 @@
       "labels": [],
       "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
       "createdAt": "2023-01-19T17:29:52Z",
-      "updatedAt": "2023-02-06T15:32:34Z",
+      "updatedAt": "2023-02-10T16:30:32Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "c3c0ae0a1434c925e36878d003fdc06968a66a9b",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "after-the-fact",
-      "headRefOid": "bc04236004cecc7d6dbf2760bffac4e0ea48c0fb",
+      "headRefOid": "ca0fdc859b848ce7f88e3d8ba7a637c1a8422a75",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -1513,9 +1527,323 @@
           "body": "Looks good.",
           "createdAt": "2023-01-22T22:57:28Z",
           "updatedAt": "2023-01-22T22:57:28Z"
+        },
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "If there are no objections until the end of Fri, I'll merge for the meeting on Mon.",
+          "createdAt": "2023-02-09T16:45:02Z",
+          "updatedAt": "2023-02-09T16:45:02Z"
+        },
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "No objections with merging these changes.",
+          "createdAt": "2023-02-09T16:46:20Z",
+          "updatedAt": "2023-02-09T16:46:20Z"
         }
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5M_fVg",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T17:58:42Z",
+          "updatedAt": "2023-02-09T17:58:42Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "Verifying Firmware Provenance for a large and complex systems",
+              "createdAt": "2023-02-09T17:58:42Z",
+              "updatedAt": "2023-02-09T17:58:42Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5M_f83",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T17:59:45Z",
+          "updatedAt": "2023-02-09T17:59:45Z",
+          "comments": [
+            {
+              "originalPosition": 9,
+              "body": "@henkbirkholz I am not clear about the following line:\r\n\r\n\"and comparing them to a reference value.\"\r\n\r\nYou can create a Hash of running FW, but with whom you would compare it against ?\r\nWhere does the known reference values come in the device? ",
+              "createdAt": "2023-02-09T17:59:45Z",
+              "updatedAt": "2023-02-09T18:00:13Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5M_gt9",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T18:01:07Z",
+          "updatedAt": "2023-02-09T18:01:08Z",
+          "comments": [
+            {
+              "originalPosition": 10,
+              "body": "input to more complex verification known as remote attestation procedures.",
+              "createdAt": "2023-02-09T18:01:07Z",
+              "updatedAt": "2023-02-09T18:01:08Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5M_iCh",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T18:03:10Z",
+          "updatedAt": "2023-02-09T18:03:11Z",
+          "comments": [
+            {
+              "originalPosition": 9,
+              "body": "This is where I believe a SCITT Trust Registry can provide value. This would give consumer the ability to query for trust declarations based on the SHA-256 hash value of a FW package, using somethings as simple as an http query that returns a trust score, i.e.: https://softwareassuranceguardian.com/SAGCTR_inquiry/getSAGScore?FileHash=94EDB27E1995370E9003EE0A0A12D0A7DE2E8DA5EB663C31A97CB4215AB171B6 ",
+              "createdAt": "2023-02-09T18:03:10Z",
+              "updatedAt": "2023-02-09T18:03:11Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NAGd5",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T19:38:04Z",
+          "updatedAt": "2023-02-09T19:38:05Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "```suggestion\r\nIn contrast to operating systems or user space software components of large and complex systems, firmware components are often executed during boot-cycles before there is an opportunity to authenticate them.\r\n```",
+              "createdAt": "2023-02-09T19:38:04Z",
+              "updatedAt": "2023-02-09T19:38:39Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NAG9D",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T19:39:27Z",
+          "updatedAt": "2023-02-09T19:39:28Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "```suggestion\r\nAuthentication takes place, for example, by validating a signature or by creating a hash of measurements and comparing them to a reference value.\r\n```",
+              "createdAt": "2023-02-09T19:39:28Z",
+              "updatedAt": "2023-02-10T16:28:37Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NAHYr",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T19:40:53Z",
+          "updatedAt": "2023-02-09T19:40:54Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "```suggestion\r\nIn such cases measurements (e.g., a hash or digests) should be stored in a protected or shielded environment (e.g., TEEs or TPMs).\r\n```",
+              "createdAt": "2023-02-09T19:40:53Z",
+              "updatedAt": "2023-02-09T19:40:54Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NAHvx",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T19:42:02Z",
+          "updatedAt": "2023-02-09T19:42:03Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "```suggestion\r\nAfter finishing a high assurance boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of Reference Integrity Measurements (RIMs).\r\n```",
+              "createdAt": "2023-02-09T19:42:02Z",
+              "updatedAt": "2023-02-09T19:42:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NAH8J",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-09T19:42:39Z",
+          "updatedAt": "2023-02-09T19:42:40Z",
+          "comments": [
+            {
+              "originalPosition": 19,
+              "body": "```suggestion\r\nA consumer of published software wants:\r\n```",
+              "createdAt": "2023-02-09T19:42:39Z",
+              "updatedAt": "2023-02-09T19:42:40Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NAIQ_",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "mostly just wording nits, looks good.",
+          "createdAt": "2023-02-09T19:43:41Z",
+          "updatedAt": "2023-02-09T19:43:41Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NF8mm",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-10T15:32:00Z",
+          "updatedAt": "2023-02-10T15:32:00Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "This is the exactly point of the use case, that the FW cannot be measured before execution..",
+              "createdAt": "2023-02-10T15:32:00Z",
+              "updatedAt": "2023-02-10T15:32:00Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NF_Sc",
+          "commit": {
+            "abbreviatedOid": "ca0fdc8"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "a few suggestions seem to change the message of the use case. See comments",
+          "createdAt": "2023-02-10T15:37:53Z",
+          "updatedAt": "2023-02-10T15:43:18Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "hm. verification is too overloaded for my taste. If \"checking\" is not good enough... maybe \"validating\" instead?",
+              "createdAt": "2023-02-10T15:37:53Z",
+              "updatedAt": "2023-02-10T15:43:18Z"
+            },
+            {
+              "originalPosition": 13,
+              "body": "\"Should\" would imply a guidance, but we are trying to express an (maybe not fortunately, but that depends on view) a fact of something happening today for this use case.",
+              "createdAt": "2023-02-10T15:40:22Z",
+              "updatedAt": "2023-02-10T15:43:18Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NGCGH",
+          "commit": {
+            "abbreviatedOid": "ca0fdc8"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-10T15:44:27Z",
+          "updatedAt": "2023-02-10T15:44:28Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "Yogesh pointed out to me that this could maybe mean Reference Integrity Manifest (which would be less confusing, but maybe not what we wanted to say)?",
+              "createdAt": "2023-02-10T15:44:27Z",
+              "updatedAt": "2023-02-10T15:44:28Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NGDX9",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-10T15:47:48Z",
+          "updatedAt": "2023-02-10T15:47:49Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "Let's check with Monty on the title on Monday. I'll check for his availability.",
+              "createdAt": "2023-02-10T15:47:49Z",
+              "updatedAt": "2023-02-10T15:47:49Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NGZqR",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-10T16:30:32Z",
+          "updatedAt": "2023-02-10T16:30:32Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "agree on intention, but not sure its a fact... alternatives: \r\n\r\n\"ought to be\"\r\n\r\n\"when best practices are followed, are...\"\r\n\r\n\"might...\"\r\n\r\n",
+              "createdAt": "2023-02-10T16:30:32Z",
+              "updatedAt": "2023-02-10T16:30:32Z"
+            }
+          ]
+        }
+      ]
     },
     {
       "number": 18,
@@ -1799,6 +2127,208 @@
           "body": "LGTM!",
           "createdAt": "2023-02-06T17:36:06Z",
           "updatedAt": "2023-02-06T17:36:06Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": "PR_kwDOIPKmOc5JooKP",
+      "title": "Updating SW supply chain use case doc",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/22",
+      "state": "MERGED",
+      "author": "kkarunakaran89",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Addressing issue #19 and #20 ",
+      "createdAt": "2023-02-09T16:21:04Z",
+      "updatedAt": "2023-02-10T15:07:55Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "df050ebb5266277060e8a12d18473f858de9ce4a",
+      "headRepository": "kkarunakaran89/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "main",
+      "headRefOid": "60e6cc9a887d98d1f454cc42b4e0824ac21696af",
+      "closedAt": "2023-02-10T15:07:54Z",
+      "mergedAt": "2023-02-10T15:07:54Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "52b876cb75412c2895044e29b5fd43cd6d2eb4f9"
+      },
+      "comments": [
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "This fixes issue #19 and issue #20",
+          "createdAt": "2023-02-09T16:37:03Z",
+          "updatedAt": "2023-02-09T16:37:03Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5M-6tK",
+          "commit": {
+            "abbreviatedOid": "60e6cc9"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM",
+          "createdAt": "2023-02-09T16:34:34Z",
+          "updatedAt": "2023-02-09T16:34:34Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5M--xB",
+          "commit": {
+            "abbreviatedOid": "60e6cc9"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-02-09T16:43:56Z",
+          "updatedAt": "2023-02-09T16:43:56Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "id": "PR_kwDOIPKmOc5JuUj6",
+      "title": "Kkarunakaran89 patch 1",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/23",
+      "state": "MERGED",
+      "author": "kkarunakaran89",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated firmware and Software integrator use case to the same format as the ones above.",
+      "createdAt": "2023-02-10T15:29:52Z",
+      "updatedAt": "2023-02-11T10:41:52Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "52b876cb75412c2895044e29b5fd43cd6d2eb4f9",
+      "headRepository": "kkarunakaran89/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "kkarunakaran89-patch-1",
+      "headRefOid": "d2aa63c359c7828d631a27a5bdb6b420c4c22b2f",
+      "closedAt": "2023-02-11T10:41:52Z",
+      "mergedAt": "2023-02-11T10:41:52Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "d3bf3e712f001a7f2eee5842a6c1fb0a2ce0a938"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5NKIIp",
+          "commit": {
+            "abbreviatedOid": "1f24d81"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-11T10:38:42Z",
+          "updatedAt": "2023-02-11T10:38:43Z",
+          "comments": [
+            {
+              "originalPosition": 21,
+              "body": "```suggestion\r\n* to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates ?\r\n```",
+              "createdAt": "2023-02-11T10:38:43Z",
+              "updatedAt": "2023-02-11T10:38:43Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NKIKV",
+          "commit": {
+            "abbreviatedOid": "2b17a69"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-11T10:40:03Z",
+          "updatedAt": "2023-02-11T10:40:03Z",
+          "comments": [
+            {
+              "originalPosition": 17,
+              "body": "```suggestion\r\nConsumers and other interested parties of a firmware update ecosystem wants:\r\n```",
+              "createdAt": "2023-02-11T10:40:03Z",
+              "updatedAt": "2023-02-11T10:40:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NKIK1",
+          "commit": {
+            "abbreviatedOid": "2b17a69"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-11T10:40:26Z",
+          "updatedAt": "2023-02-11T10:40:26Z",
+          "comments": [
+            {
+              "originalPosition": 21,
+              "body": "```suggestion\r\n* to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates\r\n```",
+              "createdAt": "2023-02-11T10:40:26Z",
+              "updatedAt": "2023-02-11T10:40:26Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "id": "PR_kwDOIPKmOc5JwMpw",
+      "title": "Fix some minor spelling mistakes.",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/24",
+      "state": "MERGED",
+      "author": "umbellate",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-02-10T23:00:07Z",
+      "updatedAt": "2023-02-11T14:17:45Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "52b876cb75412c2895044e29b5fd43cd6d2eb4f9",
+      "headRepository": "umbellate/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "minor-spelling-fixes",
+      "headRefOid": "e8336263116f5d01019a423fb6e5d2c40a3e817d",
+      "closedAt": "2023-02-11T10:54:06Z",
+      "mergedAt": "2023-02-11T10:54:06Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "9ddaff3a38dfbae0c8c3765d69de479d9f45bd19"
+      },
+      "comments": [
+        {
+          "author": "umbellate",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Thanks for merge. I realize these are minor things (especially in\ndeveloping a draft), so know that I am reading and digesting/thinking\non the actual content. Thanks for your and the others' efforts.\n\nOn Sat, Feb 11, 2023 at 5:50 AM Yogesh Deshpande\n***@***.***> wrote:\n>\n> @yogeshbdeshpande approved this pull request.\n>\n> LGTM!\n>\n> Sincere thanks for spotting them!\n>\n> \u2014\n> Reply to this email directly, view it on GitHub, or unsubscribe.\n> You are receiving this because you authored the thread.Message ID: ***@***.***>\n",
+          "createdAt": "2023-02-11T14:17:45Z",
+          "updatedAt": "2023-02-11T14:17:45Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5NKIYs",
+          "commit": {
+            "abbreviatedOid": "e833626"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM!\r\n\r\nSincere thanks for spotting them!",
+          "createdAt": "2023-02-11T10:50:31Z",
+          "updatedAt": "2023-02-11T10:50:31Z",
           "comments": []
         }
       ]
