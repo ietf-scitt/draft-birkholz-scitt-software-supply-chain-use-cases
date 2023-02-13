@@ -64,9 +64,52 @@ Modern software applications are an intricate mix of first-party and third-party
 
 Supply chain security is a paramount prerequisite to successfully protect consumers and minimize economic, public health, and safety impacts. Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory. While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined. Recently, the global community has experienced numerous supply chain attacks targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
-<!-- ![SCITT_SW_Use_Case](https://user-images.githubusercontent.com/100775190/197196387-f8f835ba-7023-4223-98c9-3d8ec197e658.svg) -->
+
 ~~~~
-generic supply chain threats diagram here
+      Dependencies        Malicious 3rd-party package or version
+           |
+           |
+     +-----+-----+
+     |           |
+     |   Code    |        Compromise source control
+     |           |
+     +-----+-----+
+           |
+     +-----+-----+
+     |           |        Malicious plug-ins;
+     |  Commit   |        Malcious commit
+     |           |
+     +-----+-----+
+           |
+     +-----+-----+
+     |           |        Modify build tasks or build environment;
+     |   Build   |        Poison build agent/compiler;
+     |           |        Tamper with build cache
+     +-----+-----+
+           |
+     +-----+-----+
+     |           |        Compromise test tools;
+     |    Test   |        Falsification of test results
+     |           |
+     +-----+-----+
+           |
+     +-----+-----+
+     |           |        Use bad package;
+     |  Package  |        Compromise package repository
+     |           |
+     +-----+-----+
+           |
+     +-----+-----+
+     |           |        Modify release tasks;
+     |  Release  |        Modify build drop prior to release
+     |           |
+     +-----+-----+
+           |
+     +-----+-----+
+     |           | 
+     |  Deploy   |        Tamper with versioning and update process
+     |           |
+     +-----------+
 ~~~~
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
@@ -266,9 +309,3 @@ Acknowledgements
 
 <!--  LocalWords:  SCIIT uscase SBOM NIST
  -->
-
-# TODO List
-
-* Promotion Scenario: '3rd party lab validates the detail instead of their own test'
-* Endorsement Scenario: Audit downstream independent of issuer and provide an endorsement
-* CI/CD SCITT interaction - Create a model before talking to Github (Statements about SW could be listed. Policy management can be done via SCITT through SW development lifecycle)
