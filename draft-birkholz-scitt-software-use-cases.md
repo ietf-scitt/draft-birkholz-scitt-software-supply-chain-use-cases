@@ -267,8 +267,6 @@ Acknowledgements
 <!--  LocalWords:  SCIIT uscase SBOM NIST
  -->
 
-# TODO List
 
-* Promotion Scenario: '3rd party lab validates the detail instead of their own test'
-* Endorsement Scenario: Audit downstream independent of issuer and provide an endorsement
-* CI/CD SCITT interaction - Create a model before talking to Github (Statements about SW could be listed. Policy management can be done via SCITT through SW development lifecycle)
+
+
