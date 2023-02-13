@@ -106,7 +106,7 @@ Supply chain security is a paramount prerequisite to successfully protect consum
      +-----+-----+
            |
      +-----+-----+
-     |           | 
+     |           |
      |  Deploy   |        Tamper with versioning and update process
      |           |
      +-----------+
