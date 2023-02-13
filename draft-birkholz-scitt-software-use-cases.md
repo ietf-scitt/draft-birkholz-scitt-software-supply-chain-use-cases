@@ -64,10 +64,7 @@ Modern software applications are an intricate mix of first-party and third-party
 
 Supply chain security is a paramount prerequisite to successfully protect consumers and minimize economic, public health, and safety impacts. Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory. While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined. Recently, the global community has experienced numerous supply chain attacks targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
-<!-- ![SCITT_SW_Use_Case](https://user-images.githubusercontent.com/100775190/197196387-f8f835ba-7023-4223-98c9-3d8ec197e658.svg) -->
-~~~~
-generic supply chain threats diagram here
-~~~~
+![SCITT_SW_Use_Case-01](https://user-images.githubusercontent.com/100775190/218516732-2be947cd-6207-4ee3-9c7b-d69e71976bb6.svg)
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
 DevSecOps often depends on third-party and open-source solutions. These dependencies can be quite complex throughout the supply chain and render the checking of lifecycle compliance difficult. There is a need for manageable auditability and accountability of digital products. Typically, the range of types of statements about digital products (and their dependencies) is vast, heterogeneous, and can differ between community policy requirements. Taking the type and structure of all statements about digital and products into account might not be possible. Examples of statements may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs. In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility. The following use case illustrates the scope of SCITT and elaborate on the generic problem statement above.
@@ -266,9 +263,3 @@ Acknowledgements
 
 <!--  LocalWords:  SCIIT uscase SBOM NIST
  -->
-
-# TODO List
-
-* Promotion Scenario: '3rd party lab validates the detail instead of their own test'
-* Endorsement Scenario: Audit downstream independent of issuer and provide an endorsement
-* CI/CD SCITT interaction - Create a model before talking to Github (Statements about SW could be listed. Policy management can be done via SCITT through SW development lifecycle)
