@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 15 August 2023                                              ARM
+Expires: 17 August 2023                                              ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                        11 February 2023
+                                                        13 February 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 15 August 2023.
+   This Internet-Draft will expire on 17 August 2023.
 
 Copyright Notice
 
@@ -91,7 +91,6 @@ Table of Contents
      3.8.  Software Integrator assembling a software product for a
            smart car
    4.  Normative References
-   Appendix A.  TODO List
    Authors' Addresses
 
 1.  Introduction
@@ -506,18 +505,6 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
-
-Appendix A.  TODO List
-
-   *  Promotion Scenario: '3rd party lab validates the detail instead of
-      their own test'
-
-   *  Endorsement Scenario: Audit downstream independent of issuer and
-      provide an endorsement
-
-   *  CI/CD SCITT interaction - Create a model before talking to Github
-      (Statements about SW could be listed.  Policy management can be
-      done via SCITT through SW development lifecycle)
 
 Authors' Addresses
 
