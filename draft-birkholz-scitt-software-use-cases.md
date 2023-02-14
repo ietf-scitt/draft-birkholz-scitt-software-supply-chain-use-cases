@@ -210,6 +210,35 @@ There is no standardized way to:
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
 
+## Post-Boot Firmware Provenance
+
+In contrast to operating systems or user space software components of a large and complex systems, firmware components are often already executed during boot-cycles before there is an opportunity to authenticate them.
+
+Authentication takes place, for example, by validating a signed artefact against a Reference Integrity Manifest (RIM).
+Corresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input to more complex verification known as remote attestation procedures.
+
+If measurements before execution are not possible, static after-the-fact analysis is required, typically by examining artifacts.
+
+When best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
+
+After finishing a boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.
+
+A verifying system appraising the integrity of a boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
+
+A consumer of published software wants:
+
+* to easily identify sources for RIMs
+* to select appropriate RIMs and download them for the appraisal of measurements
+* to be able to assure the authenticity, applicability, and freshness of RIMs over time
+
+
+There is no standardized way to:
+
+* identify, locate, retrieve and authenticate RIMs in a uniform fashion
+* to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
+* to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion
+
+
 ## Auditing of Software Product
 
 An organization has established procurement requirements and compliance policies for software use.
