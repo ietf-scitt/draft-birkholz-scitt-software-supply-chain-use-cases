@@ -176,7 +176,7 @@ Corresponding procedures are often called authenticated, measured, or secure boo
 
 If measurements before execution are not possible, static after-the-fact analysis is required.
 
-In these cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs) on these systems itself.
+When best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
 
 After finishing a high assurance boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of Reference Integrity Measurements (RIMs).
 
