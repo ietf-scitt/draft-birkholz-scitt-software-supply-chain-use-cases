@@ -349,7 +349,7 @@ Table of Contents
    procedures.
 
    If measurements before execution are not possible, static after-the-
-   fact analysis is required.
+   fact analysis is required, typically by examining artifacts.
 
    When best practices are followed, in such cases measurements (e.g., a
    hash or digests) are stored in a protected or shielded environment
