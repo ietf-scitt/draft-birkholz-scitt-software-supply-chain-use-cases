@@ -172,7 +172,7 @@ There is no standardized way to:
 In contrast to operating systems or user space software components of a large and complex systems, firmware components are often already executed during boot-cycles before there is an opportunity to authenticate them.
 
 Authentication takes place, for example, by validating a signature or by creating a hash of measurements and comparing them to a reference value.
-Corresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input input to more complex verification known as remote attestation procedures.
+Corresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input to more complex verification known as remote attestation procedures.
 
 If measurements before execution are not possible, static after-the-fact analysis is required.
 
