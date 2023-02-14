@@ -85,7 +85,7 @@ Table of Contents
      3.2.  Multi Stakeholder Evaluation of a Released Software Product
      3.3.  Security Analysis of a Software Product
      3.4.  Promotion of a Software Component by mutliple entities
-     3.5.  Verifying Firmware Provenance for large and complex systems
+     3.5.  Post-Boot Firmware Provenance
      3.6.  Auditing of Software Product
      3.7.  Authentic Software Components in Air-Gapped Infrastructure
      3.8.  Firmware Delivery to large set of constrained IoT Devices
@@ -334,7 +334,7 @@ Table of Contents
    *  to check the integrity of modifications or transformations done by
       a provider
 
-3.5.  Verifying Firmware Provenance for large and complex systems
+3.5.  Post-Boot Firmware Provenance
 
    In contrast to operating systems or user space software components of
    a large and complex systems, firmware components are often already
