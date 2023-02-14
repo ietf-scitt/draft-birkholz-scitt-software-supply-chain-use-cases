@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 14 August 2023                                              ARM
+Expires: 18 August 2023                                              ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                        10 February 2023
+                                                        14 February 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 August 2023.
+   This Internet-Draft will expire on 18 August 2023.
 
 Copyright Notice
 
@@ -341,12 +341,12 @@ Table of Contents
    executed during boot-cycles before there is an opportunity to
    authenticate them.
 
-   Authentication takes place, for example, by checking an accompanying
-   signature or by creating a hash of measurements and comparing them to
-   a reference value.  Corresponding procedures are often called
-   authenticated, measured, or secure boot.  The output of these high
-   assurance boot procedures is often used as input to more complex
-   remote attestation procedures.
+   Authentication takes place, for example, by validating a signature or
+   by creating a hash of measurements and comparing them to a reference
+   value.  Corresponding procedures are often called authenticated,
+   measured, or secure boot.  The output of these high assurance boot
+   procedures is often used as input to more complex remote attestation
+   procedures.
 
    If measurements before execution are not possible, static after-the-
    fact analysis is required.
