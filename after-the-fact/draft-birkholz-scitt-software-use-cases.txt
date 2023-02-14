@@ -360,9 +360,8 @@ Table of Contents
    locations and must be compared to reference values that are part of
    RIMs.
 
-   A verifying system appraising the integrity of a high assurance boot
-   sequence must identify, locate, retrieve, and authenticate
-   corresponding RIMs.
+   A verifying system appraising the integrity of a boot sequence must
+   identify, locate, retrieve, and authenticate corresponding RIMs.
 
    A consumer of published software wants:
 
