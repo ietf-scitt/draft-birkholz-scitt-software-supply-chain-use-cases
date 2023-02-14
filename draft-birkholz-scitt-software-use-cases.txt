@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 17 August 2023                                              ARM
+Expires: 18 August 2023                                              ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                        13 February 2023
+                                                        14 February 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 17 August 2023.
+   This Internet-Draft will expire on 18 August 2023.
 
 Copyright Notice
 
@@ -136,7 +136,50 @@ Table of Contents
    supply chain attack may leverage one or more lifecycle stages and
    directly or indirectly target the component.
 
-   generic supply chain threats diagram here
+         Dependencies        Malicious 3rd-party package or version
+              |
+              |
+        +-----+-----+
+        |           |
+        |   Code    |        Compromise source control
+        |           |
+        +-----+-----+
+              |
+        +-----+-----+
+        |           |        Malicious plug-ins;
+        |  Commit   |        Malcious commit
+        |           |
+        +-----+-----+
+              |
+        +-----+-----+
+        |           |        Modify build tasks or build environment;
+        |   Build   |        Poison build agent/compiler;
+        |           |        Tamper with build cache
+        +-----+-----+
+              |
+        +-----+-----+
+        |           |        Compromise test tools;
+        |    Test   |        Falsification of test results
+        |           |
+        +-----+-----+
+              |
+        +-----+-----+
+        |           |        Use bad package;
+        |  Package  |        Compromise package repository
+        |           |
+        +-----+-----+
+              |
+        +-----+-----+
+        |           |        Modify release tasks;
+        |  Release  |        Modify build drop prior to release
+        |           |
+        +-----+-----+
+              |
+        +-----+-----+
+        |           |
+        |  Deploy   |        Tamper with versioning and update process
+        |           |
+        +-----------+
 
                     Figure 1: Example Lifecycle Threats
 
