@@ -167,7 +167,7 @@ There is no standardized way to:
 * to check for the trustworthiness of a provider
 * to check the integrity of modifications or transformations done by a provider
 
-## Verifying Firmware Provenance for large and complex systems
+## Post-Boot Firmware Provenance
 
 In contrast to operating systems or user space software components of a large and complex systems, firmware components are often already executed during boot-cycles before there is an opportunity to authenticate them.
 
