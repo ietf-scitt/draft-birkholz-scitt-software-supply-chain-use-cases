@@ -358,7 +358,7 @@ Table of Contents
    After finishing a high assurance boot sequence, these measurements
    about foundational firmware are retrieved after-the-fact from
    shielded locations and must be compared to reference values that are
-   part of Reference Integrity Measurements (RIMs).
+   part of Reference Integrity Manifests (RIMs).
 
    A verifying system appraising the integrity of a high assurance boot
    sequence must identify, locate, retrieve, and authenticate
