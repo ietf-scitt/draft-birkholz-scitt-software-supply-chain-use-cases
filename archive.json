@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-12T00:33:20.089682+00:00",
+  "timestamp": "2023-02-14T00:31:18.243425+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -287,6 +287,44 @@
           "body": "Closing as been addressed now!",
           "createdAt": "2023-02-09T16:37:33Z",
           "updatedAt": "2023-02-09T16:37:33Z"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "id": "I_kwDOIPKmOc5eVgyX",
+      "title": "To-do List from the 13 February 2023 revision of Use Case",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/25",
+      "state": "OPEN",
+      "author": "knight-brian",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Capturing to-do list for future action.\r\n\r\n- Promotion Scenario: '3rd party lab validates the detail instead of their own test'\r\n- Endorsement Scenario: Audit downstream independent of issuer and provide an endorsement\r\n- CI/CD SCITT interaction - Create a model before talking to Github (Statements about SW could be listed. Policy management can be done via SCITT through SW development lifecycle)",
+      "createdAt": "2023-02-13T16:45:07Z",
+      "updatedAt": "2023-02-13T19:10:14Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@knight-brian : Thank you for the help in creating the issue.\r\n\r\n The second bullet about Auditing is already addressed via section 3.5 -> Auditing of Software Product",
+          "createdAt": "2023-02-13T19:02:58Z",
+          "updatedAt": "2023-02-13T19:03:18Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Bullet 3: is more like a specific profile of general architecture, not sure Use Case Document is the right one to host Bullet 3",
+          "createdAt": "2023-02-13T19:06:00Z",
+          "updatedAt": "2023-02-13T19:06:00Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "And First bullet is already addressed by presumably section 3.1",
+          "createdAt": "2023-02-13T19:10:14Z",
+          "updatedAt": "2023-02-13T19:10:14Z"
         }
       ]
     }
@@ -2329,6 +2367,95 @@
           "body": "LGTM!\r\n\r\nSincere thanks for spotting them!",
           "createdAt": "2023-02-11T10:50:31Z",
           "updatedAt": "2023-02-11T10:50:31Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "id": "PR_kwDOIPKmOc5J3lJv",
+      "title": "Update draft-birkholz-scitt-software-use-cases.md: Draft SVG + to-do list removal",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/26",
+      "state": "CLOSED",
+      "author": "knight-brian",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Inserted draft SVG for notional threats across the software lifecycle. Feedback and revisions are welcome.\r\n- Removed To-do list from end of file, and placed on issue tracker.",
+      "createdAt": "2023-02-13T16:47:38Z",
+      "updatedAt": "2023-02-13T17:23:59Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "9ddaff3a38dfbae0c8c3765d69de479d9f45bd19",
+      "headRepository": "knight-brian/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "patch-1",
+      "headRefOid": "c661e6c158df4319db7b605aa3aec9d8c9f4b45d",
+      "closedAt": "2023-02-13T17:23:14Z",
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Alternative, using ASCII art.\r\n\r\n      Dependencies        Malicious 3rd-party package or version\r\n           |\r\n           |\r\n     +-----+-----+\r\n     |           |\r\n     |   Code    |        Compromise source control\r\n     |           |\r\n     +-----+-----+\r\n           |\r\n     +-----+-----+\r\n     |           |        Malicious plug-ins\r\n     |  Commit   |        Malcious commit\r\n     |           |\r\n     +-----+-----+\r\n           |\r\n     +-----+-----+\r\n     |           |        Modify build tasks or build environment\r\n     |   Build   |        Poison build agent/compiler;\r\n     |           |        Tamper with build cache\r\n     +-----+-----+\r\n           |\r\n     +-----+-----+\r\n     |           |        Compromise test tools;\r\n     |    Test   |        Falsification of test results\r\n     |           |\r\n     +-----+-----+\r\n           |\r\n     +-----+-----+\r\n     |           |        Use bad package;\r\n     |  Package  |        Compromise package repository\r\n     |           |\r\n     +-----+-----+\r\n           |\r\n     +-----+-----+\r\n     |           |        Modify release tasks;\r\n     |  Release  |        Modify build drop prior to release\r\n     |           |\r\n     +-----+-----+\r\n           |\r\n     +-----+-----+\r\n     |           |        Tamper with versioning and update process\r\n     |  Deploy   |\r\n     |           |\r\n     +-----------+\r\n",
+          "createdAt": "2023-02-13T17:21:21Z",
+          "updatedAt": "2023-02-13T17:21:21Z"
+        },
+        {
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Removing this to create a new PR with ASCII art only.",
+          "createdAt": "2023-02-13T17:23:59Z",
+          "updatedAt": "2023-02-13T17:23:59Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 27,
+      "id": "PR_kwDOIPKmOc5J30Vv",
+      "title": "Update: Draft ASCII art + Todo list",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/27",
+      "state": "OPEN",
+      "author": "knight-brian",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Inserted draft ASCII art: Example software lifecycle threats\r\n- Removed to-do list to a new issue for future reference",
+      "createdAt": "2023-02-13T17:30:49Z",
+      "updatedAt": "2023-02-13T19:14:50Z",
+      "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "9ddaff3a38dfbae0c8c3765d69de479d9f45bd19",
+      "headRepository": "knight-brian/draft-birkholz-scitt-software-supply-chain-use-cases",
+      "headRefName": "patch-1",
+      "headRefOid": "cfcf5fae380bf8ac8fda85562a76857e68014d0e",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@knight-brian : Sorry I did not realized you were planning to do the both, I have already done part two:",
+          "createdAt": "2023-02-13T19:12:08Z",
+          "updatedAt": "2023-02-13T19:12:08Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOIPKmOc5NQ8Wo",
+          "commit": {
+            "abbreviatedOid": "cfcf5fa"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM!",
+          "createdAt": "2023-02-13T19:14:50Z",
+          "updatedAt": "2023-02-13T19:14:50Z",
           "comments": []
         }
       ]
