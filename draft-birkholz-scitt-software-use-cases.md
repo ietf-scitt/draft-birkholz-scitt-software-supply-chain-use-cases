@@ -180,7 +180,7 @@ When best practices are followed, in such cases measurements (e.g., a hash or di
 
 After finishing a boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.
 
-A verifying system appraising the integrity of a high assurance boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
+A verifying system appraising the integrity of a boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
 
 A consumer of published software wants:
 
