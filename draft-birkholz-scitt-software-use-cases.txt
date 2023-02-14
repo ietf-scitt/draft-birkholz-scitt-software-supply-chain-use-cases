@@ -85,10 +85,11 @@ Table of Contents
      3.2.  Multi Stakeholder Evaluation of a Released Software Product
      3.3.  Security Analysis of a Software Product
      3.4.  Promotion of a Software Component by multiple entities
-     3.5.  Auditing of Software Product
-     3.6.  Authentic Software Components in Air-Gapped Infrastructure
-     3.7.  Firmware Delivery to large set of constrained IoT Devices
-     3.8.  Software Integrator assembling a software product for a
+     3.5.  Post-Boot Firmware Provenance
+     3.6.  Auditing of Software Product
+     3.7.  Authentic Software Components in Air-Gapped Infrastructure
+     3.8.  Firmware Delivery to large set of constrained IoT Devices
+     3.9.  Software Integrator assembling a software product for a
            smart car
    4.  Normative References
    Authors' Addresses
@@ -373,7 +374,58 @@ Table of Contents
    *  to check the integrity of modifications or transformations done by
       a provider
 
-3.5.  Auditing of Software Product
+3.5.  Post-Boot Firmware Provenance
+
+   In contrast to operating systems or user space software components of
+   a large and complex systems, firmware components are often already
+   executed during boot-cycles before there is an opportunity to
+   authenticate them.
+
+   Authentication takes place, for example, by validating a signed
+   artefact against a Reference Integrity Manifest (RIM).  Corresponding
+   procedures are often called authenticated, measured, or secure boot.
+   The output of these high assurance boot procedures is often used as
+   input to more complex verification known as remote attestation
+   procedures.
+
+   If measurements before execution are not possible, static after-the-
+   fact analysis is required, typically by examining artifacts.
+
+   When best practices are followed, in such cases measurements (e.g., a
+   hash or digests) are stored in a protected or shielded environment
+   (e.g., TEEs or TPMs).
+
+   After finishing a boot sequence, these measurements about
+   foundational firmware are retrieved after-the-fact from shielded
+   locations and must be compared to reference values that are part of
+   RIMs.
+
+   A verifying system appraising the integrity of a boot sequence must
+   identify, locate, retrieve, and authenticate corresponding RIMs.
+
+   A consumer of published software wants:
+
+   *  to easily identify sources for RIMs
+
+   *  to select appropriate RIMs and download them for the appraisal of
+      measurements
+
+   *  to be able to assure the authenticity, applicability, and
+      freshness of RIMs over time
+
+   There is no standardized way to:
+
+   *  identify, locate, retrieve and authenticate RIMs in a uniform
+      fashion
+
+   *  to uniquely identify among multiple potential available RIMs
+      (e.g., by age, source, signing authority, etc.)
+
+   *  to store RIMs in a fashion that enables their usage in appraisal
+      procedures years after they were created in a secure and
+      believable fashion
+
+3.6.  Auditing of Software Product
 
    An organization has established procurement requirements and
    compliance policies for software use.  In order to allow the
@@ -421,7 +473,7 @@ Table of Contents
    *  allow for more than one level of complexity of audit procedures
       (potentially depending on criticality)
 
-3.6.  Authentic Software Components in Air-Gapped Infrastructure
+3.7.  Authentic Software Components in Air-Gapped Infrastructure
 
    Some software is deployed on systems not connected to the Internet.
    Authenticity checks for off-line systems can occur at time of
@@ -455,7 +507,7 @@ Table of Contents
       that scales from applications such as global open source
       repositories down to off-line constrained devices
 
-3.7.  Firmware Delivery to large set of constrained IoT Devices
+3.8.  Firmware Delivery to large set of constrained IoT Devices
 
    Firmware is a critical component for successful execution of any
    constrained IoT device.  It is often the bedrock on which the
@@ -505,7 +557,7 @@ Table of Contents
       firmware at the install time.  For example, the firmware is still
       in a good state or otherwise?
 
-3.8.  Software Integrator assembling a software product for a smart car
+3.9.  Software Integrator assembling a software product for a smart car
 
    Software Integration is a complex activity.  This typically involves
    getting various software components from multiple suppliers and

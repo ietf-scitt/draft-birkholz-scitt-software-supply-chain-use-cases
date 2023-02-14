@@ -1184,16 +1184,19 @@ svg :is([fill="white"], [fill^="#fff"]) {
                 <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="auto internal xref">3.4</a>.  <a href="#name-promotion-of-a-software-com" class="internal xref">Promotion of a Software Component by multiple entities</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.5">
-                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="auto internal xref">3.5</a>.  <a href="#name-auditing-of-software-produc" class="internal xref">Auditing of Software Product</a></p>
+                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="auto internal xref">3.5</a>.  <a href="#name-post-boot-firmware-provenan" class="internal xref">Post-Boot Firmware Provenance</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.6">
-                <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="auto internal xref">3.6</a>.  <a href="#name-authentic-software-componen" class="internal xref">Authentic Software Components in Air-Gapped Infrastructure</a></p>
+                <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="auto internal xref">3.6</a>.  <a href="#name-auditing-of-software-produc" class="internal xref">Auditing of Software Product</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.7">
-                <p id="section-toc.1-1.3.2.7.1"><a href="#section-3.7" class="auto internal xref">3.7</a>.  <a href="#name-firmware-delivery-to-large-" class="internal xref">Firmware Delivery to large set of constrained IoT Devices</a></p>
+                <p id="section-toc.1-1.3.2.7.1"><a href="#section-3.7" class="auto internal xref">3.7</a>.  <a href="#name-authentic-software-componen" class="internal xref">Authentic Software Components in Air-Gapped Infrastructure</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.8">
-                <p id="section-toc.1-1.3.2.8.1"><a href="#section-3.8" class="auto internal xref">3.8</a>.  <a href="#name-software-integrator-assembl" class="internal xref">Software Integrator assembling a software product for a smart car</a></p>
+                <p id="section-toc.1-1.3.2.8.1"><a href="#section-3.8" class="auto internal xref">3.8</a>.  <a href="#name-firmware-delivery-to-large-" class="internal xref">Firmware Delivery to large set of constrained IoT Devices</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.9">
+                <p id="section-toc.1-1.3.2.9.1"><a href="#section-3.9" class="auto internal xref">3.9</a>.  <a href="#name-software-integrator-assembl" class="internal xref">Software Integrator assembling a software product for a smart car</a></p>
 </li>
             </ul>
 </li>
@@ -1411,124 +1414,156 @@ Due to complex distribution and promotion lifecycle scenarios, the original soft
         </ul>
 </section>
 </div>
-<div id="auditing-of-software-product">
+<div id="post-boot-firmware-provenance">
 <section id="section-3.5">
-        <h3 id="name-auditing-of-software-produc">
-<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-auditing-of-software-produc" class="section-name selfRef">Auditing of Software Product</a>
+        <h3 id="name-post-boot-firmware-provenan">
+<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-post-boot-firmware-provenan" class="section-name selfRef">Post-Boot Firmware Provenance</a>
         </h3>
-<p id="section-3.5-1">An organization has established procurement requirements and compliance policies for software use.
+<p id="section-3.5-1">In contrast to operating systems or user space software components of a large and complex systems, firmware components are often already executed during boot-cycles before there is an opportunity to authenticate them.<a href="#section-3.5-1" class="pilcrow">¶</a></p>
+<p id="section-3.5-2">Authentication takes place, for example, by validating a signed artefact against a Reference Integrity Manifest (RIM).
+Corresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input to more complex verification known as remote attestation procedures.<a href="#section-3.5-2" class="pilcrow">¶</a></p>
+<p id="section-3.5-3">If measurements before execution are not possible, static after-the-fact analysis is required, typically by examining artifacts.<a href="#section-3.5-3" class="pilcrow">¶</a></p>
+<p id="section-3.5-4">When best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).<a href="#section-3.5-4" class="pilcrow">¶</a></p>
+<p id="section-3.5-5">After finishing a boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.<a href="#section-3.5-5" class="pilcrow">¶</a></p>
+<p id="section-3.5-6">A verifying system appraising the integrity of a boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.<a href="#section-3.5-6" class="pilcrow">¶</a></p>
+<p id="section-3.5-7">A consumer of published software wants:<a href="#section-3.5-7" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.5-8.1">to easily identify sources for RIMs<a href="#section-3.5-8.1" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-8.2">to select appropriate RIMs and download them for the appraisal of measurements<a href="#section-3.5-8.2" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-8.3">to be able to assure the authenticity, applicability, and freshness of RIMs over time<a href="#section-3.5-8.3" class="pilcrow">¶</a>
+</li>
+        </ul>
+<p id="section-3.5-9">There is no standardized way to:<a href="#section-3.5-9" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.5-10.1">identify, locate, retrieve and authenticate RIMs in a uniform fashion<a href="#section-3.5-10.1" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-10.2">to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)<a href="#section-3.5-10.2" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-3.5-10.3">to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion<a href="#section-3.5-10.3" class="pilcrow">¶</a>
+</li>
+        </ul>
+</section>
+</div>
+<div id="auditing-of-software-product">
+<section id="section-3.6">
+        <h3 id="name-auditing-of-software-produc">
+<a href="#section-3.6" class="section-number selfRef">3.6. </a><a href="#name-auditing-of-software-produc" class="section-name selfRef">Auditing of Software Product</a>
+        </h3>
+<p id="section-3.6-1">An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
 Compliance and requirement checking includes audits of the results of organisational procedures and technical procedures, which can originate from checks conducted by the organization itself or checks conducted by trusted third parties.
 Consecutively, consumers of statements about a released software can be auditors.
 Examples of procedure results important to audits include: available fresh and applicable code reviews, certification documents (e.g., FIPS or Common Criteria), virus scans, vulnerability disclosure reports (fixed or not fixed), security impact or applicability justification statements.
-Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.<a href="#section-3.5-1" class="pilcrow">¶</a></p>
-<p id="section-3.5-2">A consumer of a released software wants:<a href="#section-3.5-2" class="pilcrow">¶</a></p>
+Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.<a href="#section-3.6-1" class="pilcrow">¶</a></p>
+<p id="section-3.6-2">A consumer of a released software wants:<a href="#section-3.6-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.5-3.1">to provide methods with different levels of complexity to auditors of a released software<a href="#section-3.5-3.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.6-3.1">to provide methods with different levels of complexity to auditors of a released software<a href="#section-3.6-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.5-3.2">expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available<a href="#section-3.5-3.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-3.2">expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available<a href="#section-3.6-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.5-3.3">the cost of audits to be manageable and scale well<a href="#section-3.5-3.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-3.3">the cost of audits to be manageable and scale well<a href="#section-3.6-3.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.5-3.4">complete visibility and accessibility to documents required for audits<a href="#section-3.5-3.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-3.4">complete visibility and accessibility to documents required for audits<a href="#section-3.6-3.4" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.5-4">There is no standardized way to:<a href="#section-3.5-4" class="pilcrow">¶</a></p>
+<p id="section-3.6-4">There is no standardized way to:<a href="#section-3.6-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.5-5.1">discover and associate relevant documents and check results required for various types of audits<a href="#section-3.5-5.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.6-5.1">discover and associate relevant documents and check results required for various types of audits<a href="#section-3.6-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.5-5.2">assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion<a href="#section-3.5-5.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-5.2">assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion<a href="#section-3.6-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.5-5.3">check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion<a href="#section-3.5-5.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-5.3">check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion<a href="#section-3.6-5.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.5-5.4">allow for more than one level of complexity of audit procedures (potentially depending on criticality)<a href="#section-3.5-5.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.6-5.4">allow for more than one level of complexity of audit procedures (potentially depending on criticality)<a href="#section-3.6-5.4" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
 </div>
 <div id="authentic-software-components-in-air-gapped-infrastructure">
-<section id="section-3.6">
+<section id="section-3.7">
         <h3 id="name-authentic-software-componen">
-<a href="#section-3.6" class="section-number selfRef">3.6. </a><a href="#name-authentic-software-componen" class="section-name selfRef">Authentic Software Components in Air-Gapped Infrastructure</a>
+<a href="#section-3.7" class="section-number selfRef">3.7. </a><a href="#name-authentic-software-componen" class="section-name selfRef">Authentic Software Components in Air-Gapped Infrastructure</a>
         </h3>
-<p id="section-3.6-1">Some software is deployed on systems not connected to the Internet.
+<p id="section-3.7-1">Some software is deployed on systems not connected to the Internet.
 Authenticity checks for off-line systems can occur at time of deployment of released software.
 Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
-If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.<a href="#section-3.6-1" class="pilcrow">¶</a></p>
-<p id="section-3.6-2">A consumer of a released software wants:<a href="#section-3.6-2" class="pilcrow">¶</a></p>
+If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.<a href="#section-3.7-1" class="pilcrow">¶</a></p>
+<p id="section-3.7-2">A consumer of a released software wants:<a href="#section-3.7-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.6-3.1">a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment<a href="#section-3.6-3.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.7-3.1">a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment<a href="#section-3.7-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.6-3.2">a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments<a href="#section-3.6-3.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.7-3.2">a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments<a href="#section-3.7-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.6-3.3">a simple and low cost way to update the configuration of a system component in charge of validity or authenticity checking<a href="#section-3.6-3.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.7-3.3">a simple and low cost way to update the configuration of a system component in charge of validity or authenticity checking<a href="#section-3.7-3.3" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.6-4">There is no standardized way to:<a href="#section-3.6-4" class="pilcrow">¶</a></p>
+<p id="section-3.7-4">There is no standardized way to:<a href="#section-3.7-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.6-5.1">provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion<a href="#section-3.6-5.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.7-5.1">provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion<a href="#section-3.7-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.6-5.2">enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base<a href="#section-3.6-5.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.7-5.2">enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base<a href="#section-3.7-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.6-5.3">to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices<a href="#section-3.6-5.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.7-5.3">to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices<a href="#section-3.7-5.3" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
 </div>
 <div id="firmware-delivery-to-large-set-of-constrained-iot-devices">
-<section id="section-3.7">
+<section id="section-3.8">
         <h3 id="name-firmware-delivery-to-large-">
-<a href="#section-3.7" class="section-number selfRef">3.7. </a><a href="#name-firmware-delivery-to-large-" class="section-name selfRef">Firmware Delivery to large set of constrained IoT Devices</a>
+<a href="#section-3.8" class="section-number selfRef">3.8. </a><a href="#name-firmware-delivery-to-large-" class="section-name selfRef">Firmware Delivery to large set of constrained IoT Devices</a>
         </h3>
-<p id="section-3.7-1">Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers. For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.<a href="#section-3.7-1" class="pilcrow">¶</a></p>
-<p id="section-3.7-2">Consumers and other interested parties of a firmware update ecosystem wants:<a href="#section-3.7-2" class="pilcrow">¶</a></p>
+<p id="section-3.8-1">Firmware is a critical component for successful execution of any constrained IoT device. It is often the bedrock on which the security story of the devices it powers. For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate. These devices typically connect to the Internet through an intermediary base station using wireless technologies. Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor. The public network, open distribution system, and firmware update process create several security challenges.<a href="#section-3.8-1" class="pilcrow">¶</a></p>
+<p id="section-3.8-2">Consumers and other interested parties of a firmware update ecosystem wants:<a href="#section-3.8-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.7-3.1">to know that the received firmware for system update is not faulty or malicious<a href="#section-3.7-3.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.8-3.1">to know that the received firmware for system update is not faulty or malicious<a href="#section-3.8-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-3.2">to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates<a href="#section-3.7-3.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-3.2">to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates<a href="#section-3.8-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-3.3">to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise<a href="#section-3.7-3.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-3.3">to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise<a href="#section-3.8-3.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-3.4">to confirm that the publishers know if their deliverable has been compromised. Can they trust their key protection or audit logging?<a href="#section-3.7-3.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-3.4">to confirm that the publishers know if their deliverable has been compromised. Can they trust their key protection or audit logging?<a href="#section-3.8-3.4" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-3.5">to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices<a href="#section-3.7-3.5" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-3.5">to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices<a href="#section-3.8-3.5" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.7-4">There is no standardized way to:<a href="#section-3.7-4" class="pilcrow">¶</a></p>
+<p id="section-3.8-4">There is no standardized way to:<a href="#section-3.8-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.7-5.1">provide an update framework that allows validation of authenticity of firmware revisions<a href="#section-3.7-5.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.8-5.1">provide an update framework that allows validation of authenticity of firmware revisions<a href="#section-3.8-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-5.2">to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices.<a href="#section-3.7-5.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-5.2">to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices.<a href="#section-3.8-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-5.3">reliably discern an update that has been signed by the appropriate and intended signing identity<a href="#section-3.7-5.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-5.3">reliably discern an update that has been signed by the appropriate and intended signing identity<a href="#section-3.8-5.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.7-5.4">Make an informed judgement on all available information about firmware at the install time. For example, the firmware is still in a good state or otherwise?<a href="#section-3.7-5.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.8-5.4">Make an informed judgement on all available information about firmware at the install time. For example, the firmware is still in a good state or otherwise?<a href="#section-3.8-5.4" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
 </div>
 <div id="software-integrator-assembling-a-software-product-for-a-smart-car">
-<section id="section-3.8">
+<section id="section-3.9">
         <h3 id="name-software-integrator-assembl">
-<a href="#section-3.8" class="section-number selfRef">3.8. </a><a href="#name-software-integrator-assembl" class="section-name selfRef">Software Integrator assembling a software product for a smart car</a>
+<a href="#section-3.9" class="section-number selfRef">3.9. </a><a href="#name-software-integrator-assembl" class="section-name selfRef">Software Integrator assembling a software product for a smart car</a>
         </h3>
-<p id="section-3.8-1">Software Integration is a complex activity. This typically involves getting various software components from multiple suppliers and producing an integrated package deployed as part of device assembly. For example, car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources. Integration complexity creates a higher risk of security vulnerabilities to the delivered software.<a href="#section-3.8-1" class="pilcrow">¶</a></p>
-<p id="section-3.8-2">Consumer of an integrated software wants:<a href="#section-3.8-2" class="pilcrow">¶</a></p>
+<p id="section-3.9-1">Software Integration is a complex activity. This typically involves getting various software components from multiple suppliers and producing an integrated package deployed as part of device assembly. For example, car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources. Integration complexity creates a higher risk of security vulnerabilities to the delivered software.<a href="#section-3.9-1" class="pilcrow">¶</a></p>
+<p id="section-3.9-2">Consumer of an integrated software wants:<a href="#section-3.9-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.8-3.1">all components presents in a software product listed, and the ability to identify and retrieve them from a secure and tamperproof location<a href="#section-3.8-3.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.9-3.1">all components presents in a software product listed, and the ability to identify and retrieve them from a secure and tamperproof location<a href="#section-3.9-3.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.8-3.2">to receive an alert when a vulnerability scan detects a known security issue on a running software component<a href="#section-3.8-3.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.9-3.2">to receive an alert when a vulnerability scan detects a known security issue on a running software component<a href="#section-3.9-3.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.8-3.3">verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security<a href="#section-3.8-3.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.9-3.3">verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security<a href="#section-3.9-3.3" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.8-4">There is no standardized way to:<a href="#section-3.8-4" class="pilcrow">¶</a></p>
+<p id="section-3.9-4">There is no standardized way to:<a href="#section-3.9-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.8-5.1">provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation<a href="#section-3.8-5.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.9-5.1">provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation<a href="#section-3.9-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.8-5.2">notify software integrators of vulnerabilities identified during security scans of running software<a href="#section-3.8-5.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.9-5.2">notify software integrators of vulnerabilities identified during security scans of running software<a href="#section-3.9-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.8-5.3">provide valid annotations on build integrity to ensure conformance<a href="#section-3.8-5.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.9-5.3">provide valid annotations on build integrity to ensure conformance<a href="#section-3.9-5.3" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
