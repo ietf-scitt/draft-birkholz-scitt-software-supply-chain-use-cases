@@ -174,7 +174,7 @@ In contrast to operating systems or user space software components of a large an
 Authentication takes place, for example, by validating a signed artefact against a Reference Integrity Manifest (RIM).
 Corresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input to more complex verification known as remote attestation procedures.
 
-If measurements before execution are not possible, static after-the-fact analysis is required.
+If measurements before execution are not possible, static after-the-fact analysis is required, typically by examining artifacts.
 
 When best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
 
