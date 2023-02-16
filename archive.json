@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-14T00:31:18.243425+00:00",
+  "timestamp": "2023-02-16T00:30:38.890343+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -295,15 +295,15 @@
       "id": "I_kwDOIPKmOc5eVgyX",
       "title": "To-do List from the 13 February 2023 revision of Use Case",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/25",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "knight-brian",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Capturing to-do list for future action.\r\n\r\n- Promotion Scenario: '3rd party lab validates the detail instead of their own test'\r\n- Endorsement Scenario: Audit downstream independent of issuer and provide an endorsement\r\n- CI/CD SCITT interaction - Create a model before talking to Github (Statements about SW could be listed. Policy management can be done via SCITT through SW development lifecycle)",
       "createdAt": "2023-02-13T16:45:07Z",
-      "updatedAt": "2023-02-13T19:10:14Z",
-      "closedAt": null,
+      "updatedAt": "2023-02-14T16:14:54Z",
+      "closedAt": "2023-02-14T16:14:53Z",
       "comments": [
         {
           "author": "yogeshbdeshpande",
@@ -325,6 +325,41 @@
           "body": "And First bullet is already addressed by presumably section 3.1",
           "createdAt": "2023-02-13T19:10:14Z",
           "updatedAt": "2023-02-13T19:10:14Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@henkbirkholz @knight-brian @kaywilliams @rjb4standards \r\n\r\nPlease have a look at the new document and let me know, if you agree/dis-agree with my observations on the TO DO list pending items.",
+          "createdAt": "2023-02-14T09:19:44Z",
+          "updatedAt": "2023-02-14T09:19:44Z"
+        },
+        {
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@yogeshbdeshpande Thank you. I agree with your rationale for the three bullets.  I vote to close this issue, pending feedback from others.",
+          "createdAt": "2023-02-14T12:12:51Z",
+          "updatedAt": "2023-02-14T12:12:51Z"
+        },
+        {
+          "author": "kaywilliams",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Agree.",
+          "createdAt": "2023-02-14T16:00:07Z",
+          "updatedAt": "2023-02-14T16:00:07Z"
+        },
+        {
+          "author": "rjb4standards",
+          "authorAssociation": "NONE",
+          "body": "I also agree.",
+          "createdAt": "2023-02-14T16:06:11Z",
+          "updatedAt": "2023-02-14T16:06:11Z"
+        },
+        {
+          "author": "knight-brian",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Bullets resolved. Closing issue \"To-do List from the 13 February 2023 revision of Use Case #25.\"",
+          "createdAt": "2023-02-14T16:14:53Z",
+          "updatedAt": "2023-02-14T16:14:53Z"
         }
       ]
     }
@@ -1540,24 +1575,26 @@
       "id": "PR_kwDOIPKmOc5IJjm9",
       "title": "Use Case: checking firmware after-the-fact with help of RIMs",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/17",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "henkbirkholz",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
       "createdAt": "2023-01-19T17:29:52Z",
-      "updatedAt": "2023-02-10T16:30:32Z",
+      "updatedAt": "2023-02-14T21:01:44Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "c3c0ae0a1434c925e36878d003fdc06968a66a9b",
       "headRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "after-the-fact",
-      "headRefOid": "ca0fdc859b848ce7f88e3d8ba7a637c1a8422a75",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "443e654c3fb5025ed2a9a791acd169968bb48f6b",
+      "closedAt": "2023-02-14T21:01:44Z",
+      "mergedAt": "2023-02-14T21:01:44Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "72f780884e48dc7c9ad936b69e00f6db9047333b"
+      },
       "comments": [
         {
           "author": "rjb4standards",
@@ -1579,6 +1616,13 @@
           "body": "No objections with merging these changes.",
           "createdAt": "2023-02-09T16:46:20Z",
           "updatedAt": "2023-02-09T16:46:20Z"
+        },
+        {
+          "author": "OR13",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "My feedback is non blocking, PR authors may dismiss my suggestions.",
+          "createdAt": "2023-02-14T18:39:08Z",
+          "updatedAt": "2023-02-14T18:39:08Z"
         }
       ],
       "reviews": [
@@ -1668,7 +1712,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-02-09T19:38:04Z",
@@ -1688,7 +1732,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-02-09T19:39:27Z",
@@ -1708,7 +1752,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-02-09T19:40:53Z",
@@ -1716,9 +1760,9 @@
           "comments": [
             {
               "originalPosition": 13,
-              "body": "```suggestion\r\nIn such cases measurements (e.g., a hash or digests) should be stored in a protected or shielded environment (e.g., TEEs or TPMs).\r\n```",
+              "body": "```suggestion\r\nWhen best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).\r\n```",
               "createdAt": "2023-02-09T19:40:53Z",
-              "updatedAt": "2023-02-09T19:40:54Z"
+              "updatedAt": "2023-02-14T18:41:59Z"
             }
           ]
         },
@@ -1728,7 +1772,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-02-09T19:42:02Z",
@@ -1748,7 +1792,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-02-09T19:42:39Z",
@@ -1768,7 +1812,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "APPROVED",
           "body": "mostly just wording nits, looks good.",
           "createdAt": "2023-02-09T19:43:41Z",
@@ -1867,7 +1911,7 @@
             "abbreviatedOid": "7191638"
           },
           "author": "OR13",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-02-10T16:30:32Z",
@@ -1880,6 +1924,339 @@
               "updatedAt": "2023-02-10T16:30:32Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NX3jQ",
+          "commit": {
+            "abbreviatedOid": "7191638"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T17:47:37Z",
+          "updatedAt": "2023-02-14T17:47:37Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "From the option above, I like \"when best practices are followed, are...\" best.",
+              "createdAt": "2023-02-14T17:47:37Z",
+              "updatedAt": "2023-02-14T17:47:37Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NYSS7",
+          "commit": {
+            "abbreviatedOid": "d3e624b"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T18:43:23Z",
+          "updatedAt": "2023-02-14T18:43:23Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "omitting this suggestion as per https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/17#issuecomment-1430206115",
+              "createdAt": "2023-02-14T18:43:23Z",
+              "updatedAt": "2023-02-14T18:43:23Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NYSgQ",
+          "commit": {
+            "abbreviatedOid": "d3e624b"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T18:44:03Z",
+          "updatedAt": "2023-02-14T18:44:04Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "picked one suggestion as per https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/17#issuecomment-1430206115",
+              "createdAt": "2023-02-14T18:44:04Z",
+              "updatedAt": "2023-02-14T18:44:04Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY4Ew",
+          "commit": {
+            "abbreviatedOid": "c47bdfb"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:27:54Z",
+          "updatedAt": "2023-02-14T20:27:55Z",
+          "comments": [
+            {
+              "originalPosition": 9,
+              "body": "```suggestion\r\nCorresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input input to more complex verification known as remote attestation procedures.\r\n```",
+              "createdAt": "2023-02-14T20:27:54Z",
+              "updatedAt": "2023-02-14T20:28:05Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY4Wj",
+          "commit": {
+            "abbreviatedOid": "c47bdfb"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:28:36Z",
+          "updatedAt": "2023-02-14T20:28:36Z",
+          "comments": [
+            {
+              "originalPosition": 9,
+              "body": "pulling in Yogesh's comment as a suggestion",
+              "createdAt": "2023-02-14T20:28:36Z",
+              "updatedAt": "2023-02-14T20:28:36Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY5Gz",
+          "commit": {
+            "abbreviatedOid": "f026853"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:31:11Z",
+          "updatedAt": "2023-02-14T20:31:12Z",
+          "comments": [
+            {
+              "originalPosition": 9,
+              "body": "```suggestion\r\nCorresponding procedures are often called authenticated, measured, or secure boot. The output of these high assurance boot procedures is often used as input to more complex verification known as remote attestation procedures.\r\n```",
+              "createdAt": "2023-02-14T20:31:11Z",
+              "updatedAt": "2023-02-14T20:31:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY-Ec",
+          "commit": {
+            "abbreviatedOid": "034a5c0"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:46:30Z",
+          "updatedAt": "2023-02-14T20:46:31Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "Post Boot Firmware Provenance",
+              "createdAt": "2023-02-14T20:46:30Z",
+              "updatedAt": "2023-02-14T20:46:31Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY_Rv",
+          "commit": {
+            "abbreviatedOid": "034a5c0"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:48:43Z",
+          "updatedAt": "2023-02-14T20:48:44Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "I think we mean Manifest!",
+              "createdAt": "2023-02-14T20:48:43Z",
+              "updatedAt": "2023-02-14T20:48:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY_nm",
+          "commit": {
+            "abbreviatedOid": "034a5c0"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:49:22Z",
+          "updatedAt": "2023-02-14T20:49:23Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "```suggestion\r\nAfter finishing a high assurance boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of Reference Integrity Manifests (RIMs).\r\n```",
+              "createdAt": "2023-02-14T20:49:22Z",
+              "updatedAt": "2023-02-14T20:49:23Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NY__u",
+          "commit": {
+            "abbreviatedOid": "034a5c0"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:50:05Z",
+          "updatedAt": "2023-02-14T20:50:05Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "```suggestion\r\nAuthentication takes place, for example, by validating a signed artefact against a Reference Integrity Manifest (RIM).\r\n```",
+              "createdAt": "2023-02-14T20:50:05Z",
+              "updatedAt": "2023-02-14T20:54:22Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZAxo",
+          "commit": {
+            "abbreviatedOid": "fa7a8cf"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:51:36Z",
+          "updatedAt": "2023-02-14T20:51:37Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "Maybe:\r\n\r\n```suggestion\r\nAuthentication takes place, for example, by validating a signature or by creating a hash of measurements and comparing them to a Reference Integrity Manifest (RIM).\r\n```\r\n\r\nand removing the expansion if RIM below, if we introduce it here?",
+              "createdAt": "2023-02-14T20:51:36Z",
+              "updatedAt": "2023-02-14T20:51:37Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZB2r",
+          "commit": {
+            "abbreviatedOid": "fa7a8cf"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:53:29Z",
+          "updatedAt": "2023-02-14T20:53:29Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "Corresponding to the suggestion above\r\n\r\n```suggestion\r\nAfter finishing a high assurance boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.\r\n```",
+              "createdAt": "2023-02-14T20:53:29Z",
+              "updatedAt": "2023-02-14T20:54:35Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZC5j",
+          "commit": {
+            "abbreviatedOid": "d9101bc"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:55:20Z",
+          "updatedAt": "2023-02-14T20:55:20Z",
+          "comments": [
+            {
+              "originalPosition": 11,
+              "body": "```suggestion\r\nIf measurements before execution are not possible, static after-the-fact analysis is required, typically by examining artifacts.\r\n```",
+              "createdAt": "2023-02-14T20:55:20Z",
+              "updatedAt": "2023-02-14T20:55:31Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZDq3",
+          "commit": {
+            "abbreviatedOid": "401aff9"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:56:52Z",
+          "updatedAt": "2023-02-14T20:56:52Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "```suggestion\r\nAfter finishing a boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.\r\n```",
+              "createdAt": "2023-02-14T20:56:52Z",
+              "updatedAt": "2023-02-14T20:56:52Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZEH9",
+          "commit": {
+            "abbreviatedOid": "fede135"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:57:35Z",
+          "updatedAt": "2023-02-14T20:57:35Z",
+          "comments": [
+            {
+              "originalPosition": 17,
+              "body": "```suggestion\r\nA verifying system appraising the integrity of a boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.\r\n```",
+              "createdAt": "2023-02-14T20:57:35Z",
+              "updatedAt": "2023-02-14T20:57:35Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZEVY",
+          "commit": {
+            "abbreviatedOid": "835106f"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-14T20:58:01Z",
+          "updatedAt": "2023-02-14T20:58:01Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "```suggestion\r\n## Post-Boot Firmware Provenance\r\n```",
+              "createdAt": "2023-02-14T20:58:01Z",
+              "updatedAt": "2023-02-14T20:58:01Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NZE64",
+          "commit": {
+            "abbreviatedOid": "443e654"
+          },
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "LGTM!",
+          "createdAt": "2023-02-14T20:59:08Z",
+          "updatedAt": "2023-02-14T20:59:08Z",
+          "comments": []
         }
       ]
     },
@@ -2417,24 +2794,26 @@
       "id": "PR_kwDOIPKmOc5J30Vv",
       "title": "Update: Draft ASCII art + Todo list",
       "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/pull/27",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "knight-brian",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "- Inserted draft ASCII art: Example software lifecycle threats\r\n- Removed to-do list to a new issue for future reference",
       "createdAt": "2023-02-13T17:30:49Z",
-      "updatedAt": "2023-02-13T19:14:50Z",
+      "updatedAt": "2023-02-14T09:17:21Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
-      "baseRefOid": "9ddaff3a38dfbae0c8c3765d69de479d9f45bd19",
+      "baseRefOid": "ae0cd9b41a74f493c3bf3e12732370de99d5fba8",
       "headRepository": "knight-brian/draft-birkholz-scitt-software-supply-chain-use-cases",
       "headRefName": "patch-1",
-      "headRefOid": "cfcf5fae380bf8ac8fda85562a76857e68014d0e",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "9108e98897d63ba4ad79285920612d1eb81f1413",
+      "closedAt": "2023-02-14T09:17:20Z",
+      "mergedAt": "2023-02-14T09:17:20Z",
+      "mergedBy": "yogeshbdeshpande",
+      "mergeCommit": {
+        "oid": "82fc38e53874c92cc42b4d6965497d5ffa186f9c"
+      },
       "comments": [
         {
           "author": "yogeshbdeshpande",
