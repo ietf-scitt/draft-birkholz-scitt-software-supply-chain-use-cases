@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 19 August 2023                                              ARM
+Expires: 20 August 2023                                              ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                        15 February 2023
+                                                        16 February 2023
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 August 2023.
+   This Internet-Draft will expire on 20 August 2023.
 
 Copyright Notice
 
@@ -382,7 +382,7 @@ Table of Contents
    authenticate them.
 
    Authentication takes place, for example, by validating a signed
-   artefact against a Reference Integrity Manifest (RIM).  Corresponding
+   artifact against a Reference Integrity Manifest (RIM).  Corresponding
    procedures are often called authenticated, measured, or secure boot.
    The output of these high assurance boot procedures is often used as
    input to more complex verification known as remote attestation
