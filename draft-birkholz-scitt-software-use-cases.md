@@ -231,7 +231,7 @@ There is no standardized way to:
 
 In contrast to operating systems or user space software components of a large and complex systems, firmware components are often already executed during boot-cycles before there is an opportunity to authenticate them.
 
-Authentication takes place, for example, by validating a signed artefact against a Reference Integrity Manifest (RIM).
+Authentication takes place, for example, by validating a signed artifact against a Reference Integrity Manifest (RIM).
 Corresponding procedures are often called authenticated, measured, or secure boot.
 The output of these high assurance boot procedures is often used as input to more complex verification known as remote attestation procedures.
 
