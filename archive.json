@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-16T00:30:38.890343+00:00",
+  "timestamp": "2023-02-19T00:30:51.622163+00:00",
   "repo": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
   "labels": [
     {
@@ -360,6 +360,37 @@
           "body": "Bullets resolved. Closing issue \"To-do List from the 13 February 2023 revision of Use Case #25.\"",
           "createdAt": "2023-02-14T16:14:53Z",
           "updatedAt": "2023-02-14T16:14:53Z"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "id": "I_kwDOIPKmOc5eljKy",
+      "title": "Artefact vs. Artifact",
+      "url": "https://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/issues/28",
+      "state": "CLOSED",
+      "author": "SteveLasker",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Which side of the pond shall we author the use cases?\r\nhttps://www.grammar.com/artefact_vs._artifact",
+      "createdAt": "2023-02-16T02:38:43Z",
+      "updatedAt": "2023-02-16T16:19:18Z",
+      "closedAt": "2023-02-16T16:19:18Z",
+      "comments": [
+        {
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "body": "Artifact. The stray artefact is a typo. My spell checker also tells me that while I write this comment.",
+          "createdAt": "2023-02-16T07:11:12Z",
+          "updatedAt": "2023-02-16T07:11:12Z"
+        },
+        {
+          "author": "yogeshbdeshpande",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Issue fixed via:\r\nhttps://github.com/ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases/commit/5bfa128a2e7e967adc16b423f99aee18f0455747",
+          "createdAt": "2023-02-16T16:19:15Z",
+          "updatedAt": "2023-02-16T16:19:15Z"
         }
       ]
     }
@@ -1582,7 +1613,7 @@
       "labels": [],
       "body": "Signed-off-by: Henk Birkholz <henk.birkholz@sit.fraunhofer.de>",
       "createdAt": "2023-01-19T17:29:52Z",
-      "updatedAt": "2023-02-14T21:01:44Z",
+      "updatedAt": "2023-02-16T07:09:28Z",
       "baseRepository": "ietf-scitt/draft-birkholz-scitt-software-supply-chain-use-cases",
       "baseRefName": "main",
       "baseRefOid": "c3c0ae0a1434c925e36878d003fdc06968a66a9b",
@@ -2257,6 +2288,72 @@
           "createdAt": "2023-02-14T20:59:08Z",
           "updatedAt": "2023-02-14T20:59:08Z",
           "comments": []
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NhpBX",
+          "commit": {
+            "abbreviatedOid": "443e654"
+          },
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-16T02:34:51Z",
+          "updatedAt": "2023-02-16T02:37:10Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "I know we have folks across both sides of the pond, but shall we agree on which way we'll spell artefact | artifact?\r\nFor reference: [Artefact vs. Artifact](https://www.grammar.com/artefact_vs._artifact)",
+              "createdAt": "2023-02-16T02:34:51Z",
+              "updatedAt": "2023-02-16T02:37:10Z"
+            },
+            {
+              "originalPosition": 11,
+              "body": "Ok, just noting we're not consistent in the same file :)\r\n\r\n> ... by examining artifacts.",
+              "createdAt": "2023-02-16T02:35:34Z",
+              "updatedAt": "2023-02-16T02:37:10Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NiaPN",
+          "commit": {
+            "abbreviatedOid": "443e654"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-16T07:09:00Z",
+          "updatedAt": "2023-02-16T07:09:00Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "That's actually a typo. It should be artifact.",
+              "createdAt": "2023-02-16T07:09:00Z",
+              "updatedAt": "2023-02-16T07:09:00Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOIPKmOc5NiaWI",
+          "commit": {
+            "abbreviatedOid": "443e654"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-16T07:09:27Z",
+          "updatedAt": "2023-02-16T07:09:27Z",
+          "comments": [
+            {
+              "originalPosition": 11,
+              "body": "see above :-)",
+              "createdAt": "2023-02-16T07:09:27Z",
+              "updatedAt": "2023-02-16T07:09:28Z"
+            }
+          ]
         }
       ]
     },
