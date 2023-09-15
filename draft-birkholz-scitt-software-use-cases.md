@@ -84,7 +84,7 @@ Recently, the global community has experienced numerous supply chain attacks tar
            |
      +-----+-----+
      |           |        Malicious plug-ins;
-     |  Commit   |        Malcious commit
+     |  Commit   |        Malicious commit
      |           |
      +-----+-----+
            |
@@ -257,7 +257,7 @@ There is no standardized way to:
 An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
 Compliance and requirement checking includes audits of the results of organisational procedures and technical procedures, which can originate from checks conducted by the organization itself or checks conducted by trusted third parties.
-Consecutively, consumers of statements about a released software can be auditors.
+Consequently, consumers of statements about a released software can be auditors.
 Examples of procedure results important to audits include: available fresh and applicable code reviews, certification documents (e.g., FIPS or Common Criteria), virus scans, vulnerability disclosure reports (fixed or not fixed), security impact or applicability justification statements.
 Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
 
